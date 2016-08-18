@@ -1,0 +1,213 @@
+\documentclass[12pt]{beamer}
+\usepackage{mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+  
+\title[Семинар 1]{Методы оптимизации. \\
+Семинар 1. Введение.}
+\author{Александр Катруца}
+\institute{Московский физико-технический институт,\\
+Факультет Управления и Прикладной Математики} 
+\date{5 сентября 2016 г.}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Зачем этот курс?}
+\begin{itemize}
+\item Формализация задачи выбора элемента из множества
+\item Обоснование правильности принятия решения
+\item Разнообразные приложения:
+\begin{itemize}
+\item машинное обучение: классификация, кластеризация, регрессия
+\item молекулярное моделирование
+\item анализ рисков
+\item выбор активов (portfolio optimization)
+\item оптимальное управление
+\item обработка сигналов
+\item оценка параметров в статистике 
+\item и другие\footnote{\url{http://www.cvxpy.org/en/latest/examples/index.html}}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{О чём этот курс?}
+Первый семестр (теоретический):
+\begin{itemize}
+\item Основы выпуклого анализа
+\item Теория двойственности
+\item Условия оптимальности
+\end{itemize}
+
+Второй семестр (практический):
+\begin{itemize}
+\item Методы безусловной минимизации первого и второго порядка 
+\item Методы условной оптимизации
+\item Линейное программирование: симплекс-метод и пр.
+\item Оптимальные методы
+\item ...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{План на семестр}
+\begin{itemize}
+\item Семинар и лекция раз в неделю
+\item 2 задания
+\item Итоговая контрольная в конце семестра \\ (и промежуточная в середине семестра)
+\item Экзамен в конце семестра. Oценка усредняется по оценкам за:
+\begin{itemize}
+\item 2 задания
+\item итоговую контрольную
+\item ответ на экзамене
+\end{itemize}
+\item Миниконтрольные в начале каждого семинара
+\item Домашнее задание на каждый семинар~--- \LaTeX
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Предварительные навыки}
+\begin{itemize}
+\item Линейная алгебра
+\item Математический анализ
+\item Программирование: Python (NumPy, SciPy, CVXPY) or MATLAB
+\item Элементы вычислительной математики
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Методология}
+\begin{enumerate}
+\item Определение целевой функции
+\item Определение допустимого множества решений
+\item Постановка и анализ оптимизационной задачи
+\item Выбор наилучшего алгоритма для решения поставленной задачи
+\item Реализация алгоритма и проверка его корректности
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Постановка задачи}
+\begin{equation*}
+\begin{split}
+&\min\limits_{\bx \in X} f_0(\bx)\\
+\text{s.t. } & f_i(\bx) = 0, \; i = 1,\ldots,p\\
+& f_j(\bx) \leq 0, \; j = n+1,\ldots,m,
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item $\bx \in \bbR^n$~--- искомый вектор
+\item $f_0(\bx): \bbR^n \rightarrow \bbR$~--- целевая функция
+\item $f_k(\bx): \bbR^n \rightarrow \bbR$~--- функции ограничений
+\end{itemize}
+Пример: выбор активов
+\begin{itemize}
+\item $\bx$~--- размер инвестиций в каждый актив
+\item $f_0$~--- суммарный риск или вариация прибыли
+\item $f_k$~--- бюджетные ограничения, min/max вложения в актив, минимально допустимая прибыль
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Как решать?}
+В общем случае:
+\begin{itemize}
+\item NP-полные
+\item {\small рандомизированные алгоритмы: время vs стабильность}
+\end{itemize}
+
+{\small НО определённые классы задач могут быть решены быстро!}
+
+\begin{itemize}
+\item Линейное программирование
+\item Метод наименьших квадратов
+\item Малоранговое приближение порядка $k$
+\item Выпуклая оптимизация
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Линейное программирование}
+\begin{equation}
+\begin{split}
+&\min\limits_{\bx \in \bbR^n} \bc^{\T}\bx\\
+\text{s.t. } & \ba^{\T}_i \bx \leq c_i, \; i = 1,\ldots, m
+\end{split}
+\label{eq::lin_prog}
+\end{equation}
+\begin{itemize}
+\item нет аналитического решения
+\item существуют эффективные алгоритмы
+\item разработанная технология
+\item симлекс-метод для решения задачи~\eqref{eq::lin_prog} входит в Top-10 алгоритмов XX века\footnote{\url{https://www.siam.org/pdf/news/637.pdf}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Метод наименьших квадратов}
+\begin{equation}
+\min\limits_{\bx \in \bbR^n} \|\bA\bx - \mathbf{b} \|^2_2,
+\label{eq::least_sq}
+\end{equation}
+где $\bA \in \bbR^{m \times n}$ и $\mathbf{b} \in \bbR^m$.
+\begin{itemize}
+\item имеет аналитическое решение: $\bx^* = (\bA^{\T}\bA)^{-1}\bA^{\T}\mathbf{b}$
+\item существуют эффективные алгоритмы
+\item разработанная технология
+\item имеет статистическую интерпретацию
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Малоранговое приближение ранга $k$}
+
+\begin{equation}
+\begin{split}
+&\min\limits_{\bX \in \bbR^{m \times n}} \|\bA - \bX \| \\
+\text{s.t. } & \text{rank}(\bX) \leq k
+\end{split}
+\label{eq::lowrank}
+\end{equation}
+
+\begin{Theorem}[Eckart–Young, 1993]
+Пусть $\bA = \bU\bSigma\bV^{\T}$~--- сингулярное разложение матрицы $\bA$, где $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ и $r = \text{rank}(\bA)$.  Тогда решение задачи~\eqref{eq::lowrank} можно записать в виде:
+\[
+\bX = \hat{\bU} \hat{\bSigma} \hat{\bV}^{\T},
+\]
+где $\hat{\bU} \in \bbR^{m \times k}$, $\hat{\bSigma} = \diag{\sigma_1, \ldots, \sigma_k}$, $\hat{\bV} \in \bbR^{n \times k}$.
+\end{Theorem}
+\small Алгоритм вычисления сингулярного разложения и быстрый и устойчивый.
+\end{frame}
+
+\begin{frame}{Выпуклая оптимизация}
+\begin{equation}
+\begin{split}
+&\min\limits_{\bx \in \bbR^n} f_0(\bx)\\
+\text{s.t. } & f_i(\bx) \leq b_i, \; i = 1,\ldots, m
+\end{split}
+\label{eq::conv_opt}
+\end{equation}
+\begin{itemize}
+\item $f_0, f_i$~--- выпуклые функции:
+\[
+f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
+\]
+где $\alpha, \beta \geq 0$ и $\alpha + \beta = 1$.
+\item нет аналитического решения
+\item существуют эффективные алгоритмы
+\item часто сложно <<увидеть>> задачу выпуклой оптимизации
+\item существуют приёмы для преобразования задачи к виду~\eqref{eq::conv_opt}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Резюме}
+\begin{itemize}
+\item Организация работы
+\item Предмет курса по оптимизации
+\item Общая формулировка оптимизационной задачи
+\item Классические оптимизационные задачи
+\end{itemize}
+\end{frame}
+
+\end{document}

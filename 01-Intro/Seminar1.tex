@@ -201,6 +201,61 @@ f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Пример}
+
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Независимый под-алфавит максимальной мощности
+\begin{equation*}
+\begin{split}
+&\max\limits_{\bx \in \bbR^n} \sum\limits_{i=1}^n x_i\\
+\text{s.t. } & x_i^2 - x_i = 0 \quad i = 1,\ldots, n\\
+& x_ix_j = 0 \qquad \forall (i, j) \in \Gamma,
+\end{split}
+\end{equation*}
+где $\Gamma$~--- множество пар
+\end{column}
+~
+\begin{column}{0.5\textwidth}
+\small
+Truss design
+\begin{equation*}
+\begin{split}
+& \min -2\sum\limits_{i=1}^k\sum\limits_{j=1}^m c_{ij} x_{ij} + x_{00}\\
+\text{s.t. } & \sum\limits_{i=1}^k x_i = 1\\
+& \lambda_{\min}(\bA) \geq 0,
+\end{split}
+\end{equation*}
+\scriptsize
+где $\bA = 
+\begin{bmatrix}
+x_1 & \ldots & \ldots & \sum\limits_{j=1}^m b_{pj}x_{1j}\\
+\vdots & \ddots & & \vdots\\
+ & & x_k & \sum\limits_{j=1}^m b_{pj}x_{kj}\\
+\sum\limits_{j=1}^m b_{pj}x_{1j} & \ldots & \sum\limits_{j=1}^m b_{pj}x_{kj} & x_{00}
+\end{bmatrix}
+$
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Почему выпуклость так важна?}
+\begin{block}{R. Tyrrell Rockafellar}
+The great watershed in optimization is not between linearity and
+non-linearity, but convexity and non-convexity.
+\end{block}
+\begin{itemize}
+\item Локальный оптимум является глобальным
+\item Необходимое условие оптимальности является достаточным
+\end{itemize}
+Вопросы:
+\begin{itemize}
+\item Любую ли задачу выпуклой оптимизации можно эффективно решить?
+\item Можно ли эфективно решать невыпуклые задачи оптимизации?
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Резюме}
 \begin{itemize}
 \item Организация работы

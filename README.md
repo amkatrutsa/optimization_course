@@ -7,7 +7,7 @@
 
 1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/master/01-Intro/Seminar1.pdf)
 
-2. Выпуклые множества
+2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf)
 
 3. Проекция точки на множество, отделимость, опорная гиперплоскость
 

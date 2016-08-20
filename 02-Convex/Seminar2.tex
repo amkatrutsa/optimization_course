@@ -1,7 +1,7 @@
-\documentclass[12pt]{beamer}
+\documentclass[12pt,russian]{beamer}
 \usepackage{mypres}
 \usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
+\usepackage[english,russian]{babel}
 \usepackage[T2A]{fontenc}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
@@ -30,26 +30,43 @@
 \item выпуклая оптимизация
 \end{itemize}
 \item Чем хороши выпуклые задачи?
-
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Афинное множество}
 
 \end{frame}
 
-\begin{frame}{Выпуклые множества}
+\begin{frame}{Выпуклое множество}
+\begin{block}{Выпуклое множество}
+Множество $C$ называется выпуклым, если 
+\[
+\forall x_1, \; x_2 \in C, \theta \in [0, 1] \rightarrow \theta x_1 + (1 - \theta)x_2 \in C.
+\]
+Пустое множество и множество из одной точки также считаются выпуклыми.
+\end{block}
+Очевидные примеры:
+\begin{itemize}
+\item всё пространство $\bbR^n$
+\item афинное множество
+\item луч
+\item отрезок
+\end{itemize}
+\end{frame}
 
+\begin{frame}{Операции, сохраняющие выпуклость}
+%Элипсоид: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r \}$
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item Шар по норме в $\bbR^n$: $B(r, x_c) = \{ x \; | \; \| x - x_c \| \leq r \}$
+\item Mножество симметричных положительно-определённых матриц: $\bS^n_+ = \{ \bX \in \bbR^{n \times n} \; | \; \bX^{\T} = \bX, \; \bX \succeq 0 \}$
+\item $\{ \bX \in \bbR^{n \times n} \; | \; \Tr(\bX) = 0 \}$
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Афинные множества}
 
-\end{frame}
-
-\begin{frame}{Примеры}
-
-\end{frame}
 
 \begin{frame}{Конус}
 

@@ -34,54 +34,114 @@
 \end{frame}
 
 \begin{frame}{Афинное множество}
+\small
+\begin{block}{Афинное множество}
+Множество $A$ называется афинным, если для любых $x_1$, $x_2 \in A$ и $\theta \in \bbR$ точка $\theta x_1 + (1 - \theta)x_2 \in A$.
+\end{block}
+Примеры: $\bbR^n$, гиперплоскость, точка.
+\begin{block}{Афинная комбинация точек}
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\sum\limits_{i=1}^k \theta_i = 1$ называется афинной комбинацией точек $x_1,\ldots,x_k$.
+\end{block}
 
+\begin{block}{Афинная оболочка точек}
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \sum\limits_{i=1}^k \theta_i = 1 \right\}$ называется афинной оболочкой множества $G$ и обозначается \textbf{aff}(G).
+\end{block}
+\end{frame}
+
+\begin{frame}{Утверждения}
+
+\begin{block}{Утверждение 1}
+Множество является афинным тогда и только тогда, когда в него входят все афинные комбинации его точек.
+\end{block}
+
+\begin{block}{Утверждение 2}
+Множество является афинным тогда и только тогда, когда его можно представить в виде $\{\bx | \bA\bx = \mathbf{b} \}$.
+\end{block}
 \end{frame}
 
 \begin{frame}{Выпуклое множество}
+\small
 \begin{block}{Выпуклое множество}
 Множество $C$ называется выпуклым, если 
+\vspace{-4mm}
 \[
 \forall x_1, \; x_2 \in C, \theta \in [0, 1] \rightarrow \theta x_1 + (1 - \theta)x_2 \in C.
+\vspace{-4mm}
 \]
-Пустое множество и множество из одной точки также считаются выпуклыми.
+$\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 \end{block}
-Очевидные примеры:
-\begin{itemize}
-\item всё пространство $\bbR^n$
-\item афинное множество
-\item луч
-\item отрезок
-\end{itemize}
+Примеры: $\bbR^n$, афинное множество, луч, отрезок.
+\begin{block}{Выпуклая комбинация точек}
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\sum\limits_{i=1}^k \theta_i = 1, \;\theta_i \geq 0$ называется выпуклой комбинацией точек $x_1,\ldots,x_k$.
+\end{block}
+
+\begin{block}{Выпуклая оболочка точек}
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \sum\limits_{i=1}^k \theta_i = 1, \theta_i \geq 0 \right\}$ называется выпуклой оболочкой множества $G$ и обозначается \textbf{conv}(G).
+\end{block}
+
 \end{frame}
 
 \begin{frame}{Операции, сохраняющие выпуклость}
-%Элипсоид: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r \}$
+\begin{itemize}
+\item Пересечение любого (конечного или бесконечного) числа выпуклых множеств~--- выпуклое множество
+\item Образ афинного отображения выпуклого множества~--- выпуклое множество
+\item Линейная комбинация выпуклых множеств~--- выпуклое множество
+\item Декартово произведение выпуклых множеств~--- выпуклое множество
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Примеры}
 \begin{itemize}
+\item Полупространство: $\{ \bx | \ba^{\T} \bx \leq c \}$
+\item Многоугольник: $\{ \bx | \bA\bx \preceq \mathbf{b}, \; \bC\bx = 0 \}$
 \item Шар по норме в $\bbR^n$: $B(r, x_c) = \{ x \; | \; \| x - x_c \| \leq r \}$
+\item Элипсоид: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r \}$
 \item Mножество симметричных положительно-определённых матриц: $\bS^n_+ = \{ \bX \in \bbR^{n \times n} \; | \; \bX^{\T} = \bX, \; \bX \succeq 0 \}$
-\item $\{ \bX \in \bbR^{n \times n} \; | \; \Tr(\bX) = 0 \}$
+\item $\{ \bX \in \bbR^{n \times n} \; | \; \Tr(\bX) = const \}$
 \end{itemize}
 \end{frame}
 
-
-
 \begin{frame}{Конус}
+\small
+\begin{block}{Конус (выпуклый)}
+Множество $C$ называется конусом (выпуклым конусом), если 
+\vspace{-4mm}
+\begin{equation*}
+\begin{split}
+& \forall x \in C, \theta \geq 0 \rightarrow \theta x \in C \\
+& (\forall x_1, x_2 \in C, \theta_1, \theta_2 \geq 0 \rightarrow \theta_1 x_1 + \theta_2 x_2 \in C)
+\end{split}
+\end{equation*}
+\vspace{-4mm}
+\end{block}
+Примеры: $\bbR^n$, афинное множество, проходящее через 0, луч.
+\begin{block}{Коническая (неотрицательная) комбинация точек}
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\theta_i \geq 0$ называется конической (неотрицательной) комбинацией точек $x_1,\ldots,x_k$.
+\end{block}
 
+\begin{block}{Коническая оболочка точек}
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \theta_i \geq 0 \right\}$ называется конической оболочкой множества $G$ и обозначается \textbf{cone}(G).
+\end{block}
 \end{frame}
 
 \begin{frame}{Примеры}
+\begin{itemize}
+\item $\bS^n_+$
+\item Нормальный конус: $\{ (\bx, t) \in \bbR^{n+1} \; | \; \| \bx \| \leq t \}$ 
 
+Для $\ell_2$-нормы называется конусом второго порядка или Лоренцевым конусом
+\item гиперболическое множество: $\{ \bx \in \bbR^n_+ \; | \; \prod\limits_{i=1}^n x_i \geq 1 \}$
+\item конкретные примеры с числами
+\end{itemize}
 \end{frame}
 
-\begin{frame}{Оболочки множеств}
-
-\end{frame}
-
-\begin{frame}{Примеры}
-
+\begin{frame}{Резюме}
+\begin{itemize}
+\item Афинное множество
+\item Выпуклое множество
+\item Конус
+\item Методы проверки свойств конкретных множеств
+\end{itemize}
 \end{frame}
 
 \end{document}

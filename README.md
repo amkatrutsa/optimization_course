@@ -23,7 +23,7 @@
 
 ## Список дополнительных материалов:
 
-1. [Stepen Boyd, Lieven Vandenberghe Convex Optimization](http://stanford.edu/~boyd/cvxbook/)
+1. [Stephen Boyd, Lieven Vandenberghe Convex Optimization](http://stanford.edu/~boyd/cvxbook/)
 
 2. [Курс по выпуклой оптимизации в Stanford'e](http://stanford.edu/class/ee364a/)
 

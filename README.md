@@ -9,7 +9,7 @@
 
 2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf)
 
-3. Проекция точки на множество, отделимость, опорная гиперплоскость
+3. [Проекция точки на множество, отделимость, опорная гиперплоскость]((https://github.com/amkatrutsa/MIPT-Opt/blob/master/03-Separation/Seminar3.pdf)
 
 4. Сопряжённые множества. Лемма Фаркаша.
 

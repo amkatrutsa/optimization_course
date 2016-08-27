@@ -5,11 +5,11 @@
 
 ## Ссылки на материалы семинаров:
 
-1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/master/01-Intro/Seminar1.pdf)
+1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1.pdf)
 
-2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf)
+2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2.pdf)
 
-3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/master/03-Separation/Seminar3.pdf)
+3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3.pdf)
 
 4. Сопряжённые множества. Лемма Фаркаша.
 

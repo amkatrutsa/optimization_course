@@ -3,6 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage[T2A]{fontenc}
+\newcommand{\relint}{\mathbf{relint}}
+\newcommand{\inter}{\mathbf{int}}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -21,15 +23,30 @@
 
 \begin{frame}{Напоминание}
 \begin{itemize}
-\item Афинное оболочка и множество
+\item Афинная оболочка и множество
 \item Выпуклая оболочка и множество
 \item Коническая оболочка и выпуклый конус
 \item Операции, сохраняющие выпуклость
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Внутренности выпуклого множества}
+\begin{frame}{Внутренности множества}
 
+\begin{block}{Внутренность множества}
+Внутренность множества $G$ состоит из точек из $G$, таких что:
+\[ 
+\inter G = \{ \bx \in G \; | \; \exists \varepsilon > 0, B(\bx, \varepsilon) \subset G\},
+\]
+где $B(\bx, \varepsilon) = \{ \by \; | \; \| \bx - \by \| \leq \varepsilon \}$
+\end{block}
+
+\begin{block}{Относительная внутренность}
+Относительной внутреностью множества $G$ называют следующее множество: 
+\[
+\relint G = \{ \bx \in G \; | \; \exists \varepsilon > 0,  B(\bx, \varepsilon) \cap \mathbf{aff} G \subseteq G \}
+\]
+\end{block}
+Вопрос: зачем нужна концепция относительной внутренности?
 \end{frame}
 
 \begin{frame}{Примеры}

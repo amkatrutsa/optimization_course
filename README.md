@@ -32,3 +32,5 @@
 4. [Ю.Е. Нестеров Методы выпуклой оптимизации](http://premolab.ru/pub_files/pub5/MnexoB89z7.pdf)
 
 5. [Б.Т. Поляк Введение в оптимизацию](http://bwbooks.net/index.php?id1=4&category=math&author=polya-bt&book=1983)
+
+6. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)

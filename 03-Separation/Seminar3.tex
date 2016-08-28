@@ -136,9 +136,14 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 \item Построить разделяющую гиперплоскость для множеств $X_1 = \{ \bx \in \bbR^n | \| \bx \|^2_2 \leq 1 \}$ и $X_2 = \{ \bx \in \bbR^n | x_1^2 + \ldots + x_{n-1}^2 + 1 \leq x_n \}$.
 \end{itemize}
 \end{frame}
+
 \begin{frame}{Опорная гиперплоскость}
 \begin{block}{Опорная гиперплоскость}
+Гиперплоскость $\{ \bx \in \bbR^n | \langle \bp, \bx \rangle = \beta \}$ называется опорной к множеству $X$ в граничной точке $\bx_0$, если $\langle \bp, \bx \rangle \geq \beta = \langle \bp, \bx_0 \rangle$ для всех $\bx \in X$.
+\end{block}
 
+\begin{block}{Собственно опорная гиперплоскость}
+Гиперплоскость $\{ \bx \in \bbR^n | \langle \bp, \bx \rangle = \beta \}$ называется опорной к множеству $X$ в точке $\bx_0$, если она опорная и $\exists \tilde{\bx} \in X$: $\langle \bp, \tilde{\bx} \rangle > \beta$.
 \end{block}
 
 \begin{block}{Теорема об опорной гиперплоскости}
@@ -148,7 +153,11 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item Выразить множество $\{ (x_1, x_2) \in \bbR_+^2| x_1x_2 \geq 1\}$ как пересечение гиперплоскостей.
+\item Построить опорную гиперплоскость к множеству $X = \{ (x_1, x_2) \in \bbR^2 | e^{x_1} \leq x_2 \}$ в точке $\bx_0 = (0, 1)$
+\item найти уравнене гиперплоскости опорной к множеству $X = \{ (x_1, x_2, x_3) \in \bbR^3 | x_3 \geq x_1^2 + x_2^2 \}$ и отделяющей его от точки $\bx_0 = (-5/4, 5 / 16, 15/16)$
+\end{itemize}
 \end{frame}
 
 

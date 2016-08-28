@@ -86,18 +86,53 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 
 \begin{frame}{Примеры}
 \begin{itemize}
-\item Проекция на шар $\{\bx \in \bbR^2 | \| \bx \|_* \leq 1$ в различных нормах
+\item Проекция на шар $\{\bx \in \bbR^2 | \| \bx \|_* \leq 1\}$ в различных нормах
 \item Проекция на аффинное множество $\{ \bx \in \bbR^n | \bA\bx = \mathbf{b}, \; \bA \in \bbR^{m \times n}, rank(\bA) = m \}$
 \item Проекция на аффинное множество $\{ \bx \in \bbR^n | \bx = \bx_0 + \bS\by, \; \bS \in \bbR^{n \times m}, \; \by \in \bbR^m, rank(\bS) = m \}$
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Отделимость выпуклых множеств}
+\small
+\begin{block}{Определение}
+Пусть $X_1, X_2 \subset \bbR^n$ произвольные множества. Они называются:
+\vspace{-3mm}
+\begin{itemize}
+\item отделимыми, если $\exists \bp, \beta: \; \langle\bp, \bx_1 \rangle \geq \beta \geq \langle \bp, \bx_2\rangle$, $\forall \bx_1 \in X_1$ и $\forall \bx_2 \in X_2$.
+\vspace{-3mm}
+\item собственно отделимыми, если они отделимы и $\exists \bx_1^* \in X$ и $\exists \bx_2^* \in X$: $\langle \bp, \bx_1^* \rangle > \langle \bp, \bx_2^* \rangle$
+\vspace{-3mm}
+\item сильно отделимыми, если $\exists \bp \neq 0$ и $\beta$: $\inf\limits_{\bx_1 \in X_1} \langle \bp, \bx_1 \rangle > \beta > \sup\limits_{\bx_2 \in X_2} \langle \bp, \bx_2 \rangle$
+\vspace{-3mm}
+\item строго отделимы, если $\forall \bx_1 \in X_1$ и $\forall \bx_2 \in X_2$: $\langle \bp, \bx_1 \rangle > \langle \bp, \bx_2 \rangle$.
+\end{itemize} 
+\end{block}
+
+\begin{block}{Разделяющая гиперплоскость}
+Разделяющей гиперплоскостью для множеств $X_1, X_2$ является такая гиперплоскость $\{ \bx | \langle \bp, \bx \rangle = \beta \}$, что $\langle \bp, \bx_1 \rangle \geq \beta$ для всех $\bx_1 \in X_1$ и $\langle \bp, \bx_2 \rangle \leq \beta$ для всех $\bx_2 \in X_2$   
+\end{block}
+\end{frame}
+
+\begin{frame}{Факты об отделимости}
+\begin{block}{Существование}
+Пусть $X_1$ и $X_2$ выпуклые непересекающиеся множества, тогда существует разделяющая их гиперплоскость. 
+\end{block}
+
+\begin{block}{Критерий для выпуклых множеств}
+Два выпуклых множества, таких что по крайней мере одно из них открыто, не пересекаются тогда и только тогда, когда существует разделяющая гиперплоскость.
+\end{block}
+
+\begin{block}{Критерий сильной отделимости}
+Два выпуклых множества сильно отделимы тогда и только тогда когда расстояние между ними положительно.
+\end{block}
 
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+%\item альтернатива из Бойда для системы линейных неравенств
+\item 
+\end{itemize}
 \end{frame}
 \begin{frame}{Опорная гиперплоскость}
 \begin{block}{Опорная гиперплоскость}
@@ -124,3 +159,5 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 
 
 \end{document}
+
+http://math.stackexchange.com/questions/26456/disjoint-convex-sets-that-are-not-strictly-separated

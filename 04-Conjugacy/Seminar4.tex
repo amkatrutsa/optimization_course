@@ -30,8 +30,65 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Лемма Фаркаша}
+\begin{frame}{Сопряжённое множество}
+\begin{block}{Сопряжённое множество}
+Сопряжённым (двойственным) к множеству $X \subseteq \bbR^n$ называют такое множество $X^*$, что
+\vspace{-4mm}
+\[
+X^* = \{ \bp \in \bbR^n | \langle \bp, \bx \rangle \geq -1, \; \forall \bx \in X \}.
+\]
+\end{block}
 
+\begin{block}{Сопряжённый конус}
+Если $X \subseteq \bbR^n$~--- конус, тогда
+\vspace{-4mm} 
+\[
+X^* = \{ \bp \in \bbR^n | \langle \bp, \bx \rangle \geq 0, \; \forall \bx \in X \}.
+\]
+\end{block}
+
+\begin{block}{Сопряжённое подпространство}
+Если $X$~--- линейное подпространство в $\bbR^n$, тогда 
+\vspace{-4mm} 
+\[
+X^* = \{ \bp \in \bbR^n | \langle \bp, \bx \rangle = 0, \; \forall \bx \in X \}.
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Факты о сопряжённых множествах}
+\begin{theorem}
+Пусть $X$~--- произвольное множество в $\bbR^n$. Тогда
+\vspace{-4mm}
+\[
+X^{**} = \overline{\text{conv }(X \cup \{0\})}.
+\] 
+\end{theorem}
+
+\begin{theorem}
+Пусть $X$~--- замкнутое выпуклое множество, включающее~0. Тогда $X^{**} = X$.
+\end{theorem}
+
+\begin{theorem}
+Пусть $X_1 \subset X_2$, тогда $X^*_2 \subset X^*_1$.
+\end{theorem}
+\end{frame}
+
+\begin{frame}{Примеры}
+Найти сопряжённые к следующим множествам:
+\begin{itemize}
+\item Неотрицательный октант: $\bbR^n_+$
+\item Конус положительных полуопределённых матриц: $\bS^n_+$
+\item $\{ (x_1, x_2) | |x_1| \leq x_2 \}$
+\item $\{ \bx \in \bbR^n | \| x \| \leq r \}$
+\item $\{ (\bx, t) \in \bbR^{n+1} | \| x \| \leq t \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Лемма Фаркаша}
+\begin{lemma}[Фаркаш]
+
+\end{lemma}
 \end{frame}
 
 \begin{frame}{Примеры}

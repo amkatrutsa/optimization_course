@@ -11,7 +11,7 @@
 
 3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3.pdf)
 
-4. Сопряжённые множества. Лемма Фаркаша.
+4. [Сопряжённые множества. Лемма Фаркаша](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4.pdf)
 
 5. Векторное дифференцирование
 

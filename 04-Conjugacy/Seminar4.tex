@@ -86,9 +86,33 @@ X^{**} = \overline{\text{conv }(X \cup \{0\})}.
 \end{frame}
 
 \begin{frame}{Лемма Фаркаша}
+\scriptsize
 \begin{lemma}[Фаркаш]
-
+Пусть $\bA \in \bbR^{m \times n}$ и $\mathbf{b} \in \bbR^m$. Тогда имеет решение одна и только одна из следующих двух систем:
+\vspace{-4mm}
+\begin{equation*}
+\begin{split}
+1)& \; \bA\bx = \mathbf{b}, \; \bx \geq 0\\
+2)& \; \bp\bA \geq 0, \; \langle \bp, \mathbf{b} \rangle < 0
+\end{split}
+\end{equation*}
 \end{lemma}
+
+\begin{block}{Важное следствие}
+Пусть $\bA \in \bbR^{m \times n}$ и $\mathbf{b} \in \bbR^m$. Тогда имеет решение одна и только одна из следующих двух систем:
+\vspace{-4mm}
+\begin{equation*}
+\begin{split}
+1)& \; \bA\bx \leq \mathbf{b}\\
+2)& \; \bp\bA = 0, \; \langle \bp, \mathbf{b} \rangle < 0, \; \bp \geq 0
+\end{split}
+\end{equation*}
+\end{block}
+
+\begin{block}{Применение}
+Если в задаче линейного программирования на минимум допустимое непусто и целевая функция ограничена на нём сннизу, то задача имеет решение.
+\end{block}
+
 \end{frame}
 
 \begin{frame}{Примеры}

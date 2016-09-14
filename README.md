@@ -3,7 +3,7 @@
 
 Каждый семинар состоит из краткого обзора необходимой теории, примеров решения типовых задач и недельного домашнего задания, которое необходимо выполнить в LaTeX и прислать к указанному сроку.
 
-## Ссылки на материалы семинаров:
+## Ссылки на материалы семинаров
 
 1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1.pdf)
 
@@ -21,16 +21,26 @@
 
 8. Конус возможных направлений
 
-## Список дополнительных материалов:
+## Список дополнительных материалов
 
-1. [Stephen Boyd, Lieven Vandenberghe Convex Optimization](http://stanford.edu/~boyd/cvxbook/)
+1. [Stephen Boyd, Lieven Vandenberghe. Convex Optimization](http://stanford.edu/~boyd/cvxbook/)
 
 2. [Курс по выпуклой оптимизации в Stanford'e](http://stanford.edu/class/ee364a/)
 
 3. [Курс по оптимизации и выпуклому анализу в MIT](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-253-convex-analysis-and-optimization-spring-2012/)
 
-4. [Ю.Е. Нестеров Методы выпуклой оптимизации](http://premolab.ru/pub_files/pub5/MnexoB89z7.pdf)
+4. [Ю.Е. Нестеров. Методы выпуклой оптимизации](http://premolab.ru/pub_files/pub5/MnexoB89z7.pdf)
 
-5. [Б.Т. Поляк Введение в оптимизацию](http://bwbooks.net/index.php?id1=4&category=math&author=polya-bt&book=1983)
+5. [Б.Т. Поляк. Введение в оптимизацию](http://bwbooks.net/index.php?id1=4&category=math&author=polya-bt&book=1983)
 
 6. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)
+
+## Список ссылок на материалы по оптимизации
+
+1. [Sebastien Bubeck. Convec Optimization: Algorithms and Complexity](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
+
+2. [Blog by S. Bubeck](https://blogs.princeton.edu/imabandit/)
+
+3. [J. Nocedal, S. J. Wright. Numerical Optimization](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf)
+
+4. [Lectures on Modern Convex Optimization by A. Nemirovski](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)

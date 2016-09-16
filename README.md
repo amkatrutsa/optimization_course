@@ -44,3 +44,5 @@
 3. [J. Nocedal, S. J. Wright. Numerical Optimization](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf)
 
 4. [Lectures on Modern Convex Optimization by A. Nemirovski](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)
+
+5. [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)

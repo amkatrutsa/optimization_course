@@ -37,7 +37,7 @@
 
 ## Список ссылок на материалы по оптимизации
 
-1. [Sebastien Bubeck. Convec Optimization: Algorithms and Complexity](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
+1. [Sebastien Bubeck. Convex Optimization: Algorithms and Complexity](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
 
 2. [Blog by S. Bubeck](https://blogs.princeton.edu/imabandit/)
 

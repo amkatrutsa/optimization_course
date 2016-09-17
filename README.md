@@ -13,7 +13,7 @@
 
 4. [Сопряжённые множества. Лемма Фаркаша](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4.pdf)
 
-5. Векторное дифференцирование
+5. [Векторное дифференцирование](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/05-MatrixCalculus/Seminar5.pdf)
 
 6. Выпуклые функции
 

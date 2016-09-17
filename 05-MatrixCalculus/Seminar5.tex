@@ -21,4 +21,76 @@
 \maketitle
 \end{frame}
 
+\begin{frame}{Напоминание}
+\begin{itemize}
+\item Сопряжённые множества
+\item Свойства сопряжённых множеств
+\item Лемма Фаркаша
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Основные определения}
+Более подробно смотрите \href{https://en.wikipedia.org/wiki/Matrix_calculus}{\color{blue}{\texttt{здесь}}}.
+Пусть $f: D \rightarrow E$, производная $\frac{\partial f}{\partial x} \in G$:
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+$D$ & $E$ & $G$ & Название\\
+\hline
+$\bbR$ & $\bbR$ & $\bbR$ & Производная, $f'(x)$\\
+\hline
+%$\bbR$ & $\bbR^n$ & $\bbR^n$ & $\frac{\partial f_i}{\partial x}$\\
+%\hline
+%$\bbR$ & $\bbR^{m \times n}$ & $\bbR^{m \times n}$ & $\frac{\partial f_{ij}}{\partial x}$\\
+%\hline
+$\bbR^n$ & $\bbR$ & $\bbR^n$ & Градиент, $\frac{\partial f}{\partial x_i}$\\
+\hline
+$\bbR^n$ & $\bbR^m$ & $\bbR^{n \times m}$ & Якобиан, $\frac{\partial f_i}{\partial x_j}$ \\
+\hline
+$\bbR^{m \times n}$ & $\bbR$ & $\bbR^{m \times n}$ & $\frac{\partial f}{\partial x_{ij}}$\\
+\hline
+\end{tabular}
+\end{table}
+
+Также квадратная $n \times n$ матрица вторых производных $\bH = [h_{ij}]$ в случае $f: \bbR^n \rightarrow \bbR$ называется гессиан и равна $h_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$.
+\end{frame}
+
+\begin{frame}{Примеры}
+\begin{enumerate}
+\item Линейная функция: $f(\bx) = \bc^{\T}\bx$
+\item Квадратичная форма: $f(\bx) = \frac{1}{2}x^{\T}\bA\bx + \mathbf{b}^{\T}\bx$
+\item Квадрат $\ell_2$ нормы разности: $f(\bx) = \|\bA\bx - \mathbf{b}\|^2_2$
+\item Детерминант: $f(\bX) = \det{\bX}$
+\item След: $f(\bX) = \Tr(\bA\bX\bB)$
+\item $f(\bx) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\item $f(\bA) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\item $f(\bs) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Сложная функция}
+
+Пусть $f(\bx) = g(u(\bx))$, тогда $\nabla f(\bx) = \frac{\partial g}{\partial u} \frac{\partial u}{\partial \bx}$
+
+Важно смотреть на размерности и понимать как записывать $\frac{\partial g}{\partial u}$.
+
+Примеры:
+\begin{enumerate}
+\item $\ell_2$ норма вектора: $f(\bx) = \|\bx\|_2$
+\item Билинейная форма: $f(\bx) = u^{\T}(\bx)\bR v(\bx)$, $\bR \in \bbR^{m \times n}$
+\item Экспонента: $f(\bx) = - e^{-\bx^{\T}\bx}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Резюме}
+\begin{itemize}
+\item Производная по скаляру
+\item Производная по вектору
+\item Производная по матрице
+\item Производная сложной функции
+\end{itemize}
+\end{frame}
+
+
 \end{document}

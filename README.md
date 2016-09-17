@@ -35,6 +35,8 @@
 
 6. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)
 
+7. [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+
 ## Список ссылок на материалы по оптимизации
 
 1. [Sebastien Bubeck. Convex Optimization: Algorithms and Complexity](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)

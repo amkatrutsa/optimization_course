@@ -15,7 +15,7 @@
 
 5. [Векторное дифференцирование](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/05-MatrixCalculus/Seminar5.pdf)
 
-6. Выпуклые функции
+6. [Выпуклые функции](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/06-ConvexFunctions/Seminar6.pdf)
 
 7. Субдифференциал
 

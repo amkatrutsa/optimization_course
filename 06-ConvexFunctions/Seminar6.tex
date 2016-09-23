@@ -45,10 +45,10 @@ f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \; (<) \; \alpha f(\bx_1) + (1 - \alpha
 \end{block}
 
 \begin{block}{Сильно выпуклая функция}
-Функция $f: X \subset \bbR^n \rightarrow \bbR$ называется сильно  выпуклой с константой $\theta > 0$, если $X$~--- выпуклое множество и для $\forall \bx_1, \bx_2 \in X$ и $\alpha \in [0, 1]$  выполнено:
+Функция $f: X \subset \bbR^n \rightarrow \bbR$ называется сильно  выпуклой с константой $m > 0$, если $X$~--- выпуклое множество и для $\forall \bx_1, \bx_2 \in X$ и $\alpha \in [0, 1]$  выполнено:
 \vspace{-4mm}
 \[
-f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) - \theta \alpha (1 - \alpha) \| \bx_1 - \bx_2 \|_2^2
+f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) - m \alpha (1 - \alpha) \| \bx_1 - \bx_2 \|_2^2
 \]
 \end{block}
 
@@ -65,23 +65,56 @@ f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) 
 C_{\gamma} = \{ \bx | f(\bx) \leq \gamma \}.
 \]
 \end{block}
+
+\begin{block}{Замкнутая функция}
+Функция $f$ называется замкнутой, если её надграфик замкнутое множество. 
+\end{block}
 \end{frame}
 
 \begin{frame}{Критерии выпуклости}
+\footnotesize
 \begin{block}{Дифференциальный критерий первого порядка}
-
+Функция $f$ выпукла тогда и только тогда, когда $\forall \bx, \by \in X \subset \bbR^n$ выполнена:
+\vspace{-4mm}
+\[
+f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
+\]
 \end{block}
 
 \begin{block}{Дифференциальный критерий второго порядка}
-
+Непрерывная и дважды дифференцируемая функция $f$ выпукла тогда и только тогда, когда $\forall \bx, \by \in \text{ri}(X) \subset \bbR^n$ выполнено:
+\vspace{-2mm}
+\[
+\nabla^2 f(\bx) \succeq 0.
+\]
 \end{block}
 
 \begin{block}{Связь с надграфиком}
-
+Функция выпукла тогда и только тогда, когда её надграфик выпуклое множество.
 \end{block}
 
 \begin{block}{Ограничение на прямую}
+Функция $f: X \rightarrow \bbR$ выпукла тогда и только тогда, когда выпукла функция $g(t) = f(\bx + t\bv)$ на множестве $\{ t | \bx + t\bv \in X \}$ для всех $\bx \in X$ и $\bv \in \bbR^n$.
+\end{block}
 
+\end{frame}
+
+\begin{frame}{Критерии сильной выпуклости}
+
+\begin{block}{Дифференциальный критерий первого порядка}
+Функция $f$ сильно выпукла с константой $m$ тогда и только тогда, когда $\forall \bx, \by \in X \subset \bbR^n$ выполнена:
+\vspace{-4mm}
+\[
+f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^2
+\]
+\end{block}
+
+\begin{block}{Дифференциальный критерий второго порядка}
+Непрерывная и дважды дифференцируемая функция $f$ сильно выпукла с константой $m$ тогда и только тогда, когда $\forall \bx \in \text{ri}(X) \subset \bbR^n$ выполнено:
+\vspace{-2mm}
+\[
+\nabla^2 f(\bx) \succeq m\bI.
+\]
 \end{block}
 \end{frame}
 

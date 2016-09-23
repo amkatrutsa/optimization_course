@@ -30,23 +30,41 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Определения}
+\begin{frame}{Определения функций}
+\small
 \begin{block}{Выпуклая функция}
-
+Функция $f: X \subset \bbR^n \rightarrow \bbR$ называется выпуклой (строго выпуклой), если $X$~--- выпуклое множество и для $\forall \bx_1, \bx_2 \in X$ и $\alpha \in [0, 1] \; (\alpha \in (0, 1))$  выполнено:
+\vspace{-4mm}
+\[
+f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \; (<) \; \alpha f(\bx_1) + (1 - \alpha)f(\bx_2)
+\]
 \end{block}
 
 \begin{block}{Вогнутая функция}
-
+Функция $f$ вогнутая (строго вогнутая), если $-f$ выпуклая (строго выпуклая).
 \end{block}
 
 \begin{block}{Сильно выпуклая функция}
-
+Функция $f: X \subset \bbR^n \rightarrow \bbR$ называется сильно  выпуклой с константой $\theta > 0$, если $X$~--- выпуклое множество и для $\forall \bx_1, \bx_2 \in X$ и $\alpha \in [0, 1]$  выполнено:
+\vspace{-4mm}
+\[
+f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) - \theta \alpha (1 - \alpha) \| \bx_1 - \bx_2 \|_2^2
+\]
 \end{block}
 
-\begin{block}{Надграфик}
+\end{frame}
 
+\begin{frame}{Определения множеств}
+\begin{block}{Надграфик (эпиграф)}
+Надграфиком функции $f$ называется множество $\text{epi}f = \{ (\bx, y) : \bx \in \bbR^n, \; y \in \bbR, \; y \geq f(\bx) \} \subset \bbR^{n+1}$
 \end{block}
 
+\begin{block}{Множество подуровней (множество Лебега)}
+Множество подуровня функции $f$ называется следующее множество
+\[
+C_{\gamma} = \{ \bx | f(\bx) \leq \gamma \}.
+\]
+\end{block}
 \end{frame}
 
 \begin{frame}{Критерии выпуклости}

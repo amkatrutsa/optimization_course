@@ -3,6 +3,8 @@
 
 Каждый семинар состоит из краткого обзора необходимой теории, примеров решения типовых задач и недельного домашнего задания, которое необходимо выполнить в LaTeX и прислать к указанному сроку.
 
+[Самый минимум к экзамену и сдаче заданий](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/Minimum.pdf)
+
 ## Ссылки на материалы семинаров
 
 1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1.pdf)

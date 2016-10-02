@@ -47,19 +47,52 @@ f(\bx) - f(\by) \geq \langle \ba, \bx - \by \rangle
 \end{frame}
 
 \begin{frame}{Определение}
+\begin{block}{Субградиент}
+Вектор $\ba$ называется субградиентов функции $f: X \rightarrow \bbR^n$ в точке $\bx$, если 
+\vspace{-3mm}
+\[
+f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
+\]
+для всех $\by \in X$.
+\end{block}
 
+\begin{block}{Субдифференциал}
+Множество субградиентов функции $f$ в точке $\bx$ называется субдифференциалом $f$ в $\bx$ и обозначается $\partial f(\bx)$.
+\end{block}
 \end{frame}
 
 \begin{frame}{Полезные факты}
+\begin{block}{Теорема Моро-Рокафеллара}
+Пусть $f_i(\bx)$~--- выпуклые функции на выпуклых множествах $G_i, \; i = 1,\ldots,n$. 
+Тогда, если $\bigcap\limits_{i=1}^n \text{ri } G_i \neq \varnothing$ то функция $f(\bx) = \sum\limits_{i=1}^n a_i f_i(\bx), \; a_i > 0$ имеет субдифференциал $\partial_G f(\bx)$ на множестве $G = \bigcap\limits_{i=1}^n G_i$ и $\partial_G f(\bx) = \sum\limits_{i=1}^n a_i \partial_{G_i} f_i(\bx)$. 
+\end{block}
 
+\begin{block}{Если функция~--- максимум}
+Если $f(\bx) = \max\limits_{i=1,\ldots,m}(f_i(\bx))$, тогда $\partial_G f(\bx) = \text{Conv} (\bigcup\limits_{i \in \calJ(\bx)} \partial_G f_i(\bx))$, где $\calJ(\bx) = \{ i = 1,\ldots, m | f_i(\bx) = f(\bx) \}$
+\end{block}
 \end{frame}
 
 \begin{frame}{Примеры}
+\begin{itemize}
+\item Модуль: $f(x) = |x|$
+\item Норма $\ell_2$: $f(\bx) = \| \bx \|_2$
+\item Скалярный максимум: $f(x) = \max(e^x, 1 - x)$
+\item Векторный максимум: $f(\bx) = |\bc^{\T}\bx|$
+\item $f(\bx) = |\bc^{\T}_1\bx| + |\bc^{\T}_2\bx|$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Условный субдифференциал}
 
 \end{frame}
 
 \begin{frame}{Резюме}
-
+\begin{itemize}
+\item Субградиент
+\item Субдифференциал
+\item Условный субдифференциал
+\item Методы вычислений
+\end{itemize}
 \end{frame}
 
 \end{document}

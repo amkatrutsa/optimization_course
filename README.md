@@ -19,7 +19,7 @@
 
 6. [Выпуклые функции](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/06-ConvexFunctions/Seminar6.pdf)
 
-7. Субдифференциал
+7. [Субдифференциал](https://github.com/amkatrutsa/MIPT-Opt/blob/public_mat    erials/07-Subdifferential/Seminar7.pdf)
 
 8. Конус возможных направлений
 

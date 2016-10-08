@@ -1,8 +1,8 @@
 \documentclass[12pt,russian]{beamer}
 \usepackage{mypres}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
 \usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
 \newcommand{\relint}{\mathbf{relint}}
 \newcommand{\inter}{\mathbf{int}}
 
@@ -80,7 +80,7 @@ C_{\gamma} = \{ \bx | f(\bx) \leq \gamma \}.
 \begin{frame}{Критерии выпуклости}
 \scriptsize
 \begin{block}{Дифференциальный критерий первого порядка}
-Функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнена:
+Функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнено:
 \vspace{-4mm}
 \[
 f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
@@ -164,6 +164,7 @@ f\left( \int\limits_X p(x)xdx \right) \leq \int\limits_X f(x)p(x)dx
 \item Неравенство Гёльдера
 \item Неравенство про среднее арифметическое и среднее геометрическое
 \item $f(\bE(x)) \leq \bE(f(x))$
+\item Выпуклость множества $\{ \bx | \prod\limits_{i=1}^n x_i \geq 1 \}$
 \end{itemize}
 \end{frame}
 

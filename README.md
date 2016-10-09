@@ -21,7 +21,7 @@
 
 7. [Субдифференциал](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/07-Subdifferential/Seminar7.pdf)
 
-8. [Конус возможных направлений](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf))
+8. [Конус возможных направлений](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf)
 
 ## Список дополнительных материалов
 

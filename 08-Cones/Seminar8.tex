@@ -5,6 +5,7 @@
 \usepackage[russian]{babel}
 \newcommand{\relint}{\mathbf{relint}}
 \newcommand{\inter}{\mathbf{int}}
+\DeclareMathOperator{\extr}{\mathrm{extr}}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -90,6 +91,22 @@ T^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = n}^m \lambda_i \
 \end{frame}
 
 \begin{frame}{Острый экстремум}
+
+\begin{block}{Определение}
+Точка $\bx^*$~--- точка острого минимума функции $f$ на множестве $G$, если существует $\gamma > 0$: $f(\bx) - f(\bx^*) \geq \gamma \|\bx - \bx^*\|_2, \; \forall x \in G$. 
+\end{block}
+
+\begin{block}{Лемма}
+Пусть $f$~--- дифференцируемая функция на $G \subset \bbR^n$. 
+Точка $\bx^*$~--- точка острого минимума функции $f$ на множестве $G$ тогда и только тогда, когда существкет такое $\alpha > 0$, что $\nabla f^{\T}(\bx^*) \bz \geq \alpha > 0, \; \bz \in T(\bx^*|G), \| \bz \|_2 = 1$.
+\end{block}
+
+\begin{block}{Примеры}
+\begin{itemize}
+\item $x^2_1 + x^2_2 \rightarrow \extr\limits_{G}, \quad G = \{(x_1, x_2) | x^2_1 + x_2^2 = 2, \; x_1 + x_2 \leq 1 \}$
+\item $x_1 + 2x_2 \rightarrow \extr\limits_{G}$
+\end{itemize}
+\end{block}
 
 \end{frame}
 

@@ -31,6 +31,33 @@
 
 \begin{frame}{Конус возможных направлений}
 
+\begin{block}{Определение}
+Конусом возможных направдений для множества $G \subset \bbR^n$ в точке $\bx_0 \in G$ будем называть такое множество $\Gamma(\bx_0 | G) = \{ \bs \in \bbR^n | \bx_0 + \alpha\bs \in G, \; 0 \leq \alpha \leq \overline{\alpha}(\bs) \}$.
+\end{block}
+
+\begin{block}{Определение для выпуклого множества}
+Конусом возможных направдений для выпуклого множества $X \subset \bbR^n$ в точке $\bx_0 \in X$ будем называть такое множество $\Gamma(\bx_0 | X) = \{ \bs \in \bbR^n | \bs = \lambda (\bx - \bx_0), \; \lambda > 0, \forall x \in X \}$.
+\end{block}
+Какая связь между нормальным конусом и конусом возможных направлений?
+
+\end{frame}
+
+\begin{frame}{Пример}
+\begin{block}{Полезный факт}
+Пусть $G = \{ \bx \in \bbR^n | \varphi_i(\bx) \leq 0, \; i = \overline{1,n}; \; \varphi_i(\bx) = \ba_i^{\T}\bx - b_i = 0, \; i = \overline{n, m} \}$. Тогда если $\varphi_i(\bx)$ выпуклы и множество $G$ регулярно, то \vspace{-4mm}
+\[
+\Gamma(\bx_0|G) = \{ \bs \in \bbR^n | \nabla \varphi_i(\bx_0)^{\T} \bs \leq 0, i \in I, \ba^{\T}_i \bs = 0, i = \overline{n,m} \}
+\vspace{-4mm}
+\]
+и \vspace{-4mm}
+\[
+\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = m}^n \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
+\vspace{-4mm}
+\]
+где $\lambda_i \in \bbR$, $\mu_i \geq 0$, $\bx_0 \in G$ и $I = \{i: \varphi_i(\bx_0) = 0\}$.
+\end{block}
+Найти $\Gamma(\bx_0|X)$ и $\Gamma^*(\bx_0|X)$ следующих множества:
+$X = \{ \bx \in \bbR^2 | x^2_1 + 2x^2_2 \leq 3, \; x_1 + x_2 = 0 \}$.
 \end{frame}
 
 \begin{frame}{Касательный конус}

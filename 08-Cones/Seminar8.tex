@@ -44,24 +44,49 @@
 
 \begin{frame}{Пример}
 \begin{block}{Полезный факт}
-Пусть $G = \{ \bx \in \bbR^n | \varphi_i(\bx) \leq 0, \; i = \overline{1,n}; \; \varphi_i(\bx) = \ba_i^{\T}\bx - b_i = 0, \; i = \overline{n, m} \}$. Тогда если $\varphi_i(\bx)$ выпуклы и множество $G$ регулярно, то \vspace{-4mm}
+Пусть $G = \{ \bx \in \bbR^n | \varphi_i(\bx) \leq 0, \; i = \overline{0,n-1}; \; \varphi_i(\bx) = \ba_i^{\T}\bx - b_i = 0, \; i = \overline{n, m} \}$. Тогда если $\varphi_i(\bx)$ выпуклы и множество $G$ регулярно, то \vspace{-4mm}
 \[
 \Gamma(\bx_0|G) = \{ \bs \in \bbR^n | \nabla \varphi_i(\bx_0)^{\T} \bs \leq 0, i \in I, \ba^{\T}_i \bs = 0, i = \overline{n,m} \}
 \vspace{-4mm}
 \]
 и \vspace{-4mm}
 \[
-\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = m}^n \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
+\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = n}^m \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
 \vspace{-4mm}
 \]
-где $\lambda_i \in \bbR$, $\mu_i \geq 0$, $\bx_0 \in G$ и $I = \{i: \varphi_i(\bx_0) = 0\}$.
+где $\lambda_i \in \bbR$, $\mu_i \geq 0$, $\bx_0 \in G$ и $I = \{i: \varphi_i(\bx_0) = 0, \; i = \overline{0,n-1}\}$.
 \end{block}
 Найти $\Gamma(\bx_0|X)$ и $\Gamma^*(\bx_0|X)$ следующих множества:
 $X = \{ \bx \in \bbR^2 | x^2_1 + 2x^2_2 \leq 3, \; x_1 + x_2 = 0 \}$.
 \end{frame}
 
 \begin{frame}{Касательный конус}
+\begin{block}{Определение}
+Касательным конусом к множеству $G$ в точке $\bx_0 \in \overline{G}$ называется следующее множество $T(\bx_0 |G) = \{ \lambda \bz | \lambda > 0, \; \exists \{\bx_k\} \subset G, \; \bx_k \rightarrow \bx_0, \bx_k \neq \bx_0, \; \lim\limits_{k \rightarrow \infty} \frac{\bx_0 - \bx_k}{\|\bx_0 - \bx_k\|_2} = \bz \}$
+\end{block}
 
+\begin{block}{Пояснение}
+Касательный конус состоит из всех направлений, по которым можно сходиться к точке $\bx_0$ по последовательностям из множества $G$.
+\end{block}
+
+\begin{block}{Лемма}
+Если $G$~--- выпуклое множество, то $T(\bx_0|G) = \Gamma(\bx_0|G)$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Полезный факт}
+Пусть множество $G = \{\bx \in \bbR^n | \varphi_i(\bx) \leq 0, i = \overline{0, n-1} \; \varphi_i(\bx) = 0, i = \overline{n, m} \}$ регулярно, тогда \vspace{-4mm}
+\[
+T(\bx_0|G) = \{ \bz \in \bbR^n | \nabla \varphi^{\T}_i(\bx_0)\bz \leq 0, i \in I, \; \nabla \varphi^{\T}_i(\bx_0)\bz = 0, i = \overline{n,m} \}
+\vspace{-4mm}
+\]
+и \vspace{-4mm}
+\[
+T^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = n}^m \lambda_i \nabla \varphi_i(\bx_0) - \sum\limits_{i \in I} \mu_i \nabla \varphi_i(\bx_0) \right \},
+\] 
+где $\mu_i \geq 0$, $\lambda_i \in \bbR$, $I = \{i | \varphi_i(\bx_0) = 0, i = \overline{0, n-1} \}$
+
+Пример: найти $T(\bx_0|G)$ и $T^*(\bx_0|G)$ для множества $G = \{\bx \in \bbR^2 | x_1 + x_2 \leq 1, \; x^2_1 + 2x_2^2 = 1 \}$
 \end{frame}
 
 \begin{frame}{Острый экстремум}

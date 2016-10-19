@@ -31,6 +31,10 @@
 
 \begin{frame}{Мотивация}
 
+\begin{block}{Вопрос 0}
+Когда существует решение оптимизационной задачи?
+\end{block}
+
 \begin{block}{Вопрос 1}
 Как проверить, что точка является решением оптимизационной задачи? 
 \end{block}
@@ -41,7 +45,13 @@
 \end{frame}
 
 \begin{frame}{Существование решения}
+\begin{block}{Теорема Вейерштрасса}
+Пусть $X \subset R^n$ компактное множество и пусть $f(x)$ непрерывная функция на $X$. 
+Тогда точка глобального минимума функции $f (x)$ на $X$ существует.
+\end{block}
 
+Эта теорема гарантирует, что решение подавляющего большинства разумных задач существует.
+ 
 \end{frame}
 
 \begin{frame}{Условия оптимальности}
@@ -60,17 +70,38 @@
 \begin{frame}{Общая задача минимизации}
 
 \begin{block}{Задача}
-
+\[
+f(x) \rightarrow \min\limits_{x \in X}
+\]
 \end{block}
 
 \begin{block}{Критерий оптимальности}
-
+Пусть $f(x)$ определена на множестве $X \subset \bbR^n$.
+Тогда 
+\begin{enumerate}
+\item если $x^*$ точка минимума $f(x)$ на $X$, то $\partial_X f(x^*) \neq \emptyset$ и $0 \in \partial_X f(x^*)$
+\item если для некоторой точки $x^* \in X$ существует субдифференциал $\partial_X f(x^*)$ и $0 \in \partial_X f(x^*)$, тогда $x^*$~--- точка минимума $f(x)$ на $X$.
+\end{enumerate}
 \end{block}
+Какие проблемы у приведённого критерия?
 
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item $\bx^{\T}\bx + \alpha \| \bx - 
+\bc \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
+\item $\bx^{\T}\bx + \alpha \| \bc^{\T}\bx - 
+b \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
+\item Ограничение на допустимое множество
+\begin{equation*}
+\begin{split}
+\vspace{-4mm}
+&(x + 2)^2 + |y + 3| \rightarrow \min\limits_{(x, y) \in \bbR^2}\\
+\text{s.t. }& 8 + 2x - y \leq 0
+\end{split}
+\end{equation*}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Задача безусловной минимизации}

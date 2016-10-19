@@ -23,7 +23,7 @@
 
 8. [Конус возможных направлений, касательный конус, острый экстремум](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf)
 
-9. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-GeneralOptimality/Seminar9.pdf)
+9. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-OptimalityConditions/Seminar9.pdf)
 
 10. Задача безусловной минимизации и задача с ограничениями типа равенств
 

@@ -144,8 +144,16 @@ b \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
 \end{equation*}
 \end{block}
 
-\begin{block}{Критерий оптимальности}
+\begin{block}{Лагранжиан}
+\begin{equation*}
+L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
+\end{equation*}
+\end{block}
 
+\begin{block}{Критерий оптимальности}
+Пусть $f(x)$ и $g_i(x)$ дважды дифференцируемы в точке $x^*$ и непрерывно дифференцируемы в некоторой окрестности $x^*$.
+Пусть также $\nabla_x L(x^*, \blambda) = 0$.
+Тогда если $\nabla^2 L(x^*, \blambda) \succ 0$, то $x^*$~--- точка локального минимума.
 \end{block}
 
 \end{frame}

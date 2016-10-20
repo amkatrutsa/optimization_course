@@ -169,7 +169,20 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \begin{frame}{{\small Задача минимизации с ограничениями типа равенств и неравенств}}
 
 \begin{block}{Задача}
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \min\limits_{x \in \bbR^n} f(x)\\
+\text{s.t. } & g_i(x) = 0, \; i = 1,\ldots,m\\
+& h_j(x) \leq 0, \; j = 1,\ldots, n
+\end{split}
+\end{equation*}
+\end{block}
 
+\begin{block}{Лагранжиан}
+\begin{equation*}
+L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_{j=1}^n \mu_j h_j(x)
+\end{equation*}
 \end{block}
 
 \begin{block}{Критерий оптимальности}
@@ -179,7 +192,40 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\small
+\item Пример 1
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \extr (x_1 - 3)(x_2 - 2)\\
+\text{s.t. } & x_1 + 2x_2 = 4\\
+& x^2_1 + x^2_2 \leq 5\\
+& x_1 \geq 0, \; x_2 \geq 0 
+\end{split}
+\end{equation*} 
+\vspace{-5mm}
+\item Пример 2
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \extr \sum\limits_{i=1}^n \frac{c_i}{x_i}\\
+\text{s.t. } & \sum\limits_{i=1}^n a_ix_i \leq b\\
+& x_i > 0, \; b > 0, \; c_i > 0, \; a_i > 0
+\end{split}
+\end{equation*}
+\vspace{-4mm}
+\item Пример 3
+\vspace{-3mm}
+\begin{equation*}
+\begin{split}
+& \extr (x_1x_3 - 2x_2)\\
+\text{s.t. } & 2x_1 - x_2 - 3x_3 \leq 10\\
+& 3x_1 + 2x_2 + x_3 = 6\\
+& x_2 \geq 0
+\end{split}
+\end{equation*}
+\end{itemize}
 \end{frame}
 
 \end{document}

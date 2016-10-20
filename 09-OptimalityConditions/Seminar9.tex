@@ -71,7 +71,7 @@
 
 \begin{block}{Задача}
 \[
-f(x) \rightarrow \min\limits_{x \in X}
+f(x) \rightarrow \min\limits_{{\color{red}{x \in X}}}
 \]
 \end{block}
 
@@ -80,10 +80,10 @@ f(x) \rightarrow \min\limits_{x \in X}
 Тогда 
 \begin{enumerate}
 \item если $x^*$ точка минимума $f(x)$ на $X$, то $\partial_X f(x^*) \neq \emptyset$ и $0 \in \partial_X f(x^*)$
-\item если для некоторой точки $x^* \in X$ существует субдифференциал $\partial_X f(x^*)$ и $0 \in \partial_X f(x^*)$, тогда $x^*$~--- точка минимума $f(x)$ на $X$.
+\item если для некоторой точки $x^* \in X$ существует субдифференциал $\partial_X f(x^*)$ и $0 \in \partial_X f(x^*)$, то $x^*$~--- точка минимума $f(x)$ на $X$.
 \end{enumerate}
 \end{block}
-Какие проблемы у приведённого критерия?
+Какие недостатки у приведённого критерия?
 
 \end{frame}
 
@@ -105,25 +105,43 @@ b \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
 \end{frame}
 
 \begin{frame}{Задача безусловной минимизации}
+Задача: $f(x) \rightarrow \min\limits_{\color{red}{x \in \bbR^n}}$.
 
-\begin{block}{Задача}
-
+\begin{block}{Критерий оптимальности для выпуклых функций}
+Пусть $f(x)$ выпуклая функция на $\bbR^n$. 
+Тогда точка $x^*$ решение задачи безусловной минимизации $\Leftrightarrow$ $0 \in \partial f(x^*)$.
 \end{block}
 
-\begin{block}{Критерий оптимальности}
+\begin{block}{Следствие}
+Если $f(x)$ выпукла и дифференцируема на $\bbR^n$.
+Тогда точка $x^*$ решение задачи безусловной минимизации $\Leftrightarrow$ $\nabla f(x^*) = 0$.
+\end{block}
 
+\begin{block}{Достаточное условие для невыпуклых функций}
+Пусть $f$ дважды дифференцируема на $\bbR^n$ и $x^*$ такая что $\nabla f(x^*) = 0$. 
+Тогда если $\nabla^2 f(x^*) \succ 0$, то $x^*$ точка строгого локального минимума $f(x)$ на $\bbR^n$.  
 \end{block}
 
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item $x_1e^{x_1} - (1 + e^{x_2})\cos x_2 \rightarrow \min$
+\item Функция Розенброка: $(1 - x_1)^2 + \alpha \sum\limits_{i = 2}^n (x_i - x_{i-1})^2 \rightarrow \min$, $\alpha > 0$
+\item $x^2_1 + x^2_2 - x_1x_2 + e^{x_1 + x_2} \rightarrow \min$
+\end{itemize}
 \end{frame}
 
 \begin{frame}{{\small Задача минимизации с ограничениями типа равенств}}
 
 \begin{block}{Задача}
-
+\vspace{-3mm}
+\begin{equation*}
+\begin{split}
+& f(x) \rightarrow \min\limits_{x \in \bbR^n} \\
+\text{s.t. } & g_i(x) = 0, \; i = 1,\ldots, m 
+\end{split}
+\end{equation*}
 \end{block}
 
 \begin{block}{Критерий оптимальности}
@@ -133,7 +151,11 @@ b \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item $\sum\limits_{i=1}^n\alpha_i x^4_i \rightarrow \extr\limits_{\bx \in G}$, $G = \{\bx \in \bbR^n \; | \; \bc^{\T}\bx = 1 \}$, $\alpha_i > 0,\; c_i > 0$
+\item $x_1 + 4x_2 + 9x_3 \rightarrow \extr\limits_{\bx \in G}, \; G = \left \{ \frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = 1 \right\}$
+\item Примеры из задачника по матану на метод множителей Лагранжа
+\end{itemize}
 \end{frame}
 
 \begin{frame}{{\small Задача минимизации с ограничениями типа равенств и неравенств}}

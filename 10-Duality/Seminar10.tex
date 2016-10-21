@@ -1,0 +1,122 @@
+\documentclass[12pt,russian]{beamer}
+\usepackage{mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\newcommand{\relint}{\mathbf{relint}}
+\newcommand{\inter}{\mathbf{int}}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Семинар 10]{Методы оптимизации. \\
+ Семинар 10. Условия оптимальности.}
+\author{Александр Катруца}
+\institute{Московский физико-технический институт,\\
+Факультет Управления и Прикладной Математики} 
+\date{14 октября 2016 г.}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Напоминание}
+\begin{itemize}
+\item Существование решения оптимизационной задачи 
+\item Условия оптимальности для
+\begin{itemize}
+\item общей задачи оптимизации
+\item задачи безусловной оптимизации
+\item задачи оптимизации с ограничениями типа равенств
+\item задачи оптимизации с ограничениями типа равенств и неравенств
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Обозначения}
+\small
+\begin{block}{Задача}
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \min\limits_{x \in \mathcal{D}} f(x) = p^*\\
+\text{s.t. } & g_i(x) = 0, \; i = 1,\ldots,m\\
+& h_j(x) \leq 0, \; j = 1,\ldots, p
+\end{split}
+\end{equation*}
+\end{block}
+
+\begin{block}{Лагранжиан}
+\vspace{-2mm}
+\begin{equation*}
+L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_{j=1}^p \mu_j h_j(x)
+\vspace{-2mm}
+\end{equation*}
+\end{block}
+
+\begin{block}{Двойственные переменные}
+Вектора $\bmu$ и $\blambda$ называются двойственными переменными.
+\end{block}
+
+\begin{block}{Двойственная функция}
+Функция $g(\bmu, \blambda) = \inf\limits_{x\in \mathcal{D}} L(x, \blambda, \bmu)$ называется двойственной функцией Лагранжа.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Свойства двойственной функции}
+\small
+\begin{block}{Вогнутость}
+Двойственная функция является {\color{red}{вогнутой}} как инфимум аффинных функций по $(\bmu, \blambda)$ в независимости от того, является ли исходная задача выпуклой.
+\end{block}
+
+\begin{block}{Нижняя граница}
+Для любого $\blambda$ и для $\bmu \geq 0$ выполнено $g(\bmu, \blambda) \leq p^*$.
+\end{block}
+
+\begin{block}{Двойственная задача}
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \max g(\bmu, \blambda) = d^*\\
+\text{s.t. } & \bmu \geq 0
+\end{split}
+\end{equation*}
+\end{block}
+
+\begin{block}{Зачем?}
+\begin{itemize}
+\vspace{-2mm}
+\item Двойственная задача выпукла независимо от того, выпукла ли прямая
+\vspace{-3mm}
+\item Нижняя оценка может достигаться
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Примеры}
+
+\end{frame}
+
+\begin{frame}{Слабая и сильная двойственность}
+
+\end{frame}
+
+
+\begin{frame}{Геометрическая интерпретация}
+
+\end{frame}
+
+\begin{frame}{Условия Каруша-Куна-Таккера}
+
+\end{frame}
+
+\begin{frame}{Механическая интерпретация}
+
+\end{frame}
+
+\begin{frame}{Примеры}
+
+\end{frame}
+\end{document}

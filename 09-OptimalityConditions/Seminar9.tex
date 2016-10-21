@@ -174,19 +174,58 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \begin{split}
 & \min\limits_{x \in \bbR^n} f(x)\\
 \text{s.t. } & g_i(x) = 0, \; i = 1,\ldots,m\\
-& h_j(x) \leq 0, \; j = 1,\ldots, n
+& h_j(x) \leq 0, \; j = 1,\ldots, p
 \end{split}
 \end{equation*}
 \end{block}
 
 \begin{block}{Лагранжиан}
 \begin{equation*}
-L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_{j=1}^n \mu_j h_j(x)
+L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_{j=1}^p \mu_j h_j(x)
 \end{equation*}
 \end{block}
+\end{frame}
 
-\begin{block}{Критерий оптимальности}
+\begin{frame}{Условия оптимальности}
+\begin{block}{Необходимое условие}
+Пусть $x^*$ решение задачи математического программирования, и функции $f, h_j, g_i$ дифференцирумы. 
+Тогда найдутся такие $\bmu^*$ и $\blambda^*$, что выполнены следующие условия:
+\begin{itemize}
+\item $g_i(x^*) = 0$
+\item $h_j(x^*) \leq 0$
+\item $ \mu^*_j \geq 0$
+\item $\mu^*_jh_j(x^*) = 0$
+\item $\nabla_x L(x^*, \blambda^*, \bmu^*) = 0$
+\end{itemize}
+\end{block}
+Если задача выпуклая, то это же условие является достаточным.
+\end{frame}
 
+\begin{frame}{Условия оптимальности (cont'd)}
+\small
+Если задача невыпуклая, то
+\begin{block}{Достаточное условие первого порядка}
+\small
+Если для стационарной точки $(x^*, \blambda^*, \bmu^*)$ число активных неравенств $|J|$ такое что $n = m + |J|$ и $\mu_j > 0, \; j \in J$, то эта точка является точкой минимума.
+\end{block}
+
+\begin{block}{Достаточное условие второго порядка}
+\small
+Если в задаче математического программирования число активных ограничений меньше размерности задачи, то точка $x^*$ яляется решением задачи, если выполнены условия
+\vspace{-3mm}
+\[
+\bz^{\T}\nabla_{xx}^2 L(x^*)\bz > 0
+\vspace{-3mm}
+\] 
+для 
+\vspace{-4mm}
+\begin{itemize}
+\item $\bz \neq 0$ и $\nabla g^{\T}_i(x^*)\bz = 0$
+\vspace{-3mm}
+\item при $j \in J$ и $\mu_j > 0$, $\nabla h^{\T}_j(x^*) \bz = 0$
+\vspace{-3mm}
+\item при $j \in J$ и $\mu_j = 0$, $\nabla h^{\T}_j(x^*) \bz \leq 0$
+\end{itemize}
 \end{block}
 
 \end{frame}
@@ -228,4 +267,16 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Резюме}
+\begin{itemize}
+\item Существование решения оптимизационной задачи 
+\item Условия оптимальности для
+\begin{itemize}
+\item общей задачи оптимизации
+\item задачи безусловной оптимизации
+\item задачи оптимизации с ограничениями типа равенств
+\item задачи оптимизации с ограничениями типа равенств и неравенств
+\end{itemize}
+\end{itemize}
+\end{frame}
 \end{document}

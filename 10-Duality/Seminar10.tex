@@ -96,7 +96,34 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \end{frame}
 
 \begin{frame}{Примеры}
-
+Найти двойственную функцию:
+\begin{itemize}
+\item Решение СЛУ минимальной нормы 
+\vspace{-3mm}
+\begin{equation*}
+\begin{split}
+& \min \| \bx\|^2_2\\
+\text{s.t. } & \bA\bx = \mathbf{b}
+\end{split}
+\end{equation*}
+\item Линейное программирование
+\vspace{-3mm}
+\begin{equation*}
+\begin{split}
+& \min \bc^{\T}\bx\\
+\text{s.t. } & \bA\bx = \mathbf{b}\\
+& \bx \geq 0
+\end{split}
+\end{equation*}
+\item Задача разбиения
+\vspace{-3mm}
+\begin{equation*}
+\begin{split}
+& \min \bx^{\T}\bW\bx\\
+\text{s.t. } & x^2_i = 1, \; i = 1,\ldots,n
+\end{split}
+\end{equation*}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Слабая и сильная двойственность}

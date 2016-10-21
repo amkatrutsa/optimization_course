@@ -25,7 +25,7 @@
 
 9. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-OptimalityConditions/Seminar9.pdf)
 
-10. Двойственная задача
+10. [Двойственная задача](https://github.com/amkatrutsa/MIPT-Opt/blob/public_mater    ials/09-Duality/Seminar10.pdf)
 
 11. Условия Каруша-Куна-Таккера (ККТ)
 

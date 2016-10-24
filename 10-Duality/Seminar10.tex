@@ -127,12 +127,64 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \end{frame}
 
 \begin{frame}{Слабая и сильная двойственность}
+\small
+\begin{block}{Определение}
+Оптимальные значения целевой функции в прямой и двойственной задаче связаны соотношением 
+\vspace{-3mm}
+\[
+d^* \leq p^*.
+\vspace{-4mm}
+\]
+Если $d^* < p^*$, то свойство называют слабой двойственностью.
+Если $d^* = p^*$, то~--- сильной двойственностью.
+\end{block}
 
+\begin{block}{Замечание}
+Слабая двойственность есть всегда по построению двойственной задачи.
+\end{block}
+
+\begin{block}{Вопросы}
+\begin{itemize}
+\item При каких условиях выполняется сильная двойственность?
+\vspace{-7mm}
+\item Как использовать двойственность для проверки оптимальности?
+\end{itemize}
+\end{block}
 \end{frame}
 
+\begin{frame}{Условия Слейтера}
+\begin{block}{Теорема}
+Если задача выпуклая и существует $x$, лежащий внутри допустимой области, т.е. ограничения типа неравенств выполнены как строгие неравенства, то выполнено свойство сильной двойственности.
+\end{block}
+
+\begin{itemize}
+\item Решение СЛАУ наименьшей нормы
+\item Линейное программирование
+\item Квадратичное программирование с квадратичными огранчиениями
+\item Невыпуклая задача с сильной двойственностью
+\end{itemize}
+\end{frame}
 
 \begin{frame}{Геометрическая интерпретация}
+% Вставить графики и пояснения!
+\end{frame}
 
+\begin{frame}{Условия дополняющей нежёсткости}
+Пусть $\bx^*$ и $(\bmu^*, \blambda^*)$ решения прямой и двойственной задачи. То есть
+\begin{equation*}
+\begin{split}
+& f(\bx^*) = g(\bmu^*, \blambda^*) = \inf\limits_{\bx} L(\bx, \blambda, \bmu) \leq \\
+& f(\bx^*) + \sum\limits_{i=1}^m\lambda^*_i g_i(\bx^*) + \sum\limits_{j=1}^p \mu^*_j h_j(\bx^*) \leq\\
+& f(\bx^*), \qquad \bmu \geq 0 
+\end{split}
+\end{equation*}
+
+\begin{block}{Условия дополняющей нежёсткости}
+\[
+\mu^*_j h_j(\bx^*) = 0, \qquad j = 1,\ldots, p 
+\]
+Для каждого неравенства либо множитель Лагранжа равен нулю, либо оно активно. 
+\end{block}
 \end{frame}
 
 \begin{frame}{Условия Каруша-Куна-Таккера}
@@ -144,6 +196,18 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \end{frame}
 
 \begin{frame}{Примеры}
-
+\begin{itemize}
+\item
+\vspace{-5mm}
+\begin{equation*}
+\begin{split}
+& \min\limits_{\bx \in \bbR^n} \sum\limits_{i=1}^n x_i \log x_i\\
+\text{s.t. } & \bA\bx \leq \mathbf{b}\\
+& \mathbf{1}^{\T}\bx = 1
+\end{split}
+\end{equation*} 
+\item
+\item
+\end{itemize}
 \end{frame}
 \end{document}

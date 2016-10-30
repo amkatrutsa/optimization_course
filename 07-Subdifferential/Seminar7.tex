@@ -32,11 +32,13 @@
 
 \begin{frame}{Мотивация}
 \begin{block}{Зачем?}
-Для непрерывной выпуклой функции $f$ важно знать такой вектор $\ba$, что
+Важным свойством непрерывной выпуклой функции $f$ является то, что в выбранной точке $\bx$ для всех $\by \in \text{dom } f$ выполнено неравенство:
 \vspace{-3mm} 
 \[
-f(\bx) - f(\by) \geq \langle \ba, \bx - \by \rangle
+f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
+\vspace{-4mm}
 \]
+для некоторого вектора $\ba$, то есть касательная к графику функции является {\color{red}{глобальной}} оценкой снизу для функции. 
 \end{block}
 
 \begin{itemize}
@@ -73,6 +75,7 @@ f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
 \end{frame}
 
 \begin{frame}{Примеры}
+Найдите субдифференциал для следующих функций.
 \begin{itemize}
 \item Модуль: $f(x) = |x|$
 \item Норма $\ell_2$: $f(\bx) = \| \bx \|_2$
@@ -83,8 +86,9 @@ f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
 \end{frame}
 
 \begin{frame}{Условный субдифференциал}
-\small
+\footnotesize
 \begin{block}{Определение}
+\footnotesize
 Множество 
 $
 \{ \ba |  f(\bx) - f(\bx_0) \geq \langle \ba, \bx - \bx_0 \rangle, \; \forall \bx \in X \}
@@ -92,19 +96,25 @@ $
 называется субдифференциалом $f$ в $\bx_0$ на множестве $X$ и обозначается $\partial_X f(\bx_0)$.
 \end{block}
 %Если функция $f$ определена на множестве $X \subset \bbR^n$, то как определить субдифференциал в граничных точках?
+\begin{block}{Как перейти от безусловного субдифференциала к условному?}
+\footnotesize
 Если $f$~--- выпуклая функция, то рассмотрим функцию $g(\bx) = f(\bx) + \delta(\bx | X)$, которая тоже выпуклая.
 Тогда
 \vspace{-2mm} 
 \[
-\partial g (\bx_0) = \partial_X f(\bx_0) = \partial f(\bx_0) + \partial \delta(\bx_0 | X)
+\partial g (\bx_0) = \partial_X f(\bx_0) = \partial f(\bx_0) + \partial \delta(\bx_0 | X).
 \vspace{-3mm} 
 \]
-и
+Найдём $\partial \delta(\bx_0 | X)$:
+\vspace{-3mm}
 \[
 \delta(\bx |X) - \delta(\bx_0 |X) \mathop{=}\limits^{\bx \in X} 0 \geq \langle \ba, \bx - \bx_0 \rangle
-\vspace{-3mm}
+%\vspace{-3mm}
 \]
+\end{block}
+
 \begin{block}{Нормальный конус}
+\footnotesize
 Множество $N(\bx_0 | X) = \{ \ba | \langle \ba, \bx - \bx_0 \rangle \leq 0, \; \forall \bx \in X \}$ называется нормальным конусом к множеству $X$ в точке $\bx_0$.
 \end{block}
 Тогда $\partial_X f(\bx_0) = \partial f(\bx_0) + N(\bx_0 | X)$  

@@ -40,11 +40,11 @@
 \end{block}
 Примеры: $\bbR^n$, гиперплоскость, точка.
 \begin{block}{Аффинная комбинация точек}
-Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\sum\limits_{i=1}^k \theta_i = 1$ называется аффинной комбинацией точек $x_1,\ldots,x_k$.
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при {\color{red}{$\sum\limits_{i=1}^k \theta_i = 1$}} называется аффинной комбинацией точек $x_1,\ldots,x_k$.
 \end{block}
 
 \begin{block}{Аффинная оболочка точек}
-Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \sum\limits_{i=1}^k \theta_i = 1 \right\}$ называется аффинной оболочкой множества $G$ и обозначается \textbf{aff}(G).
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\sum\limits_{i=1}^k \theta_i = 1}} \right\}$ называется аффинной оболочкой множества $G$ и обозначается \textbf{aff}(G).
 \end{block}
 \end{frame}
 
@@ -72,11 +72,11 @@ $\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 \end{block}
 Примеры: $\bbR^n$, афинное множество, луч, отрезок.
 \begin{block}{Выпуклая комбинация точек}
-Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\sum\limits_{i=1}^k \theta_i = 1, \;\theta_i \geq 0$ называется выпуклой комбинацией точек $x_1,\ldots,x_k$.
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при {\color{red}{$\sum\limits_{i=1}^k \theta_i = 1, \;\theta_i \geq 0$}} называется выпуклой комбинацией точек $x_1,\ldots,x_k$.
 \end{block}
 
 \begin{block}{Выпуклая оболочка точек}
-Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \sum\limits_{i=1}^k \theta_i = 1, \theta_i \geq 0 \right\}$ называется выпуклой оболочкой множества $G$ и обозначается \textbf{conv}(G).
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\sum\limits_{i=1}^k \theta_i = 1, \theta_i \geq 0}} \right\}$ называется выпуклой оболочкой множества $G$ и обозначается \textbf{conv}(G).
 \end{block}
 
 \end{frame}
@@ -91,6 +91,7 @@ $\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 \end{frame}
 
 \begin{frame}{Примеры}
+Проверьте на аффинность и выпуклость следующие множества:
 \begin{itemize}
 \item Полупространство: $\{ \bx | \ba^{\T} \bx \leq c \}$
 \item Многоугольник: $\{ \bx | \bA\bx \preceq \mathbf{b}, \; \bC\bx = 0 \}$
@@ -117,15 +118,15 @@ $\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 \end{block}
 Примеры: $\bbR^n$, афинное множество, проходящее через 0, луч.
 \begin{block}{Коническая (неотрицательная) комбинация точек}
-Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при $\theta_i \geq 0$ называется конической (неотрицательной) комбинацией точек $x_1,\ldots,x_k$.
+Пусть $x_1, \ldots, x_k \in G$, тогда точка $\theta_1 x_1 + \ldots + \theta_k x_k$ при {\color{red}{$\theta_i \geq 0$}} называется конической (неотрицательной) комбинацией точек $x_1,\ldots,x_k$.
 \end{block}
 
 \begin{block}{Коническая оболочка точек}
-Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, \theta_i \geq 0 \right\}$ называется конической оболочкой множества $G$ и обозначается \textbf{cone}(G).
+Множество $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\theta_i \geq 0}} \right\}$ называется конической оболочкой множества $G$ и обозначается \textbf{cone}(G).
 \end{block}
 \end{frame}
 
-\begin{frame}{Примеры}
+\begin{frame}{Примеры конусов}
 \begin{itemize}
 \item $\bS^n_+$
 \item Нормальный конус: $\{ (\bx, t) \in \bbR^{n+1} \; | \; \| \bx \| \leq t \}$ 

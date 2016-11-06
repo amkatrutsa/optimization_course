@@ -33,11 +33,11 @@
 \begin{frame}{Конус возможных направлений}
 
 \begin{block}{Определение}
-Конусом возможных направлений для множества $G \subset \bbR^n$ в точке $\bx_0 \in G$ будем называть такое множество $\Gamma(\bx_0 | G) = \{ \bs \in \bbR^n | \bx_0 + \alpha\bs \in G, \; 0 \leq \alpha \leq \overline{\alpha}(\bs) \}$.
+Конусом возможных направлений для множества $G \subset \bbR^n$ в точке $\bx_0 \in G$ будем называть такое множество $\Gamma(\bx_0 | G) = \{ \bs \in \bbR^n | \bx_0 + \alpha\bs \in G, \; 0 \leq \alpha \leq \overline{\alpha}(\bs) \}$, где $\overline{\alpha}(\bs) > 0$.
 \end{block}
 
 \begin{block}{Определение для выпуклого множества}
-Конусом возможных направлений для выпуклого множества $X \subset \bbR^n$ в точке $\bx_0 \in X$ будем называть такое множество $\Gamma(\bx_0 | X) = \{ \bs \in \bbR^n | \bs = \lambda (\bx - \bx_0), \; \lambda > 0, \forall \bx \in X \}$.
+Конусом возможных направлений для \emph{выпуклого} множества $X \subset \bbR^n$ в точке $\bx_0 \in X$ будем называть такое множество $\Gamma(\bx_0 | X) = \{ \bs \in \bbR^n | \bs = \lambda (\bx - \bx_0), \; \lambda > 0, \forall \bx \in X \}$.
 \end{block}
 Какая связь между нормальным конусом и конусом возможных направлений?
 
@@ -52,7 +52,7 @@
 \]
 и \vspace{-4mm}
 \[
-\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = n}^m \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
+\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n \middle| \bp = \sum\limits_{i = n}^m \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
 \vspace{-4mm}
 \]
 где $\lambda_i \in \bbR$, $\mu_i \geq 0$, $\bx_0 \in G$ и $I = \{i: \varphi_i(\bx_0) = 0, \; i = \overline{0,n-1}\}$.
@@ -63,7 +63,7 @@ $X = \{ \bx \in \bbR^2 | x^2_1 + 2x^2_2 \leq 3, \; x_1 + x_2 = 0 \}$.
 
 \begin{frame}{Касательный конус}
 \begin{block}{Определение}
-Касательным конусом к множеству $G$ в точке $\bx_0 \in \overline{G}$ называется следующее множество $T(\bx_0 |G) = \{ \lambda \bz | \lambda > 0, \; \exists \{\bx_k\} \subset G, \; \bx_k \rightarrow \bx_0, \bx_k \neq \bx_0, \; \lim\limits_{k \rightarrow \infty} \frac{\bx_0 - \bx_k}{\|\bx_0 - \bx_k\|_2} = \bz \}$
+Касательным конусом к множеству $G$ в точке $\bx_0 \in \overline{G}$ называется следующее множество $T(\bx_0 |G) = \{ \lambda \bz | \lambda > 0, \; \exists \{\bx_k\} \subset G, \; \bx_k \rightarrow \bx_0, \bx_k \neq \bx_0, \; \lim\limits_{k \rightarrow \infty} \frac{\bx_k - \bx_0}{\|\bx_k - \bx_0\|_2} = \bz \}$
 \end{block}
 
 \begin{block}{Пояснение}
@@ -83,7 +83,7 @@ T(\bx_0|G) = \{ \bz \in \bbR^n | \nabla \varphi^{\T}_i(\bx_0)\bz \leq 0, i \in I
 \]
 и \vspace{-4mm}
 \[
-T^*(\bx_0|G) = \left \{ \bp \in \bbR^n | \bp = \sum\limits_{i = n}^m \lambda_i \nabla \varphi_i(\bx_0) - \sum\limits_{i \in I} \mu_i \nabla \varphi_i(\bx_0) \right \},
+T^*(\bx_0|G) = \left \{ \bp \in \bbR^n \middle| \bp = \sum\limits_{i = n}^m \lambda_i \nabla \varphi_i(\bx_0) - \sum\limits_{i \in I} \mu_i \nabla \varphi_i(\bx_0) \right \},
 \] 
 где $\mu_i \geq 0$, $\lambda_i \in \bbR$, $I = \{i | \varphi_i(\bx_0) = 0, i = \overline{0, n-1} \}$
 

@@ -1,0 +1,84 @@
+\documentclass[12pt,russian]{beamer}
+\usepackage{mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\newcommand{\relint}{\mathbf{relint}}
+\newcommand{\inter}{\mathbf{int}}
+\DeclareMathOperator{\extr}{\mathrm{extr}}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Семинар 9]{Методы оптимизации. \\
+ Семинар 9. Сопряжённые функции}
+\author{Александр Катруца}
+\institute{Московский физико-технический институт,\\
+Факультет Управления и Прикладной Математики} 
+\date{7 ноября 2016 г.}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Напоминание}
+\begin{itemize}
+\item Конус возможных направлений
+\item Касательный конус
+\item Острый экстремум
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Определение}
+\begin{block}{Снова сопряжённое?}
+\begin{itemize}
+\item Ранее были рассмотрены сопряжённые (двойственные) множества и, в частности, конусы
+\item Сейчас будут рассмотрены сопряжённые (двойственные) функции
+\item Далее будет введена двойственная оптимизационная задача 
+\end{itemize}
+\end{block}
+
+\begin{block}{Определение}
+Пусть $f: \bbR^n \rightarrow \bbR$. 
+Функция $f^*: \bbR^n \rightarrow \bbR$ называется сопряжённой функцией к функции $f$ и определена как
+\vspace{-4mm}
+\[
+f^*(\by) = \sup\limits_{\bx \in dom \; f} (\by^{\T}\bx - f(\bx)).
+\vspace{-3mm}
+\]
+Область определения $f^*$~--- это множество таких $\by$, что супремум конечен. 
+
+\end{block}
+\end{frame}
+
+\begin{frame}{Свойства и интерпретации}
+\begin{itemize}
+\item Сопряжённая функция $f^*$ всегда выпукла как супремум линейных функций независимо от выпуклости $f$
+\item Неравенство Юнга-Фенхеля: $\by^{\T}\bx \leq f(\bx) + f^*(\by)$
+\item Если $f$~--- дифференцируема, то $f^*(\by) = \nabla f^{\T}(\bx^*)\bx^* - f(\bx^*)$, где $\bx^*$ даёт супремум.
+\item Геометрический смысл
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Примеры}
+\begin{itemize}
+\item Линейная функция: $f(\bx) = \ba^{\T}\bx + b$
+\item Отрицательная энтропия: $f(x) = x\log x$
+\item Индикаторная функция множества $S$: $I_S(x) = 0$ iff $x \in S$
+\item Норма: $f(\bx) = \|\bx\|$.
+\item Квадрат нормы: $f(\bx) = \frac{1}{2}\|\bx\|^2$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Резюме}
+
+\begin{itemize}
+\item Сопряжённые функции
+\item Неравенство Юнга-Фенхеля и другие свойства
+\item Примеры
+\end{itemize}
+
+\end{frame}
+
+\end{document}

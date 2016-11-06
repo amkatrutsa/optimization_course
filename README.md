@@ -25,7 +25,7 @@
 
 8. [Конус возможных направлений, касательный конус, острый экстремум](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf)
 
-9. [Сопряжённые функции](https://githu    b.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-ConjugateFunctions/Seminar9.pdf)
+9. [Сопряжённые функции](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-ConjugateFunctions/Seminar9.pdf)
 
 10. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/10-OptimalityConditions/Seminar10.pdf)
 

@@ -25,13 +25,14 @@
 
 8. [Конус возможных направлений, касательный конус, острый экстремум](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf)
 
-9. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-OptimalityConditions/Seminar9.pdf)
+9. [Сопряжённые функции](https://githu    b.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-ConjugateFunctions/Seminar9.pdf)
 
-10. [Двойственная задача](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/10-Duality/Seminar10.pdf)
+10. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/10-OptimalityConditions/Seminar10.pdf)
 
-11. Условия Каруша-Куна-Таккера (ККТ)
+11. [Двойственная задача](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/11-Duality/Seminar11.pdf)
 
-12. Сопряжённые функции
+12. Условия Каруша-Куна-Таккера (ККТ)
+
 
 ### Весенний семестр
 

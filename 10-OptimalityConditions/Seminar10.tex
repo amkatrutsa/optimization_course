@@ -5,6 +5,7 @@
 \usepackage[russian]{babel}
 \newcommand{\relint}{\mathbf{relint}}
 \newcommand{\inter}{\mathbf{int}}
+\newcommand{\bh}{\mathbf{h}}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -42,6 +43,7 @@
 \begin{block}{Вопрос 2}
 Из каких условий можно найти решение оптимизационной задачи?
 \end{block}
+
 \end{frame}
 
 \begin{frame}{Существование решения}
@@ -145,6 +147,7 @@ b \|_2 \rightarrow \min\limits_{\bx \in \bbR^n}$, $\alpha > 0$
 \end{block}
 
 \begin{block}{Лагранжиан}
+\vspace{-2mm}
 \begin{equation*}
 L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \end{equation*}
@@ -153,7 +156,7 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \begin{block}{Критерий оптимальности}
 Пусть $f(x)$ и $g_i(x)$ дважды дифференцируемы в точке $x^*$ и непрерывно дифференцируемы в некоторой окрестности $x^*$.
 Пусть также $\nabla_x L(x^*, \blambda) = 0$.
-Тогда если $\nabla^2 L(x^*, \blambda) \succ 0$, то $x^*$~--- точка локального минимума.
+Тогда если $\bh^{\T}\nabla^2 L(x^*, \blambda)\bh > 0$, где $\bh \in T(\bx^*|G)$~--- касательный конус, то $x^*$~--- точка локального минимума.
 \end{block}
 
 \end{frame}

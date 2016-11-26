@@ -90,9 +90,32 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \vspace{-2mm}
 \item Двойственная задача выпукла независимо от того, выпукла ли прямая
 \vspace{-3mm}
-\item Нижняя оценка может достигаться
+\item Нижняя оценка \textbf{может} достигаться
 \end{itemize}
 \end{block}
+\end{frame}
+
+\begin{frame}{Связь с сопряжённой функцией}
+Рассмотрим задачу
+\begin{equation*}
+\begin{split}
+&\min f_0(x) \\
+\text{s.t. } & \bA\bx \leq \mathbf{b}\\
+& \bC\bx = \bd
+\end{split}
+\end{equation*}
+Тогда
+\begin{equation*}
+\begin{split}
+& g(\blambda, \bmu) = \inf_{\bx} (f_0(\bx) + \blambda^{\T}(\bA\bx - \mathbf{b}) + \bmu^{\T}(\bC\bx - \bd)) = \\
+& - \mathbf{b}^{\T}\blambda - \bmu^{\T}\bd + \inf_{\bx}(f_0(\bx) + (\bA^{\T}\blambda + \bC^{\T}\bmu)^{\T}\bx) = \\
+& - \mathbf{b}^{\T}\blambda - \bmu^{\T}\bd - f_0^*(-\bA^{\T}\blambda - \bC^{\T}\bmu)
+\end{split}
+\end{equation*}
+Области определений двойственной и сопряжённой функций связаны:
+\[
+\text{dom } g = \{ (\blambda, \bmu) \; | \; -\bA^{\T}\blambda - \bC^{\T}\bmu \in \text{dom } f^*_0 \}
+\] 
 \end{frame}
 
 \begin{frame}{Примеры}
@@ -166,7 +189,22 @@ d^* \leq p^*.
 \end{frame}
 
 \begin{frame}{Геометрическая интерпретация}
-% Вставить графики и пояснения!
+\begin{center}
+$\min\limits_{x} f_0(x), \text{ where } f_1(x) \leq 0.$
+\end{center}
+$
+g(\lambda) = \inf\limits_{(u, t) \in \mathcal{G}} (t + \lambda u) \qquad \mathcal{G} = \{ (f_1(x), f_0(x)) \; | \; x \in \mathcal{D} \}
+$
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{dual_geometry.png}
+\end{figure}
+\begin{itemize}
+\item $\lambda = 0$
+\item $\lambda^*$~--- оптимальное значение
+\item $\lambda > \lambda^*$
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Условия дополняющей нежёсткости}
@@ -181,7 +219,7 @@ d^* \leq p^*.
 
 \begin{block}{Условия дополняющей нежёсткости}
 \[
-\mu^*_j h_j(\bx^*) = 0, \qquad j = 1,\ldots, p 
+\mu^*_j h_j(\bx^*) = 0, \qquad j = 1,\ldots,p 
 \]
 Для каждого неравенства либо множитель Лагранжа равен нулю, либо оно активно. 
 \end{block}

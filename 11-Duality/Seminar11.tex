@@ -5,6 +5,7 @@
 \usepackage[russian]{babel}
 \newcommand{\relint}{\mathbf{relint}}
 \newcommand{\inter}{\mathbf{int}}
+\usefonttheme[onlymath]{serif}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -221,7 +222,11 @@ $
 \[
 \mu^*_j h_j(\bx^*) = 0, \qquad j = 1,\ldots,p 
 \]
-Для каждого неравенства либо множитель Лагранжа равен нулю, либо оно активно. 
+Для каждого неравенства
+\begin{itemize}
+\item либо множитель Лагранжа равен нулю
+\item либо оно активно.
+\end{itemize} 
 \end{block}
 \end{frame}
 
@@ -230,6 +235,19 @@ $
 \end{frame}
 
 \begin{frame}{Механическая интерпретация}
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{kkt_mechanics.eps}
+\end{figure}
+Поиск устойчивого положения системы:
+\begin{equation*}
+\begin{split}
+& \min_{\bx \in \bbR^3} \frac{1}{2}k_1x_1^2 + \frac{1}{2}k_2(x_2 - x_1)^2 + \frac{1}{2}k_3 (l - x_2)^2\\
+\text{s.t. } & \frac{w}{2} - x_1 \leq 0\\
+& w + x_1 - x_2 \leq 0\\
+& \frac{w}{2} - l + x_2 \leq 0
+\end{split}
+\end{equation*}
 
 \end{frame}
 
@@ -246,6 +264,15 @@ $
 \end{equation*} 
 \item
 \item
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Резюме}
+\begin{itemize}
+\item Двойственая задача: что это такое и зачем оно надо?
+\item Сильная и слабая двойственность
+\item Условия Слейтера
+\item Геометрическая и механическая интерпретации
 \end{itemize}
 \end{frame}
 \end{document}

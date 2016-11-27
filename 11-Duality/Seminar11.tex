@@ -176,6 +176,19 @@ d^* \leq p^*.
 \end{block}
 \end{frame}
 
+\begin{frame}{Критерий субоптимальности}
+По построению $p^* \geq g(\blambda, \bmu)$, поэтому $f_0(x) - p^* \leq f_0(x) - g(\blambda, \bmu) = \varepsilon$.
+\begin{block}{Определение}
+Разность $f_0(x) - g(\blambda, \bmu)$ называется \emph{двойственным зазором} и является оценкой сверху для разности текущего и оптимального значения функции.
+\end{block}
+Способы использования:
+\begin{itemize}
+\item критерий остановки в итерационном процессе
+\item теоретическая оценка сходимости алгоритма
+\item проверка оптимальности данной точки
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Условия Слейтера}
 \begin{block}{Теорема}
 Если задача выпуклая и существует $x$, лежащий внутри допустимой области, т.е. ограничения типа неравенств выполнены как строгие неравенства, то выполнено свойство сильной двойственности.
@@ -231,6 +244,14 @@ $
 \end{frame}
 
 \begin{frame}{Условия Каруша-Куна-Таккера}
+Из прошлого семинара известны необходимые условия~ККТ: 
+\begin{enumerate}
+\item $g_i(x^*) = 0$~--- допустимость в прямой задаче
+\item $h_j(x^*) \leq 0$~--- допустимость в прямой задаче
+\item $ \mu^*_j \geq 0$~--- допустимость в двойственной задаче
+\item $\mu^*_jh_j(x^*) = 0$~--- условие дополняющей нежёсткости
+\item $\nabla_x L(x^*, \blambda^*, \bmu^*) = 0$~--- определение двойственной функции
+\end{enumerate}
 
 \end{frame}
 
@@ -252,8 +273,9 @@ $
 \end{frame}
 
 \begin{frame}{Примеры}
+\footnotesize
 \begin{itemize}
-\item
+\item Орицательная энтропия при линейных ограничениях
 \vspace{-5mm}
 \begin{equation*}
 \begin{split}
@@ -262,8 +284,21 @@ $
 & \mathbf{1}^{\T}\bx = 1
 \end{split}
 \end{equation*} 
-\item
-\item
+\item Сформулировать двойственную задачу и по её решению найти решение прямой задачи:
+\begin{equation*}
+\begin{split}
+& \min \frac{1}{2}x^2 + 2y^2 + \frac{1}{2}z^2 + x + y + 2z\\
+\text{s.t. } & x+2y+z = 4
+\end{split}
+\end{equation*}
+\item Релаксация Лагранжа для задачи бинарного линейного программирования:
+\begin{equation*}
+\begin{split}
+&\min\limits_{\bx \in \bbR^n} \bc^{\T}\bx\\
+\text{s.t. } & \bA \bx \leq \mathbf{b}\\
+& x_i \in \{0,1 \}, \quad i = 1,\ldots,n
+\end{split}
+\end{equation*}
 \end{itemize}
 \end{frame}
 

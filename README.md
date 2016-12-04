@@ -86,12 +86,14 @@
 ## Список ссылок на материалы по оптимизации
 
 
-1. [Sebastien Bubeck. Convex Optimization: Algorithms and Complexity](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
+1. [Convex Optimization: Algorithms and Complexity by S. Bubeck](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
 
 2. [Blog by S. Bubeck](https://blogs.princeton.edu/imabandit/)
 
-3. [J. Nocedal, S. J. Wright. Numerical Optimization](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf)
+3. [Numerical Optimization by J. Nocedal & S. J. Wright](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf)
 
 4. [Lectures on Modern Convex Optimization by A. Nemirovski](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)
 
 5. [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
+
+6. [Semidefinite Optimization by M. Laurent & F. Vallentin](http://page.mi.fu-berlin.de/fmario/sdp/laurentv.pdf)

@@ -6,3 +6,4 @@
 *.spl
 *.nav
 *.snm
+.ipynb_checkpoints/

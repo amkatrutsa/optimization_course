@@ -40,8 +40,7 @@
 
 2. Задача безусловной минимизации
 	* [Градиентный спуск](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/13-GradDescent/Seminar13.ipynb)
-	* [Метод Ньютона](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/14-Newton/Seminar14.ipynb)
-	* Квазиньютоновские методы
+	* [Метод Ньютона. Квазиньютоновские методы](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/14-Newton/Seminar14.ipynb)
 	* Метод сопряжённых градиентов
 3. Линейное программирование
 	* Симплекс-метод
@@ -79,6 +78,8 @@
 7. [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 
 8. [Видео лекций S. Boyd'a по курсу Convex Optimization в Stanford'е](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+
+9. [Миникурс по выпуклой оптимизации от S. Boyd'a](http://stanford.edu/~boyd/papers/cvx_short_course.html)
 
 
 ## Список ссылок на материалы по оптимизации

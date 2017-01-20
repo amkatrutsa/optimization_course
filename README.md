@@ -41,7 +41,7 @@
 2. Задача безусловной минимизации
 	* [Градиентный спуск](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/13-GradDescent/Seminar13.ipynb)
 	* [Метод Ньютона. Квазиньютоновские методы](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/14-Newton/Seminar14.ipynb)
-	* Метод сопряжённых градиентов
+	* [Метод сопряжённых градиентов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/15-ConjGrad/Seminar15.ipynb)
 3. Линейное программирование
 	* Симплекс-метод
 	* Прямо-двойственные методы

@@ -47,7 +47,7 @@ def backtracking(x, descent_dir, **kwargs):
 
 def quad_exact_linesearch(x, p, **kwargs):
     A = kwargs["A"]
-    return -x.dot(A.dot(p)) / p.dot(A.dot(p))
+    return p.dot(p) / p.dot(A.dot(p))
 
 def Newton(f, gradf, hessf, x0, epsilon, num_iter, line_search, 
                     disp=False, callback=None, **kwargs):

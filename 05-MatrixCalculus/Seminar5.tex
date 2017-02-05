@@ -3,8 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage[T2A]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{automata,positioning}
+\usetikzlibrary{arrows}
 \newcommand{\relint}{\mathbf{relint}}
 \newcommand{\inter}{\mathbf{int}}
+
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -54,6 +58,27 @@ $\bbR^{m \times n}$ & $\bbR$ & $\bbR^{m \times n}$ & $\frac{\partial f}{\partial
 \end{table}
 
 Также квадратная $n \times n$ матрица вторых производных $\bH = [h_{ij}]$ в случае $f: \bbR^n \rightarrow \bbR$ называется гессиан и равна $h_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$.
+\end{frame}
+
+\begin{frame}{Основная техника}
+\tikzset{
+%Define style for boxes
+punkt/.style={
+rectangle,
+draw=black,
+minimum height=2em,
+text centered}
+}
+\begin{tikzpicture}
+\node[punkt,text width=4cm] (mat_repres) {Матричное представление функции: $f = \bx^{\T}\bA\bx$};
+\node[punkt,text width=4cm,below=1cm of mat_repres] (scalar_repres) {Скалярное представление: $f = \sum\limits_{ij}a_{ij}x_ix_j$};
+\draw [->,line width=0.1em,>=stealth] (mat_repres) -- (scalar_repres);
+\node[punkt,text width=5cm,right=2cm of scalar_repres] (scalar_repres_grad) {Скалярное представление градиента: $\nabla f_i = \sum\limits_{j}a_{ij}x_j$};
+\draw [->,line width=0.1em,>=stealth] (scalar_repres) -- node [text width=2cm,midway,above,text centered] {$\nabla f_i = \frac{\partial f}{\partial x_i}$} (scalar_repres_grad);
+\node[punkt, text width=3cm, above=1cm of scalar_repres_grad] (mat_repres_grad)  {Матричное представление градиента: $\nabla f = \bA\bx$};
+\draw [->,line width=0.1em,>=stealth] (scalar_repres_grad) -- (mat_repres_grad);
+\end{tikzpicture}
+
 \end{frame}
 
 \begin{frame}{Примеры}

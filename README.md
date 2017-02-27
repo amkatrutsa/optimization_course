@@ -43,7 +43,7 @@
 	* [Метод Ньютона. Квазиньютоновские методы](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/14-Newton/Seminar14.ipynb)
 	* [Метод сопряжённых градиентов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/15-ConjGrad/Seminar15.ipynb)
 3. Линейное программирование
-	* Симплекс-метод
+	* [Симплекс-метод](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/17-LinProgSimplex/Seminar17.ipynb)
 	* Прямо-двойственные методы
 4. Задача условной минимизации
 	* Метод условного градиента

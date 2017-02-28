@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bA}{\mathbf{A}}
+\usepackage{indentfirst}
+
+\title{Примеры решения задач линейного программирования симплекс-методом}
+\author{Александр Катруца}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+Здесь использованы материалы из книги~\cite{intro2lin}. 
+\begin{enumerate}
+\item Решить задачу табличным симплекс методом:
+\begin{equation*}
+\begin{split}
+& \min_{\bx} -10x_1 - 12x_2 - 12x_3\\
+\text{s.t. } & x_1 + 2x_2 +2x_3 \leq 20\\
+& 2x_2 + x_2 + 2x_3 \leq 20\\
+& 2x_1 + 2x_2 + x_3 \leq 20\\
+& x_{1,2,3} \geq 0
+\end{split}
+\end{equation*}
+\textbf{Решение:} по виду задачи ясно, что она не в канонической  форме. Введём дополнительные переменные и запишем её в канонической форме:
+\begin{equation*}
+\begin{split}
+& \min_{\bx} -10x_1 - 12x_2 - 12x_3\\
+\text{s.t. } & x_1 + 2x_2 +2x_3 + x_4 = 20\\
+& 2x_2 + x_2 + 2x_3 + x_5 = 20\\
+& 2x_1 + 2x_2 + x_3 + x_6 = 20\\
+& x_{1,2,3,4,5,6} \geq 0
+\end{split}
+\end{equation*}
+Заметим, что матрица $\bA \in \mathbb{R}^{m \times n}$, где $m=3$ и $n=6$.
+Теперь нужно найти угловую точку допустимого множества, то есть такую точку, чтобы она лежала в множестве и существовало множество индексов $\mathcal{B} \subset \{1, \dots, n\}$ мощностью $|\mathcal{B}| = m = 3$, что матрица из столбцов матрицы $\bA$ с индексами из множества $\mathcal{B}$ была невырождена, и координаты угловой точки с индексами не из множества $\mathcal{B}$ были нулевыми.
+В данном случае достаточно очевидно, что $\bx_0 = (0, 0, 0, 20, 20, 20)$, $\mathcal{B}_0 = \{4, 5, 6 \}$ и матрица базиса $\mathbf{B}_0 = \mathbf{I}_m$~--- невырождена.
+Если начальная угловая точка не так очевидна, необходимо выполнить двухфазный симплекс-метод или M-метод. 
+Такой пример будет приведён ниже.
+
+Теперь составим таблицу симплекс-метода, модифицируя которую получим решение поставленной задачи.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|c|cccccc|}
+\hline
+& $x_1$ & $x_2$ & $x_3$ & $x_4$ & $x_5$ & $x_6$\\
+\hline
+$-\mathbf{c}_{\mathcal{B}_0}^{\top}\bx_{\mathcal{B}_0} = 0$ & $-10$ & $-12$ & $-12$ & $0$ & $0$ & $0$ \\
+\hline
+$x_4 = 20$ & 1 & 2 & 2 & 1 & 0 & 0 \\
+$x_5 = 20$ & 2 & 1 & 2 & 0 & 1 & 0 \\
+$x_6 = 20$ & 2 & 2 & 1 & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\end{table}
+\end{enumerate}
+
+\begin{thebibliography}{9}
+
+\bibitem{intro2lin} 
+Dimitris Bertsimas and John N. Tsitsiklis. \emph{Introduction to linear optimization}, Belmont, MA: Athena Scientific, 1997, 5th edition
+
+\end{thebibliography}
+\end{document}
+

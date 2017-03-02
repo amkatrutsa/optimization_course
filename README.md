@@ -65,19 +65,19 @@
 
 ## Список дополнительных материалов
 
-1. [Stephen Boyd, Lieven Vandenberghe. Convex Optimization](http://stanford.edu/~boyd/cvxbook/)
+1. [Stephen Boyd, Lieven Vandenberghe. Convex Optimization](https://www.dropbox.com/s/zukr0b3f1eqfrw9/bv_cvxbook.pdf?dl=0)
 
 2. [Курс по выпуклой оптимизации в Stanford'e](http://stanford.edu/class/ee364a/)
 
 3. [Курс по оптимизации и выпуклому анализу в MIT](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-253-convex-analysis-and-optimization-spring-2012/)
 
-4. [Ю.Е. Нестеров. Методы выпуклой оптимизации](http://premolab.ru/pub_files/pub5/MnexoB89z7.pdf)
+4. [Ю.Е. Нестеров. Методы выпуклой оптимизации](https://www.dropbox.com/s/fsugv65mz5iqpxl/Nesterov.pdf?dl=0)
 
-5. [Б.Т. Поляк. Введение в оптимизацию](http://bwbooks.net/index.php?id1=4&category=math&author=polya-bt&book=1983)
+5. [Б.Т. Поляк. Введение в оптимизацию](https://www.dropbox.com/s/odu8pjystlchz15/polyak-optimizationintro.pdf?dl=0)
 
 6. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)
 
-7. [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+7. [Matrix Cookbook](https://www.dropbox.com/s/ymsjldwl8qxqlp8/matrixcookbook.pdf?dl=0)
 
 8. [Видео лекций S. Boyd'a по курсу Convex Optimization в Stanford'е](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
 
@@ -87,14 +87,14 @@
 ## Список ссылок на материалы по оптимизации
 
 
-1. [Convex Optimization: Algorithms and Complexity by S. Bubeck](http://research.microsoft.com/en-us/um/people/sebubeck/Bubeck15.pdf)
+1. [Convex Optimization: Algorithms and Complexity by S. Bubeck](https://www.dropbox.com/s/kkubqkmd9ni475i/Bubeck15.pdf?dl=0)
 
 2. [Blog by S. Bubeck](https://blogs.princeton.edu/imabandit/)
 
-3. [Numerical Optimization by J. Nocedal & S. J. Wright](http://home.agh.edu.pl/~pba/pdfdoc/Numerical_Optimization.pdf)
+3. [Numerical Optimization by J. Nocedal & S. J. Wright](https://www.dropbox.com/s/f27b15vnvrzf7ef/Numerical_Optimization.pdf?dl=0)
 
-4. [Lectures on Modern Convex Optimization by A. Nemirovski](http://www2.isye.gatech.edu/~nemirovs/Lect_ModConvOpt.pdf)
+4. [Lectures on Modern Convex Optimization by A. Nemirovski](https://www.dropbox.com/s/gr6addvyxqfqjn0/Lect_ModConvOpt.pdf?dl=0)
 
 5. [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
 
-6. [Semidefinite Optimization by M. Laurent & F. Vallentin](http://page.mi.fu-berlin.de/fmario/sdp/laurentv.pdf)
+6. [Semidefinite Optimization by M. Laurent & F. Vallentin](https://www.dropbox.com/s/shbad9vtvgbdv01/SDP_book.pdf?dl=0)

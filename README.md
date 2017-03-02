@@ -5,6 +5,8 @@
 
 [Самый минимум к экзамену и сдаче заданий по материалам осеннего семестра](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/MinimumFall.pdf)
 
+[Самый минимум к экзамену и сдаче заданий по материалам весеннего семестра](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/MinimumSpring.pdf)
+
 ## Ссылки на материалы семинаров
 
 ### Осенний семестр

@@ -46,7 +46,7 @@
 	* [Метод сопряжённых градиентов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/15-ConjGrad/Seminar15.ipynb)
 3. Линейное программирование
 	* [Симплекс-метод](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/17-LinProgSimplex/Seminar17.ipynb)
-	* [Прямо-двойственные методы](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/18-LinProgPrimalDual/Seminar18.ipynb)
+	* [Прямой метод внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/18-LinProgPrimalInterior/Seminar18.ipynb)
 4. Задача условной минимизации
 	* Метод условного градиента
 	* Метод проекции градиента

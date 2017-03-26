@@ -48,8 +48,7 @@
 	* [Симплекс-метод](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/17-LinProgSimplex/Seminar17.ipynb)
 	* [Прямой метод внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/18-LinProgPrimalInterior/Seminar18.ipynb)
 4. Задача условной минимизации
-	* Метод условного градиента
-	* Метод проекции градиента
+	* [Метод проекции градиента и условного градиента](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/19-SimpleStructureSet/Seminar19.ipynb)
 	* Метод штрафных и барьерных функций
 	* Метод модифицированой функции Лагранжа
 	* Метод возможных направлений

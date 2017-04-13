@@ -50,7 +50,7 @@
 4. Задача условной минимизации
 	* [Метод проекции градиента и условного градиента](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/19-SimpleStructureSet/Seminar19.ipynb)
 	* [Методы внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/20-InteriorPoint/Seminar20.ipynb)
-	* Метод модифицированой функции Лагранжа и внешних штрафов
+	* [Метод модифицированой функции Лагранжа и внешних штрафов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/21-Penalty/Seminar21.ipynb)
 5. Другие темы
 	* [Задача наименьших квадратов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/16-LSQ/Seminar16.ipynb)
 	* Последовательное квадратичное программирование 

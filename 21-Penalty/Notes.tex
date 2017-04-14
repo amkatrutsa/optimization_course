@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bA}{\mathbf{A}}
+\usepackage{indentfirst}
+\usepackage{secdot}
+\usepackage{color}
+
+\title{Примеры решения задач методом внешних штрафов и методом модифицированной функции Лагранжа}
+\author{Александр Катруца}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Методом внешних штрафных функций решить следующую задачу:
+\begin{equation*}
+\begin{split}
+& \min x^2 + 2y^2 + z^2 + xy\\
+\text{s.t. } & x + 2y + z \geq 3
+\end{split}
+\end{equation*}
+Решение: запишем задачу безусловной оптимизации, используя штрафную функцию для огранчений типа неравенств
+\begin{equation}
+\min x^2 + 2y^2 + z^2 + xy + \frac{\mu}{2} (\max(-x - 2y - z + 3, 0))^2
+\label{eq::penalty_problem}
+\end{equation}
+
+Рассмотрим 2 случая:
+\begin{enumerate}
+\item $-x - 2y - z + 3 \leq 0$. Тогда задача~\eqref{eq::penalty_problem} примет вид:
+\begin{equation*}
+\min x^2 + 2y^2 + z^2 + xy
+\end{equation*}
+Из необходимых условий экстремума следует, что единственная точка, которая им удовлетворяет~--- это точка $(0, 0, 0)$.
+Однако она не удовлетворяет предположению, при котором была получена ($-0 - 2 \cdot 0 - 0 + 3 \not \leq 0$).
+\item $-x - 2y - z + 3 \geq 0$. Тогда задача~\eqref{eq::penalty_problem} примет вид:
+\begin{equation*}
+\min x^2 + 2y^2 + z^2 + xy + \frac{\mu}{2}(x + 2y + z - 3)^2
+\end{equation*}
+Выпишем необходимые условия экстремума:
+\[
+\begin{cases}
+2x + y + \mu (x + 2y + z - 3) = 0 \\
+4y + x + 2\mu (x + 2y + z - 3) = 0\\
+2z + \mu (x + 2y + z - 3) = 0
+\end{cases}
+\;
+\begin{cases}
+(\mu + 2)x + (2\mu + 1)y + \mu z = 3\mu\\
+(2\mu + 1)x + (4\mu + 4)y + 2\mu z = 6\mu \\
+\mu x + 2\mu y + (\mu + 2)z = 3\mu
+\end{cases}
+\]
+Далее выразим $x,y,z$ через $\mu$ и определим, к чему сходятся эти выражения при $\mu \to \infty$:
+\[
+\begin{cases}
+x = 3 - 2y - \left(1 + \frac{2}{\mu}\right)z\\
+y = \frac{1}{2}\left(-3 + z \left(5 + \frac{2}{\mu} \right) \right)\\
+z\left(1 + \frac{2}{\mu} + 4 + \frac{2}{3}\left( 4 + \frac{4}{\mu} \right)\right) = 7
+\end{cases}
+\;
+\begin{cases}
+x = \frac{12}{23}\\
+y = \frac{18}{23}\\
+z = \frac{21}{23}
+\end{cases}
+\]
+\end{enumerate}
+
+\item
+\end{enumerate}
+\end{document}

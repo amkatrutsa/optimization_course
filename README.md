@@ -46,13 +46,11 @@
 	* [Метод сопряжённых градиентов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/15-ConjGrad/Seminar15.ipynb)
 3. Линейное программирование
 	* [Симплекс-метод](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/17-LinProgSimplex/Seminar17.ipynb)
-	* Прямо-двойственные методы
+	* [Прямой метод внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/18-LinProgPrimalInterior/Seminar18.ipynb)
 4. Задача условной минимизации
-	* Метод условного градиента
-	* Метод проекции градиента
-	* Метод штрафных и барьерных функций
-	* Метод модифицированой функции Лагранжа
-	* Метод возможных направлений
+	* [Метод проекции градиента и условного градиента](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/19-SimpleStructureSet/Seminar19.ipynb)
+	* [Методы внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/20-InteriorPoint/Seminar20.ipynb)
+	* [Метод модифицированой функции Лагранжа и внешних штрафов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/21-Penalty/Seminar21.ipynb)
 5. Другие темы
 	* [Задача наименьших квадратов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/16-LSQ/Seminar16.ipynb)
 	* Последовательное квадратичное программирование 
@@ -61,7 +59,9 @@
 	* Стохастические методы: Adagrad, SAG, etc
 	* Методы для задач с разреженностью
 	* Проксимальные методы
-	* 
+	* Оптимизация на Римановых многообразиях
+	* Оптимизация субмодулярных функций
+	* ...
 
 ## Список дополнительных материалов
 

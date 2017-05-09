@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bA}{\mathbf{A}}
+\usepackage{indentfirst}
+\usepackage{secdot}
+\usepackage{color}
+
+\title{Примеры решения задач методом внешних штрафов и методом модифицированной функции Лагранжа}
+\author{Александр Катруца}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Методом внешних штрафных функций и методом модифицированной функции Лагранжа решить следующую задачу:
+\begin{equation*}
+\begin{split}
+& \min x^2 + 2y^2 + z^2 + xy\\
+\text{s.t. } & x + 2y + z \geq 3
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item Решение методов штрафов: запишем задачу безусловной оптимизации, используя штрафную функцию для огранчений типа неравенств
+\begin{equation}
+\min x^2 + 2y^2 + z^2 + xy + \frac{\mu}{2} (\max(-x - 2y - z + 3, 0))^2
+\label{eq::penalty_problem}
+\end{equation}
+
+Рассмотрим 2 случая:
+\begin{enumerate}
+\item $-x - 2y - z + 3 \leq 0$. Тогда задача~\eqref{eq::penalty_problem} примет вид:
+\begin{equation*}
+\min x^2 + 2y^2 + z^2 + xy
+\end{equation*}
+Из необходимых условий экстремума следует, что единственная точка, которая им удовлетворяет~--- это точка $(0, 0, 0)$.
+Однако она не удовлетворяет предположению, при котором была получена ($-0 - 2 \cdot 0 - 0 + 3 \not \leq 0$).
+\item $-x - 2y - z + 3 \geq 0$. Тогда задача~\eqref{eq::penalty_problem} примет вид:
+\begin{equation*}
+\min x^2 + 2y^2 + z^2 + xy + \frac{\mu}{2}(x + 2y + z - 3)^2
+\end{equation*}
+Выпишем необходимые условия экстремума:
+\[
+\begin{cases}
+2x + y + \mu (x + 2y + z - 3) = 0 \\
+4y + x + 2\mu (x + 2y + z - 3) = 0\\
+2z + \mu (x + 2y + z - 3) = 0
+\end{cases}
+\;
+\begin{cases}
+(\mu + 2)x + (2\mu + 1)y + \mu z = 3\mu\\
+(2\mu + 1)x + (4\mu + 4)y + 2\mu z = 6\mu \\
+\mu x + 2\mu y + (\mu + 2)z = 3\mu
+\end{cases}
+\]
+Далее выразим $x,y,z$ через $\mu$ и определим, к чему сходятся эти выражения при $\mu \to \infty$:
+\[
+\begin{cases}
+x = 3 - 2y - \left(1 + \frac{2}{\mu}\right)z\\
+y = \frac{1}{2}\left(-3 + z \left(5 + \frac{2}{\mu} \right) \right)\\
+z\left(1 + \frac{2}{\mu} + 4 + \frac{2}{3}\left( 4 + \frac{4}{\mu} \right)\right) = 7
+\end{cases}
+\;
+\begin{cases}
+x = \frac{12}{23}\\
+y = \frac{18}{23}\\
+z = \frac{21}{23}
+\end{cases}
+\]
+\end{enumerate}
+\item Решение методом модифицированной функции Лагранжа: составим модифицированную функцию Лагранжа
+\[
+M = x^2 + 2y^2 + z^2 + xy + \frac{1}{2t}\left((\max(0, \lambda + t(-x-2y-z + 3)))^2 - \lambda^2 \right)
+\]
+\begin{enumerate}
+\item если $\max$ обращается в 0, то стационарная точка нарушает ограничения, следовательно, этот случай не даёт решения
+\item иначе, модифицированная функция Лагранжа записывается в виде
+\[
+M = x^2 + 2y^2 + z^2 + xy + \frac{1}{2t}\left((\lambda + t(-x-2y-z + 3))^2 - \lambda^2 \right)
+\] 
+Необходимое условие экстремума примет вид
+\[
+\begin{cases}
+x(t+2) + y(2t + 1) + tz = \lambda + 3t\\
+x(2t + 1) + y (4t + 4) + 2tz = 2\lambda + 3t\\
+xt + 2ty + (t + 2)z = \lambda + 3t
+\end{cases}
+\;
+\begin{cases}
+x = \frac{1}{t}\left( \lambda + 3t - 2ty - z(t+2) \right) \to 3 - 2y - z\\
+y = \frac{1}{3t}(6t + 2\lambda - 4z(t + 1)) \to 2 - \frac{4}{3}\frac{21}{23} = \frac{18}{23}\\
+z = \frac{-7t - 7\lambda/3 }{-23t/3 - 14/3} \to \frac{21}{23}
+\end{cases}
+\]
+Далее для опредедения значения двойственной переменной $\lambda$ необходимо в выражение
+\[
+\lambda = \lambda + t (-x - 2y - z + 3)
+\]
+подставить выражения $x(\lambda, t), y(\lambda, t), z(\lambda, t)$ и перейти к пределу при $t \to \infty$.
+Таким образом, $\lambda^* = \frac{42}{23}$.
+\end{enumerate}
+Важные замечания:
+\begin{itemize}
+\item если в процессе решения получаются бесконечности, то есть например в выражении для $z$ в числителе стоит полином большей степени, чем в знаменателе, значит Вы где-то ошиблись
+\item если Вы получили значения прямых переменных, такие что ограничение-неравенство активно, значит Вы скорее всего получите ненулевое значение двойственной переменной
+\item можно аналитически решить задачу с помощью условий ККТ и сравнить решение с полученным для проверки его правильности.
+Для реальных задач этого сделать нельзя.
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,283 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+  
+\title[Seminar 1]{Optimization Methods. \\
+Seminar 1. Introduction.}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{5 September 2016}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Survey for students}
+\begin{itemize}
+\item Name
+\item Base chair
+\item Final project in Computer Science course
+\item Familiarity with \LaTeX
+\item Expectations of this course
+\item Favorite course for 2 study-years and why
+\item Future directions: academia, industry, etc.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Expected outcome of this course}
+\begin{itemize}
+\item Formalization of the problem: how to select an element from a set?
+\item Justification of the decision correctness
+\item Wide range of applications:
+\begin{itemize}
+\item machine learning: classification, clustering, regression
+\item molecular modeling
+\item risk analysis
+\item portfolio optimization
+\item optimal control
+\item sigmal processing
+\item parameters estimation in statistic
+\item many-many others\footnote{\url{http://www.cvxpy.org/en/latest/examples/index.html}}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Short syllabus~--- general}
+Fall term (theory):
+\begin{itemize}
+\item Convex analysis
+\item Duality theory
+\item Optimality conditions
+\end{itemize}
+
+Spring term (practice):
+\begin{itemize}
+\item Methods for uncontrained optimization problems first and second orders
+\item Methods for constrained optimization problems
+\item Linear programming: simplex method and others
+\item Optimal methods
+\item ...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fall term syllabus~--- detailed}
+\begin{itemize}
+\item Lecture and seminar~--- once a week
+\item Two problem sets
+\item Final test in the end of term \\ (and midterm test in the middle of the term)
+\item Oral exam in the end of term. 
+Grading policy~--- average the following grades:
+\begin{itemize}
+\item grade for the term 
+\item grade for the exam
+\end{itemize}
+\item Minitests at the beginning of every seminar 
+\item Homework after every seminar~--- \LaTeX
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Prerequisities}
+\begin{itemize}
+\item Linear algebra
+\item Calculus
+\item Programming: Python (NumPy, SciPy, CVXPY) or MATLAB
+\item Selected topics of computational mathematics
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Methodology}
+Main steps of usage optimization methods in solving real-world problems:
+\begin{enumerate}
+\item define objective function
+\item define feasible set
+\item optimization problem statement and its analysis
+\item selection of the best algorithm for stated problem
+\item algorithm implementation and verification its correctness
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Problem statement}
+\begin{equation*}
+\begin{split}
+&\min\limits_{\bx \in X} f_0(\bx)\\
+\text{s.t. } & f_i(\bx) = 0, \; i = 1,\ldots,p\\
+& f_j(\bx) \leq 0, \; j = n+1,\ldots,m,
+\end{split}
+\end{equation*}
+\begin{itemize}
+\item $\bx \in \bbR^n$~--- target variable
+\item $f_0(\bx): \bbR^n \rightarrow \bbR$~--- objective function
+\item $f_j(\bx): \bbR^n \rightarrow \bbR$~--- constraints functions
+\end{itemize}
+Example: selection items to invest money and defining how much money invest in every item:
+\begin{itemize}
+\item $\bx$~--- amount of money to invest in every item
+\item $f_0$~--- total risk or revenue deviation
+\item $f_j$~--- budget constraints, min/max invest in item, minimal accepted revenue...
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{How to solve?}
+General case:
+\begin{itemize}
+\item NP-hard
+\item {\small randomized algorithms: time vs stability}
+\end{itemize}
+
+{\small BUT some families of problems can be solved very fast!}
+
+\begin{itemize}
+\item Linear programming
+\item Least squares problem
+\item Lowrank approximation
+\item Convex optimization
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Linear programming}
+\begin{equation}
+\begin{split}
+&\min\limits_{\bx \in \bbR^n} \bc^{\T}\bx\\
+\text{s.t. } & \ba^{\T}_i \bx \leq c_i, \; i = 1,\ldots, m
+\end{split}
+\label{eq::lin_prog}
+\end{equation}
+\begin{itemize}
+\item no analytical solution
+\item effective algorithms exist
+\item developed technology
+\item simplex method for solving problem~\eqref{eq::lin_prog} is  included in the TOP-10 algorithms of XX century\footnote{\url{https://www.siam.org/pdf/news/637.pdf}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Least squares problem}
+\begin{equation}
+\min\limits_{\bx \in \bbR^n} \|\bA\bx - \mathbf{b} \|^2_2,
+\label{eq::least_sq}
+\end{equation}
+where $\bA \in \bbR^{m \times n}$ and $\mathbf{b} \in \bbR^m$
+\begin{itemize}
+\item analytical solution: $\bx^* = (\bA^{\T}\bA)^{-1}\bA^{\T}\mathbf{b}$
+\item effective algorithms exist
+\item developed technology
+\item statistical interpretation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Lowrank approximation}
+
+\begin{equation}
+\begin{split}
+&\min\limits_{\bX \in \bbR^{m \times n}} \|\bA - \bX \|_F \\
+\text{s.t. } & \text{rank}(\bX) \leq k
+\end{split}
+\label{eq::lowrank}
+\end{equation}
+
+\begin{Theorem}[Eckart–Young, 1993]
+Let $\bA = \bU\bSigma\bV^{\T}$~be a singular value decomposition of matrix $\bA$, where $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ and $r = \text{rank}(\bA)$.  
+Then the solutuon of the problem~\eqref{eq::lowrank} can be written as:
+\[
+\bX = \hat{\bU} \hat{\bSigma} \hat{\bV}^{\T},
+\]
+where $\hat{\bU} \in \bbR^{m \times k}$, $\hat{\bSigma} = \diag{\sigma_1, \ldots, \sigma_k}$, $\hat{\bV} \in \bbR^{n \times k}$.
+\end{Theorem}
+\small Algorithms to compute SVD are stable and fast simultaneously
+\end{frame}
+
+\begin{frame}{Convex optimization}
+\begin{equation}
+\begin{split}
+&\min\limits_{\bx \in \bbR^n} f_0(\bx)\\
+\text{s.t. } & f_i(\bx) \leq b_i, \; i = 1,\ldots, m
+\end{split}
+\label{eq::conv_opt}
+\end{equation}
+\begin{itemize}
+\item $f_0, f_i$~--- convex functions:
+\[
+f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
+\]
+where $\alpha, \beta \geq 0$ and $\alpha + \beta = 1$.
+\item no analytical solution
+\item effective algorithms exist
+\item recognition convex optimization problem is often difficult
+\item techniques to reformulate a problem to the form~\eqref{eq::conv_opt} exist
+\end{itemize}
+\end{frame}
+
+\begin{frame}{What problem is easier?}
+
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+Search independent alphabet of the maximum cardinality
+\begin{equation*}
+\begin{split}
+&\max\limits_{\bx \in \bbR^n} \sum\limits_{i=1}^n x_i\\
+\text{s.t. } & x_i^2 - x_i = 0 \quad i = 1,\ldots, n\\
+& x_ix_j = 0 \qquad \forall (i, j) \in \Gamma,
+\end{split}
+\end{equation*}
+where $\Gamma$ is a set of pairs
+\end{column}
+~
+\begin{column}{0.5\textwidth}
+\small
+Truss design
+\begin{equation*}
+\begin{split}
+& \min -2\sum\limits_{i=1}^k\sum\limits_{j=1}^m c_{ij} x_{ij} + x_{00}\\
+\text{s.t. } & \sum\limits_{i=1}^k x_i = 1\\
+& \lambda_{\min}(\bA) \geq 0,
+\end{split}
+\end{equation*}
+\scriptsize
+where $\bA = 
+\begin{bmatrix}
+x_1 & \ldots & \ldots & \sum\limits_{j=1}^m b_{pj}x_{1j}\\
+\vdots & \ddots & & \vdots\\
+ & & x_k & \sum\limits_{j=1}^m b_{pj}x_{kj}\\
+\sum\limits_{j=1}^m b_{pj}x_{1j} & \ldots & \sum\limits_{j=1}^m b_{pj}x_{kj} & x_{00}
+\end{bmatrix}
+$
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Why convexity is so important?}
+\begin{block}{R. Tyrrell Rockafellar (1935~---)}
+The great watershed in optimization is not between linearity and
+non-linearity, but convexity and non-convexity.
+\end{block}
+\begin{itemize}
+\item Local optimum is global
+\item Necessary optimality condition is sufficient
+\end{itemize}
+Questions:
+\begin{itemize}
+\item Is any convex optimization problem solved efficiently?
+\item Could non-convex optimization problems be solved efficiently?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Admistrative issues
+\item Objective of the Optimization Methods course
+\item General optimization problem statement
+\item Classical optimization problems
+\end{itemize}
+\end{frame}
+
+\end{document}

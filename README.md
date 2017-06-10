@@ -13,6 +13,8 @@
 
 1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1.pdf)
 
+   [Introduction](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1en.pdf)
+
 2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2.pdf)
 
 3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3.pdf)

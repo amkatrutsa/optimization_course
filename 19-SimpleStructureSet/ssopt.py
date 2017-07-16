@@ -6,7 +6,7 @@ class ProjGD():
     '''
     Class represents projected gradient descent method 
     '''
-    def __init__(self, maxiter=100, tol=1e-6):
+    def __init__(self, maxiter=None, tol=1e-6):
         self.f = None
         self.grad = None
         self.proj = None
@@ -39,43 +39,48 @@ class ProjGD():
             self.callback(x)
         if "disp" not in p:
             p["disp"] = 1
+        i = 1
         start = time.time()
-        for i in xrange(self.maxiter):
+        while True:
             prev_f = self.f(x_prev, p)
-            if p["disp"] > 0 and ((i < 10) or ((i + 1) % 10 == 0 and (i + 1) >= 10)):
-                print("Iteration = {0}: f = {1}".format(i + 1, prev_f))
-                print("Number non-zeros elements in x = {0}".format(np.sum(x != 0)))
+            if p["disp"] > 0 and ((i < 10) or (i % 10 == 0 and i >= 10)):
+                print("Iteration = {0}: f = {1}".format(i, prev_f))
             current_gradient = self.grad(x, p)
             alpha = self.backtracking(x, -current_gradient, p)
             y = x - alpha * current_gradient
             x = self.proj(y)
-            f_diff = prev_f - self.f(x, p)
+            current_f = self.f(x, p)
+            f_diff = prev_f - current_f
             x_diff = x - x_prev
             if self.callback is not None:
                 self.callback(x)
-            if (i + 1) % 10 == 0 and p["disp"] > 1:
+            if i % 10 == 0 and p["disp"] > 1:
                 print("Diff function =", f_diff)
                 print("Norm diff x =", np.linalg.norm(x_diff))
             if f_diff <= self.tol: # and np.linalg.norm(x_diff) <= self.tol:
-                print("Tolerance reached on iteration", i + 1)
-                print("Diff function =", f_diff)
-                print("Norm diff x =", np.linalg.norm(x_diff))
-                print("f* =", prev_f - f_diff)
+                if p["disp"] > -1:
+                    print("Tolerance reached on iteration", i + 1)
+                    print("Diff function =", f_diff)
+                    print("Norm diff x =", np.linalg.norm(x_diff))
+                    print("f* =", current_f)
+                break
+            if self.maxiter is not None and i == self.maxiter:
+                if p["disp"] > -1:
+                    print("Max iterations = {0} exceeds".format(self.maxiter))
+                    print("Diff function on last iteration =", f_diff)
+                    print("Norm diff x on last iteration =", np.linalg.norm(x_diff))
+                    print("f* =", current_f)
                 break
             x_prev = x.copy()
+            i += 1
         fin = time.time()
-        if i == self.maxiter - 1:
-            print("Max iterations = {0} exceeds".format(self.maxiter))
-            print("Diff function on last iteration =", f_diff)
-            print("Norm diff x on last iteration =", np.linalg.norm(x_diff))
-            print("f* =", prev_f - f_diff)
-        return {"x": x, "time": fin - start}
+        return {"x": x, "time": fin - start, "num_iter": i}
     
 class CondGD():
     '''
     Class represents conditional gradient descent method aka Frank Wolfe algorithm
     '''
-    def __init__(self, maxiter=100, tol=1e-6):
+    def __init__(self, maxiter=None, tol=1e-6):
         self.f = None
         self.grad = None
         self.linprogsolver = None
@@ -105,11 +110,12 @@ class CondGD():
             self.callback(x)
         if "disp" not in p:
             p["disp"] = 1
+        i = 1
         start = time.time()
-        for i in xrange(self.maxiter):
+        while True:
             prev_f = self.f(x_prev, p)
-            if p["disp"] > 0 and ((i < 10) or ((i + 1) % 10 == 0 and (i + 1) >= 10)):
-                print("Iteration = {0}: f = {1}".format(i + 1, prev_f))
+            if p["disp"] > 0 and ((i < 10) or (i % 10 == 0 and i >= 10)):
+                print("Iteration = {0}: f = {1}".format(i, prev_f))
             current_gradient = self.grad(x, p)
             s = self.linprogsolver(current_gradient)
             cond_grad = s - x
@@ -120,20 +126,24 @@ class CondGD():
             x_diff = x - x_prev
             if self.callback is not None:
                 self.callback(x)
-            if (i + 1) % 10 == 0 and p["disp"] > 1:
+            if i % 10 == 0 and p["disp"] > 1:
                 print("Diff function =", f_diff)
                 print("Norm diff x =", np.linalg.norm(x_diff))
             if f_diff <= self.tol: # and np.linalg.norm(x_diff) <= self.tol:
-                print("Tolerance reached on iteration", i + 1)
-                print("Diff function =", f_diff)
-                print("Norm diff x =", np.linalg.norm(x_diff))
-                print("f* =", current_f)
+                if p["disp"] > -1:
+                    print("Tolerance reached on iteration", i)
+                    print("Diff function =", f_diff)
+                    print("Norm diff x =", np.linalg.norm(x_diff))
+                    print("f* =", current_f)
+                break
+            if self.maxiter is not None and i == self.maxiter:
+                if p["disp"] > -1:
+                    print("Max iterations = {0} exceeds".format(self.maxiter))
+                    print("Diff function on last iteration =", f_diff)
+                    print("Norm diff x on last iteration =", np.linalg.norm(x_diff))
+                    print("f* =", current_f)
                 break
             x_prev = x.copy()
+            i += 1
         fin = time.time()
-        if i == self.maxiter - 1:
-            print("Max iterations = {0} exceeds".format(self.maxiter))
-            print("Diff function on last iteration =", f_diff)
-            print("Norm diff x on last iteration =", np.linalg.norm(x_diff))
-            print("f* =", prev_f - f_diff)
-        return {"x": x, "time": fin - start}
+        return {"x": x, "time": fin - start, "num_iter": i}

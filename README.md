@@ -73,17 +73,19 @@
 
 3. [Курс по оптимизации и выпуклому анализу в MIT](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-253-convex-analysis-and-optimization-spring-2012/)
 
-4. [Ю.Е. Нестеров. Методы выпуклой оптимизации](https://www.dropbox.com/s/fsugv65mz5iqpxl/Nesterov.pdf?dl=0)
+4. [Курс по оптимизации L. Vandenberghe в UCLA](http://www.seas.ucla.edu/~vandenbe/ee236b/ee236b.html) 
 
-5. [Б.Т. Поляк. Введение в оптимизацию](https://www.dropbox.com/s/odu8pjystlchz15/polyak-optimizationintro.pdf?dl=0)
+5. [Ю.Е. Нестеров. Методы выпуклой оптимизации](https://www.dropbox.com/s/fsugv65mz5iqpxl/Nesterov.pdf?dl=0)
 
-6. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)
+6. [Б.Т. Поляк. Введение в оптимизацию](https://www.dropbox.com/s/odu8pjystlchz15/polyak-optimizationintro.pdf?dl=0)
 
-7. [Matrix Cookbook](https://www.dropbox.com/s/ymsjldwl8qxqlp8/matrixcookbook.pdf?dl=0)
+7. [Лекции А. Юдицкого в Grenoble UJF](http://ljk.imag.fr/membres/Anatoli.Iouditski/)
 
-8. [Видео лекций S. Boyd'a по курсу Convex Optimization в Stanford'е](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+8. [Matrix Cookbook](https://www.dropbox.com/s/ymsjldwl8qxqlp8/matrixcookbook.pdf?dl=0)
 
-9. [Миникурс по выпуклой оптимизации от S. Boyd'a](http://stanford.edu/~boyd/papers/cvx_short_course.html)
+9. [Видео лекций S. Boyd'a по курсу Convex Optimization в Stanford'е](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+
+10. [Миникурс по выпуклой оптимизации от S. Boyd'a](http://stanford.edu/~boyd/papers/cvx_short_course.html)
 
 
 ## Список ссылок на материалы по оптимизации

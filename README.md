@@ -7,6 +7,8 @@
 
 [Самый минимум к экзамену и сдаче заданий по материалам весеннего семестра](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/MinimumSpring.pdf)
 
+[Напоминание необходимых фактов из линейной алгебры](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/la_crash_course.ipynb)
+
 ## Ссылки на материалы семинаров
 
 ### Осенний семестр

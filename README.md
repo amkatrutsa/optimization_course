@@ -19,6 +19,8 @@
 
 2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2.pdf)
 
+   [Convex sets](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2en.pdf)
+
 3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3.pdf)
 
 4. [Сопряжённые множества. Лемма Фаркаша](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4.pdf)

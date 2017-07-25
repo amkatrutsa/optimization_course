@@ -1,0 +1,149 @@
+\documentclass[12pt,russian]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 2]{Optimization Methods. \\
+Seminar 2. Convex sets.}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology,\\
+Department of Computational and Applied Mathematics} 
+\date{September 12, 2016}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+
+\begin{itemize}
+\item Objective of the Optimization Methods course
+\item General optimization problem statement
+\item Examples of optimization problems: 
+\begin{itemize}
+\item linear programming
+\item least squares problem
+\item convex optimization problems
+\end{itemize}
+\item Why convex optimization problems are good?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Affine sets}
+\small
+\begin{block}{Affine set}
+Let $A$ be affine set if for any $x_1$, $x_2 \in A$ and $\theta \in \bbR$ point $\theta x_1 + (1 - \theta)x_2 \in A$.
+\end{block}
+Examples: $\bbR^n$, hyperplane, single point.
+
+\begin{block}{Affine combination of points}
+Assume $x_1, \ldots, x_k \in G$, then point $\theta_1 x_1 + \ldots + \theta_k x_k$ is called affine combination of the points $x_1,\ldots,x_k$ if {\color{red}{$\sum\limits_{i=1}^k \theta_i = 1$}}.
+\end{block}
+
+\begin{block}{Affine hull of set}
+A set $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\sum\limits_{i=1}^k \theta_i = 1}} \right\}$ is called affine hull of set $G$ and is denoted by \textbf{aff}(G).
+\end{block}
+\end{frame}
+
+\begin{frame}{Claims}
+
+\begin{block}{Claim 1}
+A set $G$ is affine if and only if it contains all affine combinations of points from $G$.
+\end{block}
+
+\begin{block}{Claim 2}
+A set $G$ is affine if and only if it can be represented in the form  $G = \{\bx | \bA\bx = \mathbf{b} \}$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Convex set}
+\small
+\begin{block}{Convex set}
+Let $C$ be a convex set if 
+\vspace{-4mm}
+\[
+\forall x_1, \; x_2 \in C, \theta \in [0, 1] \rightarrow \theta x_1 + (1 - \theta)x_2 \in C.
+\vspace{-4mm}
+\]
+$\emptyset$ и $\{ x_0 \}$ are also convex by definition.
+\end{block}
+Examples: $\bbR^n$, affine set, half-open segment, segment.
+
+\begin{block}{Convex combination of points}
+Assume $x_1, \ldots, x_k \in G$, then point $\theta_1 x_1 + \ldots + \theta_k x_k$ is called convex combination of points $x_1,\ldots,x_k$ if {\color{red}{$\sum\limits_{i=1}^k \theta_i = 1, \;\theta_i \geq 0$}}.
+\end{block}
+
+\begin{block}{Convex hull}
+A set $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\sum\limits_{i=1}^k \theta_i = 1, \theta_i \geq 0}} \right\}$ is called convex combination of a set $G$ and is denoted by \textbf{conv}(G).
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Operations that preserve convexity}
+\begin{itemize}
+\item Intersection of any number (finite or infinite) of convex sets is convex set.
+\item Image of convex set under affine function is convex function
+\item Linear combination of convex sets is convex
+\item Direct product of convex sets is convex
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples}
+Check if the following sets are affine and/or convex:
+\begin{itemize}
+\item Half-space: $\{ \bx | \ba^{\T} \bx \leq c \}$
+\item Polyhedron: $\{ \bx | \bA\bx \preceq \mathbf{b}, \; \bC\bx = 0 \}$
+\item A ball induced by norm in $\bbR^n$: $B(r, x_c) = \{ x \; | \; \| x - x_c \| \leq r \}$
+\item Ellipsoid: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r \}$
+\item A set of symmetric and positive-definite matrices: $\bS^n_+ = \{ \bX \in \bbR^{n \times n} \; | \; \bX^{\T} = \bX, \; \bX \succeq 0 \}$
+\item $\{ \bX \in \bbR^{n \times n} \; | \; \Tr(\bX) = const \}$
+\item Hyberbolic set: $\{ \bx \in \bbR^n_+ \; | \; \prod\limits_{i=1}^n x_i \geq 1 \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cone}
+\small
+\begin{block}{Cone (convex)}
+Let a set $C$ be a cone (convex cone), if 
+\vspace{-4mm}
+\begin{equation*}
+\begin{split}
+& \forall x \in C, \theta \geq 0 \rightarrow \theta x \in C \\
+& (\forall x_1, x_2 \in C, \theta_1, \theta_2 \geq 0 \rightarrow \theta_1 x_1 + \theta_2 x_2 \in C)
+\end{split}
+\end{equation*}
+\vspace{-4mm}
+\end{block}
+Examples: $\bbR^n$, affine set with 0, half-open segment.
+\begin{block}{Conical (non-negative) combination of points}
+Assume $x_1, \ldots, x_k \in G$, then point $\theta_1 x_1 + \ldots + \theta_k x_k$ is called conic (non-negative) combination of points $x_1,\ldots,x_k$ if {\color{red}{$\theta_i \geq 0$}}.
+\end{block}
+
+\begin{block}{Conical hull}
+A set $\left\{ \sum\limits_{i=1}^k \theta_i x_i \; | \; x_i \in G, {\color{red}{\theta_i \geq 0}} \right\}$ is called conical hull of a set $G$ and is denoted by \textbf{cone}(G).
+\end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item $\bS^n_+$
+\item Normal cone: $\{ (\bx, t) \in \bbR^{n+1} \; | \; \| \bx \| \leq t \}$ 
+
+In case of $\ell_2$ norm it is called second-order cone or Lorentz cone
+\item Some special cases
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Affine set
+\item Convex set
+\item Cone
+\item Methods to check properties of given set
+\end{itemize}
+\end{frame}
+
+\end{document}

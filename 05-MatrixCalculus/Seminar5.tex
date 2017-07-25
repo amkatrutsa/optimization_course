@@ -1,13 +1,8 @@
-\documentclass[12pt,russian]{beamer}
-\usepackage{mypres}
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
-\usepackage{tikz}
-\usetikzlibrary{automata,positioning}
-\usetikzlibrary{arrows}
-\newcommand{\relint}{\mathbf{relint}}
-\newcommand{\inter}{\mathbf{int}}
 
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
@@ -87,7 +82,7 @@ text centered}
 \item Квадратичная форма: $f(\bx) = \frac{1}{2}\bx^{\T}\bA\bx + \mathbf{b}^{\T}\bx$
 \item Квадрат $\ell_2$ нормы разности: $f(\bx) = \|\bA\bx - \mathbf{b}\|^2_2$
 \item Детерминант: $f(\bX) = \det{\bX}$
-\item След: $f(\bX) = \Tr(\bA\bX\bB)$
+\item След: $f(\bX) = \Tr(\bA\bX\bfB)$
 \item $f(\bx) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
 \item $f(\bA) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
 \item $f(\bs) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$

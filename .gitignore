@@ -8,3 +8,6 @@
 *.snm
 .ipynb_checkpoints/
 *.pyc
+*.bbl
+*.blg
+*.dvi

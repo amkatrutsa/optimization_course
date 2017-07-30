@@ -59,6 +59,7 @@
 	* [Метод модифицированой функции Лагранжа и внешних штрафов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/21-Penalty/Seminar21.ipynb)
 5. Другие темы
 	* [Задача наименьших квадратов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/16-LSQ/Seminar16.ipynb)
+	* [Оптимальный метод Нестерова и обыкновенные дифференциальные уравнения](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/ODE4NesterovAcc/ODE4NesterovAcc.ipynb)
 	* Последовательное квадратичное программирование 
 	* Оптимальные методы и нижние оценки (теория)
 	* Зеркальный спуск и ускорения Нестерова

@@ -92,6 +92,8 @@
 
 10. [Миникурс по выпуклой оптимизации от S. Boyd'a](http://stanford.edu/~boyd/papers/cvx_short_course.html)
 
+11. [Nonlinear Optimization by A. Ruszczy](https://www.dropbox.com/s/w6ax8vzzjdxniaq/Andrzej_Ruszczy_Nonlinear_Optimization.pdf?dl=0)
+
 
 ## Список ссылок на материалы по оптимизации
 

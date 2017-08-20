@@ -1,3 +1,3 @@
-[Русская версия](./README_ru.md)
+[Методы оптимизации, ФУПМ МФТИ](./README_ru.md)
 
-[English version](./README_en.md)
+[Optimization Methods, DCAM MIPT](./README_en.md)

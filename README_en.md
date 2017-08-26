@@ -9,6 +9,8 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 2. [Convex sets](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2en.pdf)
 
+3. [Projection onto set, separation, support hyperplane](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3en.pdf)
+
 
 ### Spring term
 

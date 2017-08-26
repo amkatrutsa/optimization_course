@@ -1,0 +1,183 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{multimedia}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 3]{Optimization Methods. \\
+ Seminar 3. Projection of a point on a set, separation, support hyperplane.}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology,\\
+Department of Control and Applied Mathematics} 
+\date{September 19, 2016}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Affine hull and affine set
+\item Convex hull and convex set
+\item Conical hull and convex cone
+\item Operations that preserve convexity
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Types interior of a set}
+
+\begin{block}{Interior of a set}
+Interior of a set $G$ consists of points from $G$ such that:
+\[ 
+\inter G = \{ \bx \in G \; | \; \exists \varepsilon > 0, B(\bx, \varepsilon) \subset G\},
+\]
+where $B(\bx, \varepsilon) = \{ \by \; | \; \| \bx - \by \| \leq \varepsilon \}$
+\end{block}
+
+\begin{block}{Relative interior of a set}
+Relative interior of set $G$ is called the following set: 
+\[
+\relint G = \{ \bx \in G \; | \; \exists \varepsilon > 0,  B(\bx, \varepsilon) \cap \mathbf{aff} G \subseteq G \}
+\]
+\end{block}
+Q: why do we need relative interior concept?
+\end{frame}
+
+\begin{frame}{Examples}
+Find relative interior of the following sets
+\begin{itemize}
+\item $\{ \bx \in \bbR^n | \bA\bx = \mathbf{b} \}$
+\item $\{ \bx \in \bbR^n | \sum\limits_{i=1}^n \alpha_i x_i^2 \leq 1, \; \alpha_i > 0 , i = 1,\ldots, n \}$ 
+\item $\{ \bx \in \bbR^n | \sum\limits_{i=1}^n \alpha_i x_i^2 = 1, \; \alpha_i > 0 , i = 1,\ldots, n \}$ 
+\item $\{ (x_1, x_2, x_3) \in \bbR^3 | -1 \leq x_1 \leq 1, \; -1 \leq x_2 \leq 1, \; x_3 = 0 \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Projection of point on a set}
+\small
+\begin{block}{Distance between a point and a set}
+Let $d$ be a distance between point $\ba \in \bbR^n$ and closed set $X \subset \bbR^n$ according to the norm $\| \cdot \|$:
+\vspace{-4mm}
+\[
+d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
+\]
+\end{block}
+\begin{block}{Projection of a point on a set}
+Let $\pi_X(\ba) \in X$ be a projection of a point $\ba \in \bbR^n$ on a set $X \subset \bbR^n$ according to the norm $\| \cdot \|$:
+\vspace{-4mm}
+\[
+\pi_X(\ba) = \argmin_{\by \in X} \| \ba - \by \|
+\]
+\end{block}
+Q: is projection unique? If not, then in what case it is unique? How uniqueness of projected is related to the convexity of set?
+
+\end{frame}
+
+\begin{frame}{Facts about projections}
+
+\begin{block}{Projection criterion}
+A point $\pi_X(\ba) \in X$ is a projection of a point $\ba$ on a set $X$ $\Leftrightarrow$ $\| \ba - \bx \| \geq \| \ba - \pi_X(\ba) \|, \; \forall \bx \in X$.
+\end{block}
+
+\begin{block}{Projection criterion for $\ell_2$-norm}
+A point $\pi_X(\ba) \in X$ is a projection of a point $\ba$ on a set $X$ $\Leftrightarrow$ $\langle \pi_X(\ba) - \ba, \bx - \pi_X(\ba) \rangle \geq 0, \; \forall \bx \in X$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item Find projection on a ball $\{\bx \in \bbR^2 | \| \bx \|_* \leq 1\}$ in $\ell_1, \; \ell_2$ and $\ell_{\infty}$ norms
+\item Find projection on the affine set $\{ \bx \in \bbR^n | \bA\bx = \mathbf{b}, \; \bA \in \bbR^{m \times n}, rank(\bA) = m \}$
+\item Find projection on the affine set $\{ \bx \in \bbR^n | \bx = \bx_0 + \bS\by, \; \bS \in \bbR^{n \times m}, \; \by \in \bbR^m, rank(\bS) = m \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Separation of a convex sets}
+\small
+\begin{block}{Definitions}
+Let $X_1, X_2 \subset \bbR^n$ be arbitrary sets. 
+They are called:
+\vspace{-3mm}
+\begin{itemize}
+\item separated, if $\exists \bp, \beta: \; \langle\bp, \bx_1 \rangle \geq \beta \geq \langle \bp, \bx_2\rangle$, $\forall \bx_1 \in X_1$ and $\forall \bx_2 \in X_2$.
+\vspace{-3mm}
+\item self-separated, if they are separated and $\exists \bx_1^* \in X$ и $\exists \bx_2^* \in X$: $\langle \bp, \bx_1^* \rangle > \langle \bp, \bx_2^* \rangle$
+\vspace{-3mm}
+\item strong separated if $\exists \bp \neq 0$ и $\beta$: $\inf\limits_{\bx_1 \in X_1} \langle \bp, \bx_1 \rangle > \beta > \sup\limits_{\bx_2 \in X_2} \langle \bp, \bx_2 \rangle$
+\vspace{-3mm}
+\item strict separated if $\forall \bx_1 \in X_1$ и $\forall \bx_2 \in X_2$: $\langle \bp, \bx_1 \rangle > \langle \bp, \bx_2 \rangle$.
+\end{itemize} 
+\end{block}
+
+\begin{block}{Separating hyperplane}
+Separating hyperplane for sets $X_1, X_2$ is a hyperplane $\{ \bx | \langle \bp, \bx \rangle = \beta \}$ such that $\langle \bp, \bx_1 \rangle \geq \beta$ for all $\bx_1 \in X_1$ and $\langle \bp, \bx_2 \rangle \leq \beta$ for all $\bx_2 \in X_2$   
+\end{block}
+\end{frame}
+
+\begin{frame}{Facts about separation}
+\begin{block}{Existence}
+If $X_1$ and $X_2$ be convex and disjoint sets, then there exists hyperplane that separates them. 
+\end{block}
+
+\begin{block}{Separation criterion for convex sets}
+Two convex sets such that at least one of them is open are disjoint if and only if there exists separating hyperplane.
+\end{block}
+
+\begin{block}{Strict separation criterion}
+Two convex sets are strict separated if and only if distance between them is positive.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item Find separating hyperplane for sets $X_1, X_2$: $X_1 = \{ (x_1, x_2) \in \bbR^2 | x_1x_2 > 1, x_1 > 0 \}$, $X_2 = \{ (x_1, x_2) \in \bbR^2 |  x_2 \leq 9 + \frac{4}{x_1 - 1} \}$.
+\item Criterion of consistency the system of strict linear inequalities  $\bA\bx < \mathbf{b}$ in terms of non-intersection of affine set $\{\mathbf{b} - \bA\bx | \bx \in \bbR^n \}$ and set $\{ \by \in \bbR^m | y_i > 0 \}$ 
+\item Example of two closed disjoint convex sets which are not strict separating
+\item Find separating hyperplane for sets $X_1 = \{ \bx \in \bbR^n | \| \bx \|^2_2 \leq 1 \}$ и $X_2 = \{ \bx \in \bbR^n | x_1^2 + \ldots + x_{n-1}^2 + 1 \leq x_n \}$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Supporting hyperplane}
+\begin{block}{Supporting hyperplane}
+A hyperplane $\{ \bx \in \bbR^n | \langle \bp, \bx \rangle = \beta \}$ is called supporting to the set $X$ at boundary point $\bx_0$, if $\langle \bp, \bx \rangle \geq \beta = \langle \bp, \bx_0 \rangle$ for all $\bx \in X$.
+\end{block}
+
+\begin{block}{Self-supporting hyperplane}
+A hyperplane $\{ \bx \in \bbR^n | \langle \bp, \bx \rangle = \beta \}$ is called self-supporting to the set $X$ at point $\bx_0$, if it is supporting and $\exists \tilde{\bx} \in X$: $\langle \bp, \tilde{\bx} \rangle > \beta$.
+\end{block}
+
+\begin{block}{Theorem about supporting hyperplane}
+There exists supporting hyperplane (self-supporting) at any boundary (relative boundary) point of convex set.
+\end{block}
+\end{frame}
+
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item Represent the set $\{ (x_1, x_2) \in \bbR_+^2| x_1x_2 \geq 1\}$ as intersection of hyperplanes
+\item Construct supporting hyperplane to the set $X = \{ (x_1, x_2) \in \bbR^2 | e^{x_1} \leq x_2 \}$ в точке $\bx_0 = (0, 1)$
+\item Find hyperplane which is supporting to the set $X = \{ (x_1, x_2, x_3) \in \bbR^3 | x_3 \geq x_1^2 + x_2^2 \}$ and separating it from the point $\bx_0 = (-5/4, 5 / 16, 15/16)$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Interior and relative interior of convex set
+\item Projection of point on a set
+\item Separation of convex sets
+\item Supporting hyperplane 
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
+
+http://math.stackexchange.com/questions/26456/disjoint-convex-sets-that-are-not-strictly-separated

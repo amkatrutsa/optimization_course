@@ -11,6 +11,8 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 3. [Projection onto set, separation, support hyperplane](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3en.pdf)
 
+4. [Conjugate sets. Farkas' lemma](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4en.pdf)
+
 
 ### Spring term
 

@@ -3,6 +3,8 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 ## Links to resources of seminars
 
+[Crash course on numerical linear algebra](la_crash_course_en.ipynb)
+
 ### Fall term
 
 1. [Introduction](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1en.pdf)

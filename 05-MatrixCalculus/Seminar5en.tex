@@ -1,0 +1,116 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T2A]{fontenc}
+
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 5]{Optimization Methods. \\
+ Seminar 5. Introduction to Matrix calculus.}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{October 3, 2016}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Conjugate sets
+\item Properties of conjugate sets
+\item Farkas' lemma
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Basic definitions}
+More details see \href{https://en.wikipedia.org/wiki/Matrix_calculus}{\color{blue}{\texttt{here}}}.
+Let $f: D \rightarrow E$ be some function, then its derivative $\frac{\partial f}{\partial x} \in G$:
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+$D$ & $E$ & $G$ & Name\\
+\hline
+$\bbR$ & $\bbR$ & $\bbR$ & Derivative, $f'(x)$\\
+\hline
+%$\bbR$ & $\bbR^n$ & $\bbR^n$ & $\frac{\partial f_i}{\partial x}$\\
+%\hline
+%$\bbR$ & $\bbR^{m \times n}$ & $\bbR^{m \times n}$ & $\frac{\partial f_{ij}}{\partial x}$\\
+%\hline
+$\bbR^n$ & $\bbR$ & $\bbR^n$ & Gradient, $\frac{\partial f}{\partial x_i}$\\
+\hline
+$\bbR^n$ & $\bbR^m$ & $\bbR^{n \times m}$ & Jacobian, $\frac{\partial f_i}{\partial x_j}$ \\
+\hline
+$\bbR^{m \times n}$ & $\bbR$ & $\bbR^{m \times n}$ & $\frac{\partial f}{\partial x_{ij}}$\\
+\hline
+\end{tabular}
+\end{table}
+
+Also square matrix $n \times n$ of the second derivatives $\bH = [h_{ij}]$ in case of $f: \bbR^n \rightarrow \bbR$ is called hessian and its elements equal $h_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$.
+\end{frame}
+
+\begin{frame}{The main technique}
+\tikzset{
+%Define style for boxes
+punkt/.style={
+rectangle,
+draw=black,
+minimum height=2em,
+text centered}
+}
+\begin{tikzpicture}
+\node[punkt,text width=4cm] (mat_repres) {Matrix representation of function: $f = \bx^{\T}\bA\bx$};
+\node[punkt,text width=4cm,below=1cm of mat_repres] (scalar_repres) {Scalar representation of function: $f = \sum\limits_{ij}a_{ij}x_ix_j$};
+\draw [->,line width=0.1em,>=stealth] (mat_repres) -- (scalar_repres);
+\node[punkt,text width=5cm,right=2cm of scalar_repres] (scalar_repres_grad) {Scalar representation of gradient: $\nabla f_i = \sum\limits_{j}a_{ij}x_j$};
+\draw [->,line width=0.1em,>=stealth] (scalar_repres) -- node [text width=2cm,midway,above,text centered] {$\nabla f_i = \frac{\partial f}{\partial x_i}$} (scalar_repres_grad);
+\node[punkt, text width=4cm, above=1cm of scalar_repres_grad] (mat_repres_grad)  {Matrix representation of gradient: $\nabla f = \bA\bx$};
+\draw [->,line width=0.1em,>=stealth] (scalar_repres_grad) -- (mat_repres_grad);
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{enumerate}
+\item Linear function: $f(\bx) = \bc^{\T}\bx$
+\item Quadratic form: $f(\bx) = \frac{1}{2}\bx^{\T}\bA\bx + \mathbf{b}^{\T}\bx$
+\item  $\ell_2$ norm of difference squared: $f(\bx) = \|\bA\bx - \mathbf{b}\|^2_2$
+\item Determinant: $f(\bX) = \det{\bX}$
+\item Trace: $f(\bX) = \Tr(\bA\bX\bfB)$
+\item $f(\bx) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\item $f(\bA) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\item $f(\bs) = (\bx - \bA\bs)^{\T}\bW(\bx - \bA\bs)$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Function composition}
+
+Let $f(\bx) = g(u(\bx))$, then $\nabla f(\bx) = \frac{\partial g}{\partial u} \frac{\partial u}{\partial \bx}$
+
+Check dimensions and understand how to write $\frac{\partial g}{\partial u}$.
+
+Examples:
+\begin{enumerate}
+\item $\ell_2$ norm of vector: $f(\bx) = \|\bx\|_2$
+\item Bilinear form: $f(\bx) = u^{\T}(\bx)\bR v(\bx)$, $\bR \in \bbR^{m \times n}$
+\item Exponent: $f(\bx) = - e^{-\bx^{\T}\bx}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Derivative by scalar
+\item Derivative by vector
+\item Derivative by matrix
+\item Derivative of function composition
+\end{itemize}
+\end{frame}
+
+
+\end{document}

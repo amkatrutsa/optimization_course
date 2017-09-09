@@ -13,6 +13,8 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 4. [Conjugate sets. Farkas' lemma](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4en.pdf)
 
+5. [Introduction to matrix calculus](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/05-MatrixCalculus/Seminar5en.pdf)
+
 
 ### Spring term
 

@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
+\setbeamertemplate{enumerate items}[default]
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -12,7 +13,7 @@
 \author{Александр Катруца}
 \institute{Московский физико-технический институт,\\
 Факультет Управления и Прикладной Математики} 
-\date{12 сентября 2016 г.}
+\date{12 сентября 2017 г.}
 \begin{document}
 \begin{frame}
 \maketitle
@@ -92,15 +93,15 @@ $\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 
 \begin{frame}{Примеры}
 Проверьте на аффинность и выпуклость следующие множества:
-\begin{itemize}
+\begin{enumerate}
 \item Полупространство: $\{ \bx | \ba^{\T} \bx \leq c \}$
 \item Многоугольник: $\{ \bx | \bA\bx \preceq \mathbf{b}, \; \bC\bx = 0 \}$
 \item Шар по норме в $\bbR^n$: $B(r, x_c) = \{ x \; | \; \| x - x_c \| \leq r \}$
-\item Эллипсоид: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r \}$
+\item Эллипсоид: $\mathcal{E}(x_c, \bP, r) = \{ x \; | \; (x - x_c)^{\T}\bP^{-1} (x - x_c) \leq r^2 \}$
 \item Множество симметричных положительно-определённых матриц: $\bS^n_+ = \{ \bX \in \bbR^{n \times n} \; | \; \bX^{\T} = \bX, \; \bX \succeq 0 \}$
 \item $\{ \bX \in \bbR^{n \times n} \; | \; \Tr(\bX) = const \}$
 \item Гиперболическое множество: $\{ \bx \in \bbR^n_+ \; | \; \prod\limits_{i=1}^n x_i \geq 1 \}$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Конус}
@@ -127,13 +128,13 @@ $\emptyset$ и $\{ x_0 \}$ также считаются выпуклыми.
 \end{frame}
 
 \begin{frame}{Примеры конусов}
-\begin{itemize}
+\begin{enumerate}
 \item $\bS^n_+$
 \item Нормальный конус: $\{ (\bx, t) \in \bbR^{n+1} \; | \; \| \bx \| \leq t \}$ 
 
 Для $\ell_2$-нормы называется конусом второго порядка или Лоренцевым конусом
 \item Конкретные примеры с числами
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Резюме}

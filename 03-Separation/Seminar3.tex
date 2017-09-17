@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
+\setbeamertemplate{enumerate items}[default]
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -12,7 +13,7 @@
 \author{Александр Катруца}
 \institute{Московский физико-технический институт,\\
 Факультет Управления и Прикладной Математики} 
-\date{19 сентября 2016 г.}
+\date{19 сентября 2017 г.}
 
 \begin{document}
 \begin{frame}
@@ -49,12 +50,12 @@
 
 \begin{frame}{Примеры}
 Найти относительные внутренности следующих множеств
-\begin{itemize}
+\begin{enumerate}
 \item $\{ \bx \in \bbR^n | \bA\bx = \mathbf{b} \}$
 \item $\{ \bx \in \bbR^n | \sum\limits_{i=1}^n \alpha_i x_i^2 \leq 1, \; \alpha_i > 0 , i = 1,\ldots, n \}$ 
 \item $\{ \bx \in \bbR^n | \sum\limits_{i=1}^n \alpha_i x_i^2 = 1, \; \alpha_i > 0 , i = 1,\ldots, n \}$ 
 \item $\{ (x_1, x_2, x_3) \in \bbR^3 | -1 \leq x_1 \leq 1, \; -1 \leq x_2 \leq 1, \; x_3 = 0 \}$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Проекция точки на множество}
@@ -89,11 +90,11 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 \end{frame}
 
 \begin{frame}{Примеры}
-\begin{itemize}
+\begin{enumerate}
 \item Проекция на шар $\{\bx \in \bbR^2 | \| \bx \|_* \leq 1\}$ в различных нормах
 \item Проекция на аффинное множество $\{ \bx \in \bbR^n | \bA\bx = \mathbf{b}, \; \bA \in \bbR^{m \times n}, rank(\bA) = m \}$
 \item Проекция на аффинное множество $\{ \bx \in \bbR^n | \bx = \bx_0 + \bS\by, \; \bS \in \bbR^{n \times m}, \; \by \in \bbR^m, rank(\bS) = m \}$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Отделимость выпуклых множеств}
@@ -133,12 +134,12 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 \end{frame}
 
 \begin{frame}{Примеры}
-\begin{itemize}
+\begin{enumerate}
 \item Построить разделяющую гиперплоскость для множеств $X_1, X_2$: $X_1 = \{ (x_1, x_2) \in \bbR^2 | x_1x_2 > 1, x_1 > 0 \}$, $X_2 = \{ (x_1, x_2) \in \bbR^2 |  x_2 \leq 9 + \frac{4}{x_1 - 1} \}$.
 \item Критерий разрешимости системы строгих линейных неравенств $\bA\bx < \mathbf{b}$ как не пересечение аффинного множества $\{\mathbf{b} - \bA\bx | \bx \in \bbR^n \}$ и множества $\{ \by \in \bbR^m | y_i > 0 \}$ 
 \item Пример двух замкнутых выпуклых не пересекающихся множеств, которые не являются строго отделимыми
 \item Построить разделяющую гиперплоскость для множеств $X_1 = \{ \bx \in \bbR^n | \| \bx \|^2_2 \leq 1 \}$ и $X_2 = \{ \bx \in \bbR^n | x_1^2 + \ldots + x_{n-1}^2 + 1 \leq x_n \}$.
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Опорная гиперплоскость}
@@ -157,11 +158,11 @@ d(\ba, X, \| \cdot \|) = \inf\{\| \ba - \by \| \; | \; \by \in X\}
 
 
 \begin{frame}{Примеры}
-\begin{itemize}
+\begin{enumerate}
 \item Выразить множество $\{ (x_1, x_2) \in \bbR_+^2| x_1x_2 \geq 1\}$ как пересечение гиперплоскостей
 \item Построить опорную гиперплоскость к множеству $X = \{ (x_1, x_2) \in \bbR^2 | e^{x_1} \leq x_2 \}$ в точке $\bx_0 = (0, 1)$
 \item Найти уравнение гиперплоскости опорной к множеству $X = \{ (x_1, x_2, x_3) \in \bbR^3 | x_3 \geq x_1^2 + x_2^2 \}$ и отделяющей его от точки $\bx_0 = (-5/4, 5 / 16, 15/16)$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 

@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
+\setbeamertemplate{enumerate items}[default]
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -12,7 +13,7 @@
 \author{Александр Катруца}
 \institute{Московский физико-технический институт,\\
 Факультет Управления и Прикладной Математики} 
-\date{26 сентября 2016 г.}
+\date{\today}
 
 \begin{document}
 \begin{frame}
@@ -74,13 +75,13 @@ X^{**} = \overline{\text{conv }(X \cup \{0\})}.
 
 \begin{frame}{Примеры}
 Найти сопряжённые к следующим множествам:
-\begin{itemize}
+\begin{enumerate}
 \item Неотрицательный октант: $\bbR^n_+$
 \item Конус положительных полуопределённых матриц: $\bS^n_+$
 \item $\{ (x_1, x_2) | |x_1| \leq x_2 \}$
-\item $\{ \bx \in \bbR^n | \| x \| \leq r \}$
+\item $\{ \bx \in \bbR^n | \| x \|_2 \leq r \}$
 \item $\{ (\bx, t) \in \bbR^{n+1} | \| x \| \leq t \}$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Лемма Фаркаша}

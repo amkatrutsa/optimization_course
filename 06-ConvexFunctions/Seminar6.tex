@@ -12,7 +12,7 @@
 \author{Александр Катруца}
 \institute{Московский физико-технический институт,\\
 Факультет Управления и Прикладной Математики} 
-\date{10 октября 2016 г.}
+\date{\today}
 
 \begin{document}
 \begin{frame}
@@ -124,7 +124,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^
 \end{frame}
 
 \begin{frame}{Примеры}
-\begin{itemize}
+\begin{enumerate}
 \item Квадратичная функция: $f(x) = \frac{1}{2}\bx^{\T}\bP\bx + \bq^{\T}\bx + r$, $\bx \in \bbR^n$
 \item Нормы в $\bbR^n$
 \item $f(\bx) = \log{(e^{x_1} + \ldots + e^{x_n})}$, $\bx \in \bbR^n$
@@ -134,7 +134,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^
 \item Расширение на бесконечное множество функций: если для $\by \in \calA$ функция $f(\bx, \by)$ выпуклая функция по $\bx$, тогда $\sup\limits_{\by \in \calA} f(\bx, \by) $ выпукла по $\bx$
 \item Максимальное собственное значение: $f(\bX) = \lambda_{\max}(\bX) = \sup\{\by^{\T}\bX\by \; | \; \|\by\|_2 = 1\}$ 
 
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Неравенство Йенсена}
@@ -159,12 +159,12 @@ f\left( \int\limits_X p(x)xdx \right) \leq \int\limits_X f(x)p(x)dx
 \end{frame}
 
 \begin{frame}{Примеры}
-\begin{itemize}
+\begin{enumerate}
 \item Неравенство Гёльдера
 \item Неравенство о среднем арифметическом и среднем геометрическом
 \item $f(\bE(x)) \leq \bE(f(x))$
 \item Выпуклость множества $\{ \bx | \prod\limits_{i=1}^n x_i \geq 1 \}$
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}{Резюме}

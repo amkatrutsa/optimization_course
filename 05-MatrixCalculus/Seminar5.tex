@@ -13,7 +13,7 @@
 \author{Александр Катруца}
 \institute{Московский физико-технический институт,\\
 Факультет Управления и Прикладной Математики} 
-\date{3 октября 2016 г.}
+\date{\today}
 
 \begin{document}
 \begin{frame}
@@ -65,7 +65,7 @@ minimum height=2em,
 text centered}
 }
 \begin{tikzpicture}
-\node[punkt,text width=4cm] (mat_repres) {Матричное представление функции: $f = \bx^{\T}\bA\bx$};
+\node[punkt,text width=4cm] (mat_repres) {Матричное представление функции: $f(\bx) = \bx^{\T}\bA\bx, \; \bA \in \bS^n$};
 \node[punkt,text width=4cm,below=1cm of mat_repres] (scalar_repres) {Скалярное представление: $f = \sum\limits_{ij}a_{ij}x_ix_j$};
 \draw [->,line width=0.1em,>=stealth] (mat_repres) -- (scalar_repres);
 \node[punkt,text width=5cm,right=2cm of scalar_repres] (scalar_repres_grad) {Скалярное представление градиента: $\nabla f_i = \sum\limits_{j}a_{ij}x_j$};

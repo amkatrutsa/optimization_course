@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
-\setbeamertemplate{enumerate items}[default]
+
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -92,7 +92,7 @@ X^{**} = \overline{\text{conv }(X \cup \{0\})}.
 \begin{equation*}
 \begin{split}
 1)& \; \bA\bx = \mathbf{b}, \; \bx \geq 0\\
-2)& \; \bp\bA \geq 0, \; \langle \bp, \mathbf{b} \rangle < 0
+2)& \; \bp^{\T}\bA \geq 0, \; \langle \bp, \mathbf{b} \rangle < 0
 \end{split}
 \end{equation*}
 \end{lemma}
@@ -103,7 +103,7 @@ X^{**} = \overline{\text{conv }(X \cup \{0\})}.
 \begin{equation*}
 \begin{split}
 1)& \; \bA\bx \leq \mathbf{b}\\
-2)& \; \bp\bA = 0, \; \langle \bp, \mathbf{b} \rangle < 0, \; \bp \geq 0
+2)& \; \bp^{\T}\bA = 0, \; \langle \bp, \mathbf{b} \rangle < 0, \; \bp \geq 0
 \end{split}
 \end{equation*}
 \end{block}
@@ -118,7 +118,7 @@ X^{**} = \overline{\text{conv }(X \cup \{0\})}.
 \begin{block}{Геометрия леммы Фаркаша}
 $\bA\bx = \mathbf{b}$ при $\bx \geq 0$ означает, что $\mathbf{b}$ лежит в конусе, натянутым на столбцы матрицы $\bA$
 
-$\bp\bA \geq 0, \; \langle \bp, \mathbf{b} \rangle < 0$ означает, что существует разделяющая гиперплоскость между вектором $\mathbf{b}$ и конусом из столбцов матрицы $\bA$.
+$\bp^{\T}\bA \geq 0, \; \langle \bp, \mathbf{b} \rangle < 0$ означает, что существует разделяющая гиперплоскость между вектором $\mathbf{b}$ и конусом из столбцов матрицы $\bA$.
 \end{block}
 \end{frame}
 

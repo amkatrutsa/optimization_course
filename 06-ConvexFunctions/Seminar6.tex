@@ -87,7 +87,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
 \end{block}
 
 \begin{block}{Дифференциальный критерий второго порядка}
-Непрерывная и дважды дифференцируемая функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in \text{ri}(X) \subset \bbR^n$ выполнено:
+Непрерывная и дважды дифференцируемая функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in \textbf{relint}(X) \subset \bbR^n$ выполнено:
 \vspace{-2mm}
 \[
 \nabla^2 f(\bx) \succeq 0.
@@ -127,7 +127,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^
 \begin{enumerate}
 \item Квадратичная функция: $f(x) = \frac{1}{2}\bx^{\T}\bP\bx + \bq^{\T}\bx + r$, $\bx \in \bbR^n$
 \item Нормы в $\bbR^n$
-\item $f(\bx) = \log{(e^{x_1} + \ldots + e^{x_n})}$, $\bx \in \bbR^n$
+\item $f(\bx) = \log{(e^{x_1} + \ldots + e^{x_n})}$, $\bx \in \bbR^n$~--- гладкое приближение максимума
 \item Логарифм детерминанта: $f(\bX) = -\log{\det{\bX}}$, $\bX \in \bS^n_{++}$
 \item Множество выпуклых функций~--- выпуклый конус
 \item Поэлементный максимум: $f(\bx) = \max\{f_1(\bx), f_2(\bx)\}$, dom $f$ = dom $f_1 \; \cap $ dom $f_2$

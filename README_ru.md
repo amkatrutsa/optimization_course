@@ -40,22 +40,22 @@
 ### Весенний семестр
 
 
-1. [Численные методы оптимизации: введение, скорости сходимости, классификация методов, модель чёрного ящика, одномерная минимизация](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/12-NumMethods/Seminar12.ipynb)
+1. [Численные методы оптимизации: введение, скорости сходимости, классификация методов, модель чёрного ящика, одномерная минимизация](/12-NumMethods/Seminar12.ipynb)
 
 2. Задача безусловной минимизации
-	* [Градиентный спуск](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/13-GradDescent/Seminar13.ipynb)
-	* [Метод Ньютона. Квазиньютоновские методы](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/14-Newton/Seminar14.ipynb)
-	* [Метод сопряжённых градиентов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/15-ConjGrad/Seminar15.ipynb)
+	* [Градиентный спуск](/13-GradDescent/Seminar13.ipynb)
+	* [Метод Ньютона. Квазиньютоновские методы](/14-Newton/Seminar14.ipynb)
+	* [Метод сопряжённых градиентов](/15-ConjGrad/Seminar15.ipynb)
 3. Линейное программирование
-	* [Симплекс-метод](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/17-LinProgSimplex/Seminar17.ipynb)
-	* [Прямой метод внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/18-LinProgPrimalInterior/Seminar18.ipynb)
+	* [Симплекс-метод](/17-LinProgSimplex/Seminar17.ipynb)
+	* [Прямой метод внутренней точки](/18-LinProgPrimalInterior/Seminar18.ipynb)
 4. Задача условной минимизации
-	* [Метод проекции градиента и условного градиента](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/19-SimpleStructureSet/Seminar19.ipynb)
-	* [Методы внутренней точки](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/20-InteriorPoint/Seminar20.ipynb)
-	* [Метод модифицированой функции Лагранжа и внешних штрафов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/21-Penalty/Seminar21.ipynb)
+	* [Метод проекции градиента и условного градиента](/19-SimpleStructureSet/Seminar19.ipynb)
+	* [Методы внутренней точки](/20-InteriorPoint/Seminar20.ipynb)
+	* [Метод модифицированой функции Лагранжа и внешних штрафов](/21-Penalty/Seminar21.ipynb)
 5. Другие темы
-	* [Задача наименьших квадратов](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/16-LSQ/Seminar16.ipynb)
-	* [Оптимальный метод Нестерова и обыкновенные дифференциальные уравнения](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/ODE4NesterovAcc/ODE4NesterovAcc.ipynb)
+	* [Задача наименьших квадратов](/16-LSQ/Seminar16.ipynb)
+	* [Оптимальный метод Нестерова и обыкновенные дифференциальные уравнения](/ODE4NesterovAcc/ODE4NesterovAcc.ipynb)
 	* Последовательное квадратичное программирование 
 	* Оптимальные методы и нижние оценки (теория)
 	* Зеркальный спуск и ускорения Нестерова

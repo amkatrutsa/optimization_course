@@ -54,7 +54,6 @@ f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) 
 \end{frame}
 
 \begin{frame}{Определения множеств}
-\footnotesize
 \begin{block}{Надграфик (эпиграф)}
 Надграфиком функции $f$ называется множество $\text{epi}f = \{ (\bx, y) : \bx \in \bbR^n, \; y \in \bbR, \; y \geq f(\bx) \} \subset \bbR^{n+1}$
 \end{block}
@@ -73,9 +72,10 @@ C_{\gamma} = \{ \bx | f(\bx) \leq \gamma \}.
 \end{frame}
 
 \begin{frame}{Критерии выпуклости}
-\scriptsize
+\footnotesize
+\vspace{-2mm}
 \begin{block}{Дифференциальный критерий первого порядка}
-Функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнено:
+Функция $f$ выпукла $\Leftrightarrow$ она определена на выпуклом множестве~$X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнено:
 \vspace{-4mm}
 \[
 f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
@@ -83,7 +83,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
 \end{block}
 
 \begin{block}{Дифференциальный критерий второго порядка}
-Непрерывная и дважды дифференцируемая функция $f$ выпукла тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in \textbf{relint}(X) \subset \bbR^n$ выполнено:
+Непрерывная и дважды дифференцируемая функция $f$ выпукла $\Leftrightarrow$ она определена на выпуклом множестве $X$ и $\forall \bx, \by \in \textbf{relint}(X) \subset \bbR^n$ выполнено:
 \vspace{-2mm}
 \[
 \nabla^2 f(\bx) \succeq 0.
@@ -91,11 +91,11 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
 \end{block}
 
 \begin{block}{Связь с надграфиком}
-Функция выпукла тогда и только тогда, когда её надграфик выпуклое множество.
+Функция выпукла $\Leftrightarrow$ её надграфик выпуклое множество.
 \end{block}
 
 \begin{block}{Ограничение на прямую}
-Функция $f: X \rightarrow \bbR$ выпукла тогда и только тогда, когда $X$~--- выпуклое множество и выпукла функция $g(t) = f(\bx + t\bv)$ на множестве $\{ t | \bx + t\bv \in X \}$ для всех $\bx \in X$ и $\bv \in \bbR^n$.
+Функция $f: X \rightarrow \bbR$ выпукла тогда и только тогда, когда $X$ выпуклое множество и выпукла функция $g(t) = f(\bx + t\bv)$ на множестве $\{ t | \bx + t\bv \in X \}$ для всех $\bx \in X$ и $\bv \in \bbR^n$.
 \end{block}
 
 \end{frame}
@@ -103,7 +103,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx)
 \begin{frame}{Критерии сильной выпуклости}
 
 \begin{block}{Дифференциальный критерий первого порядка}
-Функция $f$ сильно выпукла с константой $m$ тогда и только тогда, когда определена на выпуклом множестве $X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнена:
+Функция $f$ сильно выпукла с константой $m$ $\Leftrightarrow$ она определена на выпуклом множестве $X$ и $\forall \bx, \by \in X \subset \bbR^n$ выполнена:
 \vspace{-4mm}
 \[
 f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^2
@@ -111,7 +111,7 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^
 \end{block}
 
 \begin{block}{Дифференциальный критерий второго порядка}
-Непрерывная и дважды дифференцируемая функция $f$ сильно выпукла с константой $m$ тогда и только тогда, когда она определена на выпуклом множестве $X$ и $\forall \bx \in \text{\bf relint}(X) \subset \bbR^n$ выполнено:
+Непрерывная и дважды дифференцируемая функция $f$ сильно выпукла с константой $m$ $\Leftrightarrow$ она определена на выпуклом множестве $X$ и $\forall \bx \in \text{\bf relint}(X) \subset \bbR^n$ выполнено:
 \vspace{-2mm}
 \[
 \nabla^2 f(\bx) \succeq m\bI.

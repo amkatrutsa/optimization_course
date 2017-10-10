@@ -3,37 +3,37 @@
 
 Каждый семинар состоит из краткого обзора необходимой теории, примеров решения типовых задач и недельного домашнего задания, которое необходимо выполнить в LaTeX или Jupyter Notebook и прислать к указанному в задании сроку.
 
-[Самый минимум к экзамену и сдаче заданий по материалам осеннего семестра](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/MinimumFall.pdf)
+[Самый минимум к экзамену и сдаче заданий по материалам осеннего семестра](/MinimumFall.pdf)
 
-[Самый минимум к экзамену и сдаче заданий по материалам весеннего семестра](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/MinimumSpring.pdf)
+[Самый минимум к экзамену и сдаче заданий по материалам весеннего семестра](/MinimumSpring.pdf)
 
-[Напоминание необходимых фактов из линейной алгебры](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/la_crash_course.ipynb)
+[Напоминание необходимых фактов из линейной алгебры](la_crash_course.ipynb)
 
 ## Ссылки на материалы семинаров
 
 ### Осенний семестр
 
-1. [Введение](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1.pdf)
+1. [Введение](/01-Intro/Seminar1.pdf)
 
-2. [Выпуклые множества](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2.pdf)
+2. [Выпуклые множества](/02-Convex/Seminar2.pdf)
 
-3. [Проекция точки на множество, отделимость, опорная гиперплоскость](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3.pdf)
+3. [Проекция точки на множество, отделимость, опорная гиперплоскость](/03-Separation/Seminar3.pdf)
 
-4. [Сопряжённые множества. Лемма Фаркаша](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4.pdf)
+4. [Сопряжённые множества. Лемма Фаркаша](/04-Conjugacy/Seminar4.pdf)
 
-5. [Векторное дифференцирование](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/05-MatrixCalculus/Seminar5.pdf)
+5. [Векторное дифференцирование](/05-MatrixCalculus/Seminar5.pdf)
 
-6. [Выпуклые функции](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/06-ConvexFunctions/Seminar6.pdf)
+6. [Выпуклые функции](/06-ConvexFunctions/Seminar6.pdf)
 
-7. [Субдифференциал](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/07-Subdifferential/Seminar7.pdf)
+7. [Субдифференциал](/07-Subdifferential/Seminar7.pdf)
 
-8. [Конус возможных направлений, касательный конус, острый экстремум](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/08-Cones/Seminar8.pdf)
+8. [Конус возможных направлений, касательный конус, острый экстремум](/08-Cones/Seminar8.pdf)
 
-9. [Сопряжённые функции](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/09-ConjugateFunctions/Seminar9.pdf)
+9. [Сопряжённые функции](/09-ConjugateFunctions/Seminar9.pdf)
 
-10. [Условия оптимальности](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/10-OptimalityConditions/Seminar10.pdf)
+10. [Условия оптимальности](/10-OptimalityConditions/Seminar10.pdf)
 
-11. [Двойственная задача](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/11-Duality/Seminar11.pdf)
+11. [Двойственная задача](/11-Duality/Seminar11.pdf)
 
 
 

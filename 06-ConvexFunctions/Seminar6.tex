@@ -139,16 +139,16 @@ f(\by) \geq f(\bx) + \nabla f^{\T}(\bx)(\by - \bx) + \frac{m}{2}\| \by - \bx \|^
 Для выпуклой функции $f$ выполнено следующее неравенство:
 \vspace{-4mm}
 \[
-f\left( \sum\limits_{i=1}^n \alpha_i \bx_i \right) \leq \sum\limits_{i=1}^n \alpha_i f(\bx_i),
+f\left( \sum\limits_{i=1}^n \alpha_i \bx_i \right) \leq \sum\limits_{i=1}^n \alpha_i f(\bx_i),\ (i\in\{1,2,...,n\} = \Omega)
 \vspace{-4mm}
 \] 
 где $\alpha_i \geq 0$ и $\sum\limits_{i=1}^n \alpha_i = 1$.
 \end{block}
 
-или в бесконечномерном случае: $p(\mu) \geq 0$ и $\int\limits p(\mu) = 1$ 
+или в бесконечномерном случае: $p(\mu) \geq 0$ и $\int\limits_\Omega p(\mu) = 1$ 
 \vspace{-4mm}
 \[
-f\left( \int\limits_\Omega p(\mu)x(\mu)d\mu \right) \leq \int\limits_\Omega f(x(\mu))p(\mu)d\mu,\ (x(\mu)\in X\ \forall \mu\in\Omega)
+f\left( \int\limits_\Omega p(\mu)\bx(\mu)d\mu \right) \leq \int\limits_\Omega f(\bx(\mu))p(\mu)d\mu,\ (\bx(\mu)\in X\ \forall \mu\in\Omega)
 \]
 при условии, что интегралы существуют.
 

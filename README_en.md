@@ -7,15 +7,17 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 ### Fall term
 
-1. [Introduction](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/01-Intro/Seminar1en.pdf)
+1. [Introduction](./01-Intro/Seminar1en.pdf)
 
-2. [Convex sets](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/02-Convex/Seminar2en.pdf)
+2. [Convex sets](./02-Convex/Seminar2en.pdf)
 
-3. [Projection onto set, separation, support hyperplane](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/03-Separation/Seminar3en.pdf)
+3. [Projection onto set, separation, support hyperplane](./03-Separation/Seminar3en.pdf)
 
-4. [Conjugate sets. Farkas' lemma](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/04-Conjugacy/Seminar4en.pdf)
+4. [Conjugate sets. Farkas' lemma](./04-Conjugacy/Seminar4en.pdf)
 
-5. [Introduction to matrix calculus](https://github.com/amkatrutsa/MIPT-Opt/blob/public_materials/05-MatrixCalculus/Seminar5en.pdf)
+5. [Introduction to matrix calculus](./05-MatrixCalculus/Seminar5en.pdf)
+
+6. [Convex functions](./06-ConvexFunctions/Seminar6en.pdf)
 
 
 ### Spring term

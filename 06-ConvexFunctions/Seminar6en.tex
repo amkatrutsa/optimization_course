@@ -1,0 +1,172 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 6]{Optimization methods. \\
+ Seminar 6. Convex functions}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{\today}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Derivative by scalar
+\item Derivative by vector
+\item Derivative by matrix
+\item Chain rule
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Functions definitions}
+\small
+\begin{block}{Convex function}
+A function $f: X \subset \bbR^n \rightarrow \bbR$ is called conves ({\color{blue}{strictly convex}}), if \\ {\color{red}{$X$ is a convex set}} and
+$\forall \bx_1, \bx_2 \in X$ and $\alpha \in [0, 1] \; ({\color{blue}{\alpha \in (0, 1)}})$:
+\vspace{-4mm}
+\[
+f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \; ({\color{blue}{<}}) \; \alpha f(\bx_1) + (1 - \alpha)f(\bx_2)
+\]
+\end{block}
+
+\begin{block}{Concave function}
+A function $f$ is concave (strictly concave), if $-f$ is convex (strictly convex).
+\end{block}
+
+\begin{block}{Strongly convex function}
+A function $f: X \subset \bbR^n \rightarrow \bbR$ is called strongly convex with constant $m > 0$, if $X$ is a convex set and $\forall \bx_1, \bx_2 \in X$ и $\alpha \in [0, 1]$:
+\vspace{-4mm}
+\[
+f(\alpha \bx_1 + (1 - \alpha)\bx_2) \leq \alpha f(\bx_1) + (1 - \alpha)f(\bx_2) - \frac{m}{2} \alpha (1 - \alpha) \| \bx_1 - \bx_2 \|_2^2
+\]
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Sets definitions}
+\begin{block}{Epigraph}
+An epigraph of a function $f$ is called a set $\text{epi}f = \{ (\bx, y) : \bx \in \bbR^n, \; y \in \bbR, \; y \geq f(\bx) \} \subset \bbR^{n+1}$
+\end{block}
+
+\begin{block}{Sublevel set}
+A sublevel set of a function $f$ is called a set
+\vspace{-4mm}
+\[
+C_{\gamma} = \{ \bx | f(\bx) \leq \gamma \}.
+\]
+\end{block}
+
+\begin{block}{Quasi-convex function}
+A function $f$ is called quasi-convex, if its domain is convex set and sublevel set for any $\gamma$ is convex. 
+\end{block}
+\end{frame}
+
+\begin{frame}{Convex function criteria}
+\footnotesize
+\vspace{-2mm}
+\begin{block}{First order criterion}
+A function $f$ is convex $\Leftrightarrow$the function is defined on the convex set~$X$ and $\forall \bx, \by \in X \subset \bbR^n$:
+\vspace{-4mm}
+\[
+f(\by) \geq f(\bx) + \left( \nabla f(\bx) \right)^{\T} (\by - \bx)
+\]
+\end{block}
+
+\begin{block}{Second order criterion}
+A continuous and twice differentiable function $f$ is convex $\Leftrightarrow$ the function is defined on the convex set $X$ and $\forall \bx, \by \in \textbf{relint}(X) \subset \bbR^n$:
+\vspace{-2mm}
+\[
+\nabla^2 f(\bx) \succeq 0.
+\]
+\end{block}
+
+\begin{block}{Relation to the epigraph property}
+A function is convex $\Leftrightarrow$ its epigraph is convex set.
+\end{block}
+
+\begin{block}{Restriction to the line}
+A function $f: X \rightarrow \bbR$ is convex iff $X$ is a convex set and the univariate function $g(t) = f(\bx + t\bv)$ defined on the set $\{ t | \bx + t\bv \in X, \; \forall \bx, \bv \}$ is convex.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Strongly convexity criteria}
+
+\begin{block}{First order criterion}
+A function $f$ is strongly convex with constant $m$ $\Leftrightarrow$ the function is defined on the convex set $X$ and $\forall \bx, \by \in X \subset \bbR^n$:
+\vspace{-4mm}
+\[
+f(\by) \geq f(\bx) + \left( \nabla f(\bx) \right)^{\T} + \frac{m}{2}\| \by - \bx \|^2
+\]
+\end{block}
+
+\begin{block}{Second order criterion}
+A continuous and twice differentiable function $f$ is strongly convex with constant $m$ $\Leftrightarrow$ the function is defined on the convex set $X$ and $\forall \bx \in \text{\bf relint}(X) \subset \bbR^n$:
+\vspace{-2mm}
+\[
+\nabla^2 f(\bx) \succeq m\bI.
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{enumerate}
+\item Quadratic function: $f(x) = \frac{1}{2}\bx^{\T}\bP\bx + \bq^{\T}\bx + r$, $\bx \in \bbR^n$, $\bP \in \bS^n$
+\item Proper norms in $\bbR^n$
+\item $f(\bx) = \log{(e^{x_1} + \ldots + e^{x_n})}$, $\bx \in \bbR^n$~--- smooth approximation of maximum
+\item Log determinant: $f(\bX) = -\log{\det{\bX}}$, $\bX \in \bS^n_{++}$
+\item A set of the convex functions is a convex cone
+\item Element-wise maximum of convex functions: $f(\bx) = \max\{f_1(\bx), f_2(\bx)\}$, dom $f$ = dom $f_1 \; \cap $ dom $f_2$
+\item Extension to the infinite set of functions: if for any $\by \in \calA$ a function $f(\bx, \by)$ is convex on $\bx$, then $\sup\limits_{\by \in \calA} f(\bx, \by)$ is convex on $\bx$
+\item Leading eigenvalue: $f(\bX) = \lambda_{\max}(\bX)$ 
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Jensen inequality}
+ 
+\begin{block}{Jensen inequality}
+For any convex function $f$ we have the following inequality:
+\vspace{-4mm}
+\[
+f\left( \sum\limits_{i=1}^n \alpha_i \bx_i \right) \leq \sum\limits_{i=1}^n \alpha_i f(\bx_i),
+\vspace{-4mm}
+\] 
+where $\alpha_i \geq 0$ and $\sum\limits_{i=1}^n \alpha_i = 1$.
+\end{block}
+Or in the case of infinitely many $\bx_i$: $p(x) \geq 0$ и $\int\limits_X p(x) = 1$ 
+\vspace{-4mm}
+\[
+f\left( \int\limits_X p(x)xdx \right) \leq \int\limits_X f(x)p(x)dx
+\]
+if integrals exist.
+
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{enumerate}
+\item H{\"o}lder inequality 
+\item Arithmetic mean vs. geometric mean
+\item $f(\bE(x)) \leq \bE(f(x))$
+\item Convexity of the hyperbolic set $\{ \bx | \prod\limits_{i=1}^n x_i \geq 1 \}$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Convex function
+\item Epigraph and sublevel set of function 
+\item Convex function criteria
+\item Jensen inequality
+\end{itemize}
+\end{frame}
+\end{document}

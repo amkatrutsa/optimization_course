@@ -64,13 +64,13 @@ f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
 \begin{frame}{Полезные факты}
 \begin{block}{Теорема Моро-Рокафеллара}
 Пусть $f_i(\bx)$~--- выпуклые функции на выпуклых множествах $G_i, \; i = 1,\ldots,n$. 
-Тогда, если $\bigcap\limits_{i=1}^n \text{ri } G_i \neq \varnothing$ то функция $f(\bx) = \sum\limits_{i=1}^n a_i f_i(\bx), \; a_i > 0$ имеет субдифференциал $\partial_G f(\bx)$ на множестве $G = \bigcap\limits_{i=1}^n G_i$ и $\partial_G f(\bx) = \sum\limits_{i=1}^n a_i \partial_{G_i} f_i(\bx)$. 
+Тогда, если $\bigcap\limits_{i=1}^n \text{relint} (G_i) \neq \varnothing$ то функция $f(\bx) = \sum\limits_{i=1}^n a_i f_i(\bx), \; a_i > 0$ имеет субдифференциал $\partial_G f(\bx)$ на множестве $G = \bigcap\limits_{i=1}^n G_i$ и $\partial_G f(\bx) = \sum\limits_{i=1}^n a_i \partial_{G_i} f_i(\bx)$. 
 \end{block}
 
 \begin{block}{Если функция~--- максимум}
 Если $f(\bx) = \max\limits_{i=1,\ldots,m}(f_i(\bx))$, тогда 
 \pause
-$\partial_G f(\bx) = \text{Conv} (\bigcup\limits_{i \in \calJ(\bx)} \partial_G f_i(\bx))$, где $\calJ(\bx) = \{ i = 1,\ldots, m | f_i(\bx) = f(\bx) \}$
+$\partial_G f(\bx) = \text{Conv} \left(\bigcup\limits_{i \in \calJ(\bx)} \partial_G f_i(\bx)\right)$, где $\calJ(\bx) = \{ i = 1,\ldots, m | f_i(\bx) = f(\bx) \}$
 \end{block}
 \end{frame}
 

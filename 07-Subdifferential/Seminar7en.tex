@@ -1,0 +1,140 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 7]{Optimization methods. \\
+ Seminar 7. Subdifferential}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{\today}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Convex function
+\item Epigraph and sublevel set
+\item Criteria of convex function
+\item Jensen inequality
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Motivation}
+\begin{block}{For what?}
+The important property of any convex function $f$ is that for any point $\bx$ for all $\by \in \text{dom } f$ the following inequality holds:
+\vspace{-3mm} 
+\[
+f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
+\vspace{-4mm}
+\]
+for some vector $\ba$, namely tangent hyperplane to the function at the point $\bx$ is a {\color{red}{global}} lower bound for the function. 
+\end{block}
+
+\begin{itemize}
+\item If the function $f$ is differentiable, then $\ba = \nabla f(\by)$.
+\item What if the function $f$ is {\color{red}{not}} differentiable?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Definition}
+\begin{block}{Subgradient}
+A vector $\ba$ is called \emph{subgradient} of a function $f: X \rightarrow \bbR^n$ in a point $\bx$, if 
+\vspace{-3mm}
+\[
+f(\by) - f(\bx) \geq \langle \ba, \by - \bx \rangle
+\]
+for all $\by \in X$.
+\end{block}
+
+\begin{block}{Subdifferential}
+A set of subgradients of the function $f$ in the point $\bx$ is called \emph{subdifferential} of the function $f$ in the point $\bx$ and is denoted as $\partial f(\bx)$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Helpful facts}
+\begin{block}{Moreau-Rockafellar theorem}
+Let $f_i(\bx)$ be convex functions defined over convex sets $G_i, \; i = 1,\ldots,n$. 
+Then, if $\bigcap\limits_{i=1}^n \text{relint} (G_i) \neq \varnothing$, then a function $f(\bx) = \sum\limits_{i=1}^n a_i f_i(\bx), \; a_i > 0$ has subdifferential $\partial_G f(\bx)$ on the set $G = \bigcap\limits_{i=1}^n G_i$ and $\partial_G f(\bx) = \sum\limits_{i=1}^n a_i \partial_{G_i} f_i(\bx)$. 
+\end{block}
+
+\begin{block}{Subdifferential of maximum}
+If $f(\bx) = \max\limits_{i=1,\ldots,m}(f_i(\bx))$, then 
+\pause
+$\partial_G f(\bx) = \text{Conv} \left(\bigcup\limits_{i \in \calJ(\bx)} \partial_G f_i(\bx)\right)$, где $\calJ(\bx) = \{ i = 1,\ldots, m | f_i(\bx) = f(\bx) \}$
+\end{block}
+\end{frame}
+
+\begin{frame}{Examples}
+Find subdifferential fr the following functions
+\begin{itemize}
+\item Absolute value: $f(x) = |x|$
+\item $\ell_2$ norm: $f(\bx) = \| \bx \|_2$
+\item Scalar maximum: $f(x) = \max(e^x, 1 - x)$
+\item Multivariate maximum: $f(\bx) = |\bc^{\T}\bx|$
+\item $f(\bx) = |\bc^{\T}_1\bx| + |\bc^{\T}_2\bx|$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conditional subdifferential}
+\footnotesize
+\begin{block}{Definition}
+\footnotesize
+A set 
+$
+\{ \ba |  f(\bx) - f(\bx_0) \geq \langle \ba, \bx - \bx_0 \rangle, \; \forall \bx \in X \}
+$ 
+is called \emph{subdifferential} of function $f$ in a point $\bx_0$ on a set $X$ and denoted as $\partial_X f(\bx_0)$.
+\end{block}
+%Если функция $f$ определена на множестве $X \subset \bbR^n$, то как определить субдифференциал в граничных точках?
+\begin{block}{From conditional subdifferential to unconditional one}
+\footnotesize
+If the function $f$ is convex, then consider a function $g(\bx) = f(\bx) + \delta(\bx | X)$, which is also convex.
+Thus
+\vspace{-2mm} 
+\[
+\partial g (\bx_0) = \partial_X f(\bx_0) = \partial f(\bx_0) + \partial \delta(\bx_0 | X).
+\vspace{-3mm} 
+\]
+Find $\partial \delta(\bx_0 | X)$:
+\vspace{-3mm}
+\[
+\delta(\bx |X) - \delta(\bx_0 |X) \mathop{=}\limits^{\bx \in X} 0 \geq \langle \ba, \bx - \bx_0 \rangle
+%\vspace{-3mm}
+\]
+\end{block}
+
+\begin{block}{Normal cone}
+\footnotesize
+A set $N(\bx_0 | X) = \{ \ba | \langle \ba, \bx - \bx_0 \rangle \leq 0, \; \forall \bx \in X \}$ is called normal cone to the set $X$ in a point $\bx_0$.
+\end{block}
+Then $\partial_X f(\bx_0) = \partial f(\bx_0) + N(\bx_0 | X)$  
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{itemize}
+\item $f(x) = |x|$, $X = \{-1 \leq x \leq 1 \}$
+\item $f(\bx) = |x_1 - x_2|$, $X = \{ \bx | \| \bx \|^2_2 \leq 2 \}$
+%\item $f(\bx) = |x_1 - x_2| + |x_1 + x_2|$, $X = \{ \bx | \| \bx \|^2_2 \leq 2 \}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Subgradient
+\item Subdifferential
+\item Conditional subdifferential
+\item How to compute them
+\end{itemize}
+\end{frame}
+
+\end{document}

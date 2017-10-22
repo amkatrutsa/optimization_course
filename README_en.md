@@ -19,6 +19,8 @@ Resources for seminars on "Optimization methods" course for 3-rd year students o
 
 6. [Convex functions](./06-ConvexFunctions/Seminar6en.pdf)
 
+7. [Subdifferential](./07-Subdifferential/Seminar7en.pdf)
+
 
 ### Spring term
 

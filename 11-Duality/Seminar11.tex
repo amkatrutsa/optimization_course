@@ -12,9 +12,9 @@
 \title[Семинар 11]{Методы оптимизации. \\
  Семинар 11. Двойственность.}
 \author{Александр Катруца}
-\institute{Московский физико-технический институт,\\
+\institute{Московский физико-технический институт\\
 Факультет Управления и Прикладной Математики} 
-\date{28 ноября 2016 г.}
+\date{\today}
 
 \begin{document}
 \begin{frame}
@@ -40,7 +40,7 @@
 \vspace{-5mm}
 \begin{equation*}
 \begin{split}
-& \min\limits_{x \in \mathcal{D}} f(x) = p^*\\
+& \min\limits f(x) = p^*\\
 \text{s.t. } & g_i(x) = 0, \; i = 1,\ldots,m\\
 & h_j(x) \leq 0, \; j = 1,\ldots, p
 \end{split}
@@ -60,7 +60,7 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 \end{block}
 
 \begin{block}{Двойственная функция}
-Функция $g(\bmu, \blambda) = \inf\limits_{x\in \mathcal{D}} L(x, \blambda, \bmu)$ называется двойственной функцией Лагранжа.
+Функция $g(\bmu, \blambda) = \inf\limits_x L(x, \blambda, \bmu)$ называется двойственной функцией Лагранжа.
 \end{block}
 
 \end{frame}
@@ -197,7 +197,7 @@ d^* \leq p^*.
 \item Решение СЛАУ наименьшей нормы
 \item Линейное программирование
 \item Квадратичное программирование с квадратичными огранчиениями
-\item Невыпуклая задача с сильной двойственностью
+%\item Невыпуклая задача с сильной двойственностью
 \end{itemize}
 \end{frame}
 
@@ -280,7 +280,7 @@ $
 \begin{frame}{Примеры}
 \footnotesize
 \begin{itemize}
-\item Орицательная энтропия при линейных ограничениях
+\item Отрицательная энтропия при линейных ограничениях
 \vspace{-5mm}
 \begin{equation*}
 \begin{split}
@@ -309,7 +309,7 @@ $
 
 \begin{frame}{Резюме}
 \begin{itemize}
-\item Двойственая задача: что это такое и зачем оно надо?
+\item Двойственая задача: что это такое и зачем она нужна?
 \item Сильная и слабая двойственность
 \item Условия Слейтера
 \item Геометрическая и механическая интерпретации

@@ -17,8 +17,8 @@ def GradientDescent(f, gradf, x0, epsilon, num_iter, line_search,
             callback(x)
         iteration += 1
         if disp:
-            print "Current function val =", f(x)
-            print "Current gradient norm = ", np.linalg.norm(gradf(x))
+            print("Current function val =", f(x))
+            print("Current gradient norm = ", np.linalg.norm(gradf(x)))
         if np.linalg.norm(gradf(x)) < epsilon:
             break
         if iteration >= num_iter:
@@ -66,8 +66,8 @@ def Newton(f, gradf, hessf, x0, epsilon, num_iter, line_search,
             callback(x)
         iteration += 1
         if disp:
-            print "Current function val =", f(x)
-            print "Current gradient norm = ", np.linalg.norm(gradf(x))
+            print("Current function val =", f(x))
+            print("Current gradient norm = ", np.linalg.norm(gradf(x)))
         if np.linalg.norm(gradf(x)) < epsilon:
             break
         if iteration >= num_iter:

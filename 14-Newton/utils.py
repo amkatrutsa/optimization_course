@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import numpy as np
 
 def GradientDescent(f, gradf, x0, epsilon, num_iter, line_search, 
@@ -17,8 +15,8 @@ def GradientDescent(f, gradf, x0, epsilon, num_iter, line_search,
 			callback(x)
 		iteration += 1
 		if disp:
-			print "Current function val =", f(x)
-			print "Current gradient norm = ", np.linalg.norm(gradf(x))
+			print("Current function val =", f(x))
+			print("Current gradient norm = ", np.linalg.norm(gradf(x)))
 		if np.linalg.norm(gradf(x)) < epsilon:
 			break
 		if iteration >= num_iter:
@@ -34,5 +32,5 @@ def backtracking(x, descent_dir, **kwargs):
         rho = kwargs["rho"]
         alpha = 1
         while f(x + alpha * descent_dir) >= f(x) + beta1 * alpha * grad_f(x).dot(descent_dir) or np.isnan(f(x + alpha * descent_dir)):
-			alpha *= rho
-	return alpha
+            alpha *= rho
+    return alpha

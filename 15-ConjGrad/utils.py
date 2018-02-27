@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import numpy as np
 
 def GradientDescent(f, gradf, x0, epsilon, num_iter, line_search, 

@@ -1,8 +1,8 @@
-# Optimization Methods, DCAM MIPT
+# Optimization Methods
 
-This repository contains seminars resources for the course Optimization methods for 3-rd year students of DCAM MIPT.
+This repository contains seminars resources for the course Optimization methods for 3-rd year students of Department of Control and Applied Mathematics, [MIPT](https://mipt.ru/english/).
 Every seminar presents brief review of necessary part of theory covered in lectures and examples of standard tasks for considered topic. 
-Also after every seminar students have home assignment which has to be submitted in $\LaTeX$ or Jupyter Notebook format before deadline.
+Also after every seminar students have home assignment which has to be submitted in LaTeX or Jupyter Notebook format before deadline.
 
 The main tool in development of efficient optimization methods is numerical linear algebra. 
 To refresh your knowledge, you can use the crash course ([ru](la_crash_course.ipynb), [en](la_crash_course_en.ipynb)). 

@@ -33,7 +33,7 @@ To refresh your knowledge, you can use the crash course ([ru](la_crash_course.ip
 
 ### Questions
 
-The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of the course that students have to answer two pass the exam.
+The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of the course that students have to answer to pass the exam.
 
 ## Spring term
 
@@ -56,7 +56,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 ### Questions
 
-The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term part of the course that students have to answer two pass the exam.
+The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term part of the course that students have to answer to pass the exam.
 
 ## Advanced and additional topics
 

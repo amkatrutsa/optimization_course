@@ -12,3 +12,4 @@
 *.blg
 *.dvi
 .DS_Store
+*.bak

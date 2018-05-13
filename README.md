@@ -1,6 +1,6 @@
 # Optimization Methods
 
-This repository contains seminars resources for the course Optimization methods for 3-rd year students of Department of Control and Applied Mathematics, [MIPT](https://mipt.ru/english/).
+This repository contains seminars resources for the course "Optimization methods" for the 3-rd year students of Department of Control and Applied Mathematics, [MIPT](https://mipt.ru/english/).
 Every seminar presents brief review of necessary part of theory covered in lectures and examples of standard tasks for considered topic. 
 Also after every seminar students have home assignment which has to be submitted in LaTeX or Jupyter Notebook format before deadline.
 
@@ -108,3 +108,7 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 16. [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
 
 17. [Semidefinite Optimization by M. Laurent & F. Vallentin](https://www.dropbox.com/s/shbad9vtvgbdv01/SDP_book.pdf?dl=0)
+
+## Contributing
+
+If you want to send pull-request, please read the following [instruction](./contribution.md)

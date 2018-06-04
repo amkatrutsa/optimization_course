@@ -7,6 +7,8 @@ Also after every seminar students have home assignment which has to be submitted
 The main tool in development of efficient optimization methods is numerical linear algebra. 
 To refresh your knowledge, you can use the crash course ([ru](la_crash_course.ipynb), [en](la_crash_course_en.ipynb)). 
 
+Almost all numerical tests in this repository are performed with [liboptpy](https://github.com/amkatrutsa/liboptpy) library, where you can find easy to use implementations of different optimization methods.
+
 ## Fall term
 
 1. Introduction ([ru](/01-Intro/Seminar1.pdf), [en](./01-Intro/Seminar1en.pdf))

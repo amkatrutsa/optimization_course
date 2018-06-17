@@ -39,21 +39,21 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 ## Spring term
 
-1. Numerical optimization methods: introduction, convergence speed, classes of methods, black box model, one-dimensional optimization ([ru](/12-NumMethods/Seminar12.ipynb), en)
+1. Numerical optimization methods: introduction, convergence speed, classes of methods, black box model, one-dimensional optimization ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12.ipynb), en)
 
 2. Unconstrained optimization problems
-	* Gradient descent ([ru](/13-GradDescent/Seminar13.ipynb), en)
-	* Newton method. Quasi-Newton methods ([ru](/14-Newton/Seminar14.ipynb), en)
-	* Conjugate gradients methods ([ru](/15-ConjGrad/Seminar15.ipynb), en)
+	* Gradient descent ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13.ipynb), en)
+	* Newton method. Quasi-Newton methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14.ipynb), en)
+	* Conjugate gradients methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15.ipynb), en)
 
 3. Linear programming
-	* Simplex method ([ru](/17-LinProgSimplex/Seminar17.ipynb), en)
-	* Primal interior point method ([ru](/18-LinProgPrimalInterior/Seminar18.ipynb), en)
+	* Simplex method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb), en)
+	* Primal interior point method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18.ipynb), en)
 
 4. Constrained optimization problems
-	* Projected gradient method and Frank-Wolfe method ([ru](/19-SimpleStructureSet/Seminar19.ipynb), en)
-	* Interior point methods ([ru](/20-InteriorPoint/Seminar20.ipynb), en)
-	* Penalty methods and augmented Lagrangian methods ([ru](/21-Penalty/Seminar21.ipynb), en)
+	* Projected gradient method and Frank-Wolfe method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19.ipynb), en)
+	* Interior point methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20.ipynb), en)
+	* Penalty methods and augmented Lagrangian methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/21-Penalty/Seminar21.ipynb), en)
 
 
 ### Questions

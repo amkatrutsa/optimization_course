@@ -31,7 +31,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 10. Optimality conditions ([ru](/10-OptimalityConditions/Seminar10.pdf), [en](/10-OptimalityConditions/Seminar10en.pdf))
 
-11. Introduction to duality theory ([ru](/11-Duality/Seminar11.pdf), en)
+11. Introduction to duality theory ([ru](/11-Duality/Seminar11.pdf), [en](/11-Duality/Seminar11en.pdf))
 
 ### Questions
 

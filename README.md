@@ -27,7 +27,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 8. Feasible direction cone, tangent cone, sharp extremum ([ru](/08-Cones/Seminar8.pdf), en)
 
-9. Conjugate functions ([ru](/09-ConjugateFunctions/Seminar9.pdf), en)
+9. Conjugate functions ([ru](/09-ConjugateFunctions/Seminar9.pdf), [en](/09-ConjugateFunctions/Seminar9en.pdf))
 
 10. Optimality conditions ([ru](/10-OptimalityConditions/Seminar10.pdf), [en](/10-OptimalityConditions/Seminar10en.pdf))
 

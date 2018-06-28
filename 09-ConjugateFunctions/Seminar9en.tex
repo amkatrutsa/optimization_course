@@ -1,0 +1,83 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 9]{Optimization methods. \\
+ Seminar 9. Conjugate functions}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{\today}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Feasible direction cone
+\item Tangent cone
+\item Sharp extremum 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition}
+\begin{block}{Conjugacy again?}
+\begin{itemize}
+\item Previously we introduced conjugate (dual) sets and in particular conjugate cones
+\item Today we consider conjugate (dual) functions
+\item Further we will introduce dual (conjugate) optimization problem
+\end{itemize}
+\end{block}
+
+\begin{block}{Definition}
+A function $f^*: \bbR^n \rightarrow \bbR$ is called conjugate function of function $f$ and is defined as
+\vspace{-4mm}
+\[
+f^*(\by) = \sup\limits_{\bx \in dom \; f} (\by^{\T}\bx - f(\bx)).
+\vspace{-3mm}
+\]
+Domain of $f^*$ is a set of $\by$, such that the supremum is finite.
+
+\end{block}
+\end{frame}
+
+\begin{frame}{Properties and interpretations}
+\begin{itemize}
+\item Conjugate function $f^*$ is always {\color{red}{convex}} as supremum of linear functions independently of convexity of $f$
+\item Young-Fenchel inequality: 
+\[
+\by^{\T}\bx \leq f(\bx) + f^*(\by)
+\]
+\item If $f$ is differentiable, then $f^*(\by) = \nabla f^{\T}(\bx^*)\bx^* - f(\bx^*)$, where $\bx^*$ is a supremum point.
+\item Geometrical interpretation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples}
+\begin{enumerate}
+\item Linear function: $f(\bx) = \ba^{\T}\bx + b$
+\item Negative entropy: $f(x) = x\log x$
+\item Indicator function of the set $S$: $I_S(x) = 0$ iff $x \in S$
+\item Norm: $f(\bx) = \|\bx\|$.
+\item Squared norm: $f(\bx) = \frac{1}{2}\|\bx\|^2$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Recap}
+
+\begin{itemize}
+\item Conjugate functions
+\item Young-Fenchel inequality and other properties
+\item Examples
+\end{itemize}
+
+\end{frame}
+
+\end{document}

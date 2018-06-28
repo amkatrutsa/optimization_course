@@ -25,7 +25,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 7. Subdifferential ([ru](/07-Subdifferential/Seminar7.pdf), [en](./07-Subdifferential/Seminar7en.pdf))
 
-8. Feasible direction cone, tangent cone, sharp extremum ([ru](/08-Cones/Seminar8.pdf), en)
+8. Feasible direction cone, tangent cone, sharp extremum ([ru](/08-Cones/Seminar8.pdf), [en](/08-Cones/Seminar8en.pdf))
 
 9. Conjugate functions ([ru](/09-ConjugateFunctions/Seminar9.pdf), [en](/09-ConjugateFunctions/Seminar9en.pdf))
 

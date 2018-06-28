@@ -1,0 +1,122 @@
+\documentclass[12pt]{beamer}
+\usepackage{../latex-sty/mypres}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english]{babel}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\title[Seminar 8]{Optimization methods. \\
+ Seminar 8. Tangent and feasible direction cones and sharp extremum}
+\author{Alexandr Katrutsa}
+\institute{Moscow Institute of Physics and Technology\\
+Department of Control and Applied Mathematics} 
+\date{\today}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}{Reminder}
+\begin{itemize}
+\item Subdifferential
+\item Conditional subdifferential
+\item Normal cone
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Feasible direction cone}
+
+\begin{block}{Definition}
+Feasible direction cone for a set $G \subset \bbR^n$ in a point $\bx_0 \in G$ is a set $\Gamma(\bx_0 | G) = \{ \bs \in \bbR^n | \bx_0 + \alpha\bs \in G, \; 0 \leq \alpha \leq \overline{\alpha}(\bs) \}$, where $\overline{\alpha}(\bs) > 0$.
+\end{block}
+
+\begin{block}{Definition for convex set}
+Feasible direction cone for a \emph{convex} set $X \subset \bbR^n$ in a point$\bx_0 \in X$ is a set $\Gamma(\bx_0 | X) = \{ \bs \in \bbR^n | \bs = \lambda (\bx - \bx_0), \; \lambda > 0, \forall \bx \in X \}$.
+\end{block}
+
+How normal cone and feasible direction cone are related?
+
+\end{frame}
+
+\begin{frame}{Example}
+\begin{block}{Useful fact}
+Assume $G = \{ \bx \in \bbR^n | \varphi_i(\bx) \leq 0, \; i = \overline{0,n-1}; \; \varphi_i(\bx) = \ba_i^{\T}\bx - b_i = 0, \; i = \overline{n, m} \}$. Then if $\varphi_i(\bx)$ is convex and set $G$ is regular, then 
+\vspace{-4mm}
+\[
+\Gamma(\bx_0|G) = \{ \bs \in \bbR^n | \nabla \varphi_i(\bx_0)^{\T} \bs \leq 0, i \in I, \ba^{\T}_i \bs = 0, i = \overline{n,m} \}
+\vspace{-4mm}
+\]
+and \vspace{-4mm}
+\[
+\Gamma^*(\bx_0|G) = \left \{ \bp \in \bbR^n \middle| \bp = \sum\limits_{i = n}^m \lambda_i\ba_i - \sum\limits_{i \in I} \mu_i \nabla\varphi_i(\bx_0) \right \},
+\vspace{-4mm}
+\]
+where $\lambda_i \in \bbR$, $\mu_i \geq 0$, $\bx_0 \in G$ and $I = \{i: \varphi_i(\bx_0) = 0, \; i = \overline{0,n-1}\}$.
+\end{block}
+Find $\Gamma(\bx_0|X)$ и $\Gamma^*(\bx_0|X)$ for the following sets:
+$X = \{ \bx \in \bbR^2 | x^2_1 + 2x^2_2 \leq 3, \; x_1 + x_2 = 0 \}$.
+\end{frame}
+
+\begin{frame}{Tangent cone}
+\begin{block}{Definition}
+Tangent cone to the set $G$ in the point $\bx_0 \in \overline{G}$ is the following set $T(\bx_0 |G) = \{ \lambda \bz | \lambda > 0, \; \exists \{\bx_k\} \subset G, \; \bx_k \rightarrow \bx_0, \bx_k \neq \bx_0, \; \lim\limits_{k \rightarrow \infty} \frac{\bx_k - \bx_0}{\|\bx_k - \bx_0\|_2} = \bz \}$
+\end{block}
+
+\begin{block}{Remark}
+Tangent cone consists of all directions such that sequences from the set $G$ converge to the point $x_0$ in this direction.
+\end{block}
+
+\begin{block}{Lemma}
+If $G$ is a convex set, then $T(\bx_0|G) = \Gamma(\bx_0|G)$.
+\end{block}
+\end{frame}
+
+\begin{frame}{Useful fact}
+Assume a set $G = \{\bx \in \bbR^n | \varphi_i(\bx) \leq 0, i = \overline{0, n-1} \; \varphi_i(\bx) = 0, i = \overline{n, m} \}$ is regular, then 
+\vspace{-4mm}
+\[
+T(\bx_0|G) = \{ \bz \in \bbR^n | \nabla \varphi^{\T}_i(\bx_0)\bz \leq 0, i \in I, \; \nabla \varphi^{\T}_i(\bx_0)\bz = 0, i = \overline{n,m} \}
+\vspace{-4mm}
+\]
+and \vspace{-4mm}
+\[
+T^*(\bx_0|G) = \left \{ \bp \in \bbR^n \middle| \bp = \sum\limits_{i = n}^m \lambda_i \nabla \varphi_i(\bx_0) - \sum\limits_{i \in I} \mu_i \nabla \varphi_i(\bx_0) \right \},
+\] 
+where $\mu_i \geq 0$, $\lambda_i \in \bbR$, $I = \{i | \varphi_i(\bx_0) = 0, i = \overline{0, n-1} \}$
+
+Example: find $T(\bx_0|G)$ and $T^*(\bx_0|G)$ for a set $G = \{\bx \in \bbR^2 | x_1 + x_2 \leq 1, \; x^2_1 + 2x_2^2 = 1 \}$
+\end{frame}
+
+\begin{frame}{Sharp extremum}
+
+\begin{block}{Definition}
+A point $\bx^*$ is a point of sharp extremum of the function $f$ on the set $G$, if there exists $\gamma > 0$ such that $f(\bx) - f(\bx^*) \geq \gamma \|\bx - \bx^*\|_2, \; \forall x \in G$. 
+\end{block}
+
+\begin{block}{Lemma}
+Assume $f$ is a differentiable function on $G \subset \bbR^n$. 
+Then $\bx^*$ is a point of sharp extremum of function $f$ on the set $G$ iff there exists $\alpha > 0$, such that $\nabla f^{\T}(\bx^*) \bz \geq \alpha > 0, \; \bz \in T(\bx^*|G), \| \bz \|_2 = 1$.
+\end{block}
+
+\begin{block}{Examples}
+\begin{itemize}
+\item $x^2_1 + x^2_2 \rightarrow \extr\limits_{G}, \; G = \{(x_1, x_2) | x^2_1 + 2x_2^2 = 2, \; x_1 + x_2 \leq 1 \}$
+\item $x_1 + 2x_2 \rightarrow \extr\limits_{G}$
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Recap}
+\begin{itemize}
+\item Feasible direction cone
+\item Tangent cone 
+\item Sharp extremum 
+\end{itemize}
+\end{frame}
+
+
+\end{document}

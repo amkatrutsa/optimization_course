@@ -70,7 +70,7 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 6. Gradient descent and beyond
 7. Optimization methods on Riemanien manifolds	
 8. Structured optimization with sparsity conditions
-9. Proximal methods
+9. Proximal methods (ru, [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/ProxMethods/prox_methods_en.ipynb))
 10. Submodular optimization
 11. ...
 

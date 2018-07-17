@@ -42,7 +42,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 1. Numerical optimization methods: introduction, convergence speed, classes of methods, black box model, one-dimensional optimization ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/tree/master/12-NumMethods/Seminar12en.ipynb))
 
 2. Unconstrained optimization problems
-	* Gradient descent ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13.ipynb), en)
+	* Gradient descent ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13en.ipynb))
 	* Newton method. Quasi-Newton methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14.ipynb), en)
 	* Conjugate gradients methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15.ipynb), en)
 

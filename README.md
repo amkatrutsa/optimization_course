@@ -62,7 +62,7 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 
 ## Advanced and additional topics
 
-1. Least squares problem ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16.ipynb), en)
+1. Least squares problem ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16en.ipynb))
 2. Nesterov's method and ODE ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/ODE4NesterovAcc/ODE4NesterovAcc.ipynb), en)
 3. Sequential quadratic programming 
 4. Theory of optimal methods and lower complexity bounds	

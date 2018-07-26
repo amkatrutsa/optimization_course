@@ -48,7 +48,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 3. Linear programming
 	* Simplex method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17en.ipynb))
-	* Primal interior point method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18.ipynb), en)
+	* Primal interior point method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18en.ipynb))
 
 4. Constrained optimization problems
 	* Projected gradient method and Frank-Wolfe method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19en.ipynb))

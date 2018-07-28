@@ -52,7 +52,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 4. Constrained optimization problems
 	* Projected gradient method and Frank-Wolfe method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19en.ipynb))
-	* Interior point methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20.ipynb), en)
+	* Interior point methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20en.ipynb))
 	* Penalty methods and augmented Lagrangian methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/21-Penalty/Seminar21.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/21-Penalty/Seminar21en.ipynb))
 
 

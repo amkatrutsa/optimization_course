@@ -145,27 +145,48 @@ General case:
 \end{itemize}
 \end{frame}
 
+\begin{frame}{History}
+
+\begin{itemize}
+\item 1940s~--- linear programming
+\item 1950s~--- quadratic programming
+\item 1960s~--- geometric programming
+\item 1990s~--- polynomial interior point methods for nonlinear convex optimization problems
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modern challenges}
+\begin{itemize}
+\item Huge-scale optimization problems $(\sim 10^8-10^{12})$
+\item Distributed optimization 
+\item Fast first and higher order methods 
+\item Stochastic optimization methods: scalability vs. accuracy
+\item Non-convex structured optimization problems
+\item Applications of convex optimization 
+\end{itemize}
+\end{frame}
+
 \begin{frame}{Linear programming}
-\begin{equation}
+\begin{equation*}
 \begin{split}
 &\min\limits_{\bx \in \bbR^n} \bc^{\T}\bx\\
 \text{s.t. } & \ba^{\T}_i \bx \leq c_i, \; i = 1,\ldots, m
 \end{split}
 \label{eq::lin_prog}
-\end{equation}
+\end{equation*}
 \begin{itemize}
 \item no analytical solution
 \item effective algorithms exist
 \item developed technology
-\item simplex method for solving problem~\eqref{eq::lin_prog} is  included in the TOP-10 algorithms of XX century\footnote{\url{https://www.siam.org/pdf/news/637.pdf}}
+\item simplex method is  included in the TOP-10 algorithms of XX century\footnote{\url{https://www.siam.org/pdf/news/637.pdf}}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Least squares problem}
-\begin{equation}
+\begin{equation*}
 \min\limits_{\bx \in \bbR^n} \|\bA\bx - \mathbf{b} \|^2_2,
 \label{eq::least_sq}
-\end{equation}
+\end{equation*}
 where $\bA \in \bbR^{m \times n}$ and $\mathbf{b} \in \bbR^m$
 \begin{itemize}
 \item analytical solution: $\bx^* = (\bA^{\T}\bA)^{-1}\bA^{\T}\mathbf{b}$
@@ -177,13 +198,13 @@ where $\bA \in \bbR^{m \times n}$ and $\mathbf{b} \in \bbR^m$
 
 \begin{frame}{Lowrank approximation}
 
-\begin{equation}
+\begin{equation*}
 \begin{split}
 &\min\limits_{\bX \in \bbR^{m \times n}} \|\bA - \bX \|_F \\
 \text{s.t. } & \text{rank}(\bX) \leq k
 \end{split}
 \label{eq::lowrank}
-\end{equation}
+\end{equation*}
 
 \begin{Theorem}[Eckart–Young, 1993]
 Let $\bA = \bU\bSigma\bV^{\T}$~be a singular value decomposition of matrix $\bA$, where $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ and $r = \text{rank}(\bA)$.  

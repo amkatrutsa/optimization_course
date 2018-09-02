@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage[T2A]{fontenc}
+\usefonttheme[onlymath]{serif}
 
 \expandafter\def\expandafter\insertshorttitle\expandafter{%
   \insertshorttitle\hfill%
@@ -31,7 +32,7 @@
 \end{frame}
 
 \begin{frame}{Зачем этот курс?}
-\begin{itemize}
+\begin{itemize}[<+->]
 \item Формализация задачи выбора элемента из множества
 \item Обоснование правильности принятия решения
 \item Разнообразные приложения:
@@ -43,19 +44,21 @@
 \item оптимальное управление
 \item обработка сигналов
 \item оценка параметров в статистике 
-\item и другие\footnote{\url{http://www.cvxpy.org/en/latest/examples/index.html}}
+\item и другие% \footnote{\url{http://www.cvxpy.org/en/latest/examples/index.html}}
 \end{itemize}
 \end{itemize}
 \end{frame}
 
 \begin{frame}{О чём этот курс?}
+\uncover<+->{
 Первый семестр (теоретический):
 \begin{itemize}
 \item Основы выпуклого анализа
-\item Теория двойственности
 \item Условия оптимальности
+\item Теория двойственности
 \end{itemize}
-
+}
+\uncover<+->{
 Второй семестр (практический):
 \begin{itemize}
 \item Методы безусловной минимизации первого и второго порядка 
@@ -64,20 +67,21 @@
 \item Оптимальные методы
 \item ...
 \end{itemize}
+}
 \end{frame}
 
 \begin{frame}{План на семестр}
-\begin{itemize}
+\begin{itemize}[<+->]
 \item Семинар и лекция раз в неделю
-\item 2 задания
+\item Миниконтрольные в начале каждого семинара
+\item Домашнее задание после каждого семинара
 \item Итоговая контрольная в конце семестра \\ (и промежуточная в середине семестра)
 \item Экзамен в конце семестра. Среднее арифметическое:
 \begin{itemize}
 \item оценки за работу в семестре
 \item ответа на экзамене
 \end{itemize}
-\item Миниконтрольные в начале каждого семинара
-\item Домашнее задание на каждый семинар~--- \LaTeX
+\item Piazza для Q\&A
 \end{itemize}
 \end{frame}
 
@@ -92,7 +96,7 @@
 
 \begin{frame}{Методология}
 Основные этапы использования методов оптимизации при решении реальных задач:
-\begin{enumerate}
+\begin{enumerate}[<+->]
 \item Определение целевой функции
 \item Определение допустимого множества решений
 \item Постановка и анализ оптимизационной задачи
@@ -103,6 +107,7 @@
 \end{frame}
 
 \begin{frame}{Постановка задачи}
+\uncover<+->{
 \begin{equation*}
 \begin{split}
 &\min\limits_{\bx \in X} f_0(\bx)\\
@@ -110,18 +115,20 @@
 & f_j(\bx) \leq 0, \; j = p+1,\ldots,m,
 \end{split}
 \end{equation*}
-\begin{itemize}
+}
+\begin{itemize}[<+->]
 \item $\bx \in \bbR^n$~--- искомый вектор
 \item $f_0(\bx): \bbR^n \rightarrow \bbR$~--- целевая функция
 \item $f_k(\bx): \bbR^n \rightarrow \bbR$~--- функции ограничений
 \end{itemize}
+\uncover<+->{
 Пример: выбор объектов для вложения денег и определение в какой объект сколько вкладывать
 \begin{itemize}
 \item $\bx$~--- размер инвестиций в каждый актив
 \item $f_0$~--- суммарный риск или вариация прибыли
 \item $f_k$~--- бюджетные ограничения, min/max вложения в актив, минимально допустимая прибыль
 \end{itemize}
-
+}
 \end{frame}
 
 \begin{frame}{Как решать?}
@@ -152,7 +159,7 @@
 \end{frame}
 
 \begin{frame}{Современнные направления}
-\begin{itemize}
+\begin{itemize}[<+->]
 \item Решение задач огромной размерности $(\sim 10^8-10^{12})$
 \item Распределённая оптимизация
 \item Быстрые методы первого порядка
@@ -166,7 +173,7 @@
 \begin{equation*}
 \begin{split}
 &\min\limits_{\bx \in \bbR^n} \bc^{\T}\bx\\
-\text{s.t. } & \ba^{\T}_i \bx \leq c_i, \; i = 1,\ldots, m
+\text{s.t. } & \ba^{\T}_i \bx \leq b_i, \; i = 1,\ldots, m
 \end{split}
 \label{eq::lin_prog}
 \end{equation*}
@@ -178,7 +185,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Метод наименьших квадратов}
+\begin{frame}{Задача наименьших квадратов}
 \begin{equation*}
 \min\limits_{\bx \in \bbR^n} \|\bA\bx - \mathbf{b} \|^2_2,
 \label{eq::least_sq}
@@ -199,11 +206,10 @@
 &\min\limits_{\bX \in \bbR^{m \times n}} \|\bA - \bX \|_F \\
 \text{s.t. } & \text{rank}(\bX) \leq k
 \end{split}
-\label{eq::lowrank}
 \end{equation*}
 
 \begin{Theorem}[Eckart–Young, 1993]
-Пусть $\bA = \bU\bSigma\bV^{\T}$~--- сингулярное разложение матрицы $\bA$, где $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ и $r = \text{rank}(\bA)$.  Тогда решение задачи~\eqref{eq::lowrank} можно записать в виде:
+Пусть $\bA = \bU\bSigma\bV^{\T}$~--- сингулярное разложение матрицы $\bA$, где $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ и $r = \text{rank}(\bA)$.  Тогда решение задачи можно записать в виде:
 \[
 \bX = \hat{\bU} \hat{\bSigma} \hat{\bV}^{\T},
 \]
@@ -220,7 +226,7 @@
 \end{split}
 \label{eq::conv_opt}
 \end{equation*}
-\begin{itemize}
+\begin{itemize}[<+->]
 \item $f_0, f_i$~--- выпуклые функции:
 \[
 f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
@@ -229,60 +235,64 @@ f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
 \item нет аналитического решения
 \item существуют эффективные алгоритмы
 \item часто сложно <<увидеть>> задачу выпуклой оптимизации
-\item существуют приёмы для преобразования задачи к виду~\eqref{eq::conv_opt}
+\item существуют приёмы для преобразования задачи к стандартному виду
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Какая задача проще?}
-
-\begin{columns}[T]
-\begin{column}{0.5\textwidth}
-Поиск независимого под-алфавит максимальной мощности
-\begin{equation*}
-\begin{split}
-&\max\limits_{\bx \in \bbR^n} \sum\limits_{i=1}^n x_i\\
-\text{s.t. } & x_i^2 - x_i = 0 \quad i = 1,\ldots, n\\
-& x_ix_j = 0 \qquad \forall (i, j) \in \Gamma,
-\end{split}
-\end{equation*}
-где $\Gamma$~--- множество пар
-\end{column}
-~
-\begin{column}{0.5\textwidth}
-\small
-Truss design
-\begin{equation*}
-\begin{split}
-& \min -2\sum\limits_{i=1}^k\sum\limits_{j=1}^m c_{ij} x_{ij} + x_{00}\\
-\text{s.t. } & \sum\limits_{i=1}^k x_i = 1\\
-& \lambda_{\min}(\bA) \geq 0,
-\end{split}
-\end{equation*}
-\scriptsize
-где $\bA = 
-\begin{bmatrix}
-x_1 & \ldots & \ldots & \sum\limits_{j=1}^m b_{pj}x_{1j}\\
-\vdots & \ddots & & \vdots\\
- & & x_k & \sum\limits_{j=1}^m b_{pj}x_{kj}\\
-\sum\limits_{j=1}^m b_{pj}x_{1j} & \ldots & \sum\limits_{j=1}^m b_{pj}x_{kj} & x_{00}
-\end{bmatrix}
-$
-\end{column}
-\end{columns}
-
-\end{frame}
+%\begin{frame}{Какая задача проще?}
+%
+%\begin{columns}[T]
+%\begin{column}{0.5\textwidth}
+%Поиск независимого под-алфавит максимальной мощности
+%\begin{equation*}
+%\begin{split}
+%&\max\limits_{\bx \in \bbR^n} \sum\limits_{i=1}^n x_i\\
+%\text{s.t. } & x_i^2 - x_i = 0 \quad i = 1,\ldots, n\\
+%& x_ix_j = 0 \qquad \forall (i, j) \in \Gamma,
+%\end{split}
+%\end{equation*}
+%где $\Gamma$~--- множество пар
+%\end{column}
+%~
+%\begin{column}{0.5\textwidth}
+%\small
+%Truss design
+%\begin{equation*}
+%\begin{split}
+%& \min -2\sum\limits_{i=1}^k\sum\limits_{j=1}^m c_{ij} x_{ij} + x_{00}\\
+%\text{s.t. } & \sum\limits_{i=1}^k x_i = 1\\
+%& \lambda_{\min}(\bA) \geq 0,
+%\end{split}
+%\end{equation*}
+%\scriptsize
+%где $\bA = 
+%\begin{bmatrix}
+%x_1 & \ldots & \ldots & \sum\limits_{j=1}^m b_{pj}x_{1j}\\
+%\vdots & \ddots & & \vdots\\
+% & & x_k & \sum\limits_{j=1}^m b_{pj}x_{kj}\\
+%\sum\limits_{j=1}^m b_{pj}x_{1j} & \ldots & \sum\limits_{j=1}^m b_{pj}x_{kj} & x_{00}
+%\end{bmatrix}
+%$
+%\end{column}
+%\end{columns}
+%
+%\end{frame}
 
 \begin{frame}{Почему выпуклость так важна?}
+\uncover<+->{
 \begin{block}{R. Tyrrell Rockafellar (1935~---)}
 The great watershed in optimization is not between linearity and
 non-linearity, but convexity and non-convexity.
 \end{block}
-\begin{itemize}
+}
+\begin{itemize}[<+->]
 \item Локальный оптимум является глобальным
 \item Необходимое условие оптимальности является достаточным
 \end{itemize}
+\uncover<+->{
 Вопросы:
-\begin{itemize}
+}
+\begin{itemize}[<+->]
 \item Любую ли задачу выпуклой оптимизации можно эффективно решить?
 \item Можно ли эффективно решить невыпуклые задачи оптимизации?
 \end{itemize}

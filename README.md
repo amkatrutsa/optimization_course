@@ -13,7 +13,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 1. Introduction ([ru](/01-Intro/Seminar1.pdf), [en](./01-Intro/Seminar1en.pdf)). Demo of convex optimization power ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
 
-2. Convex sets ([ru](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf), [en](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2en.pdf)
+2. Convex sets ([ru](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf), [en](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2en.pdf))
 
 3. Projection onto set, separation, support hyperplane ([ru](/03-Separation/Seminar3.pdf), [en](./03-Separation/Seminar3en.pdf))
 

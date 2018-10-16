@@ -68,8 +68,8 @@ text centered}
 \node[punkt,text width=4cm] (mat_repres) {Матричное представление функции: $f(\bx) = \bx^{\T}\bA\bx, \; \bA \in \bS^n$};
 \node[punkt,text width=4cm,below=1cm of mat_repres] (scalar_repres) {Скалярное представление: $f = \sum\limits_{ij}a_{ij}x_ix_j$};
 \draw [->,line width=0.1em,>=stealth] (mat_repres) -- (scalar_repres);
-\node[punkt,text width=5cm,right=2cm of scalar_repres] (scalar_repres_grad) {Скалярное представление градиента: $\nabla f_i = 2\sum\limits_{j}a_{ij}x_j$};
-\draw [->,line width=0.1em,>=stealth] (scalar_repres) -- node [text width=2cm,midway,above,text centered] {$\nabla f_i = \frac{\partial f}{\partial x_i}$} (scalar_repres_grad);
+\node[punkt,text width=5cm,right=2cm of scalar_repres] (scalar_repres_grad) {Скалярное представление градиента: $\nabla f_k = 2\sum\limits_{j}a_{kj}x_j$};
+\draw [->,line width=0.1em,>=stealth] (scalar_repres) -- node [text width=2cm,midway,above,text centered] {$\nabla f_k = \frac{\partial f}{\partial x_k}$} (scalar_repres_grad);
 \node[punkt, text width=3cm, above=1cm of scalar_repres_grad] (mat_repres_grad)  {Матричное представление градиента: $\nabla f = 2\bA\bx$};
 \draw [->,line width=0.1em,>=stealth] (scalar_repres_grad) -- (mat_repres_grad);
 \end{tikzpicture}

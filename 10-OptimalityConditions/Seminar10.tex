@@ -150,11 +150,11 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \end{equation*}
 \end{block}
 
-\begin{block}{Критерий оптимальности}
-Пусть $f(x)$ и $g_i(x)$ дважды дифференцируемы в точке $x^*$ и непрерывно дифференцируемы в некоторой окрестности $x^*$.
-Пусть также $\nabla_x L(x^*, \blambda) = 0$.
-Тогда если $\bh^{\T}\nabla^2 L(x^*, \blambda)\bh > 0$, где $\bh \in T(\bx^*|G)$~--- касательный конус, то $x^*$~--- точка локального минимума.
-\end{block}
+%\begin{block}{Критерий оптимальности}
+%Пусть $f(x)$ и $g_i(x)$ дважды дифференцируемы в точке $x^*$ и непрерывно дифференцируемы в некоторой окрестности $x^*$.
+%Пусть также $\nabla_x L(x^*, \blambda) = 0$.
+%Тогда если $\bh^{\T}\nabla^2 L(x^*, \blambda)\bh > 0$, где $\bh \in T(\bx^*|G)$~--- касательный конус, то $x^*$~--- точка локального минимума.
+%\end{block}
 
 \end{frame}
 
@@ -169,7 +169,7 @@ L(x, \blambda) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x)
 \begin{frame}{Примеры}
 \begin{itemize}
 \item $\sum\limits_{i=1}^n\alpha_i x^4_i \rightarrow \extr\limits_{\bx \in G}$, $G = \{\bx \in \bbR^n \; | \; \bc^{\T}\bx = 1 \}$, $\alpha_i > 0,\; c_i > 0$
-\item $x_1 + 4x_2 + 9x_3 \rightarrow \extr\limits_{\bx \in G}, \; G = \left \{ \frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = 1 \right\}$
+%\item $x_1 + 4x_2 + 9x_3 \rightarrow \extr\limits_{\bx \in G}, \; G = \left \{ \frac{1}{x_1} + \frac{1}{x_2} + \frac{1}{x_3} = 1 \right\}$
 \end{itemize}
 \end{frame}
 
@@ -195,8 +195,8 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 
 \begin{frame}{Условия оптимальности}
 \begin{block}{Необходимое условие (Каруша-Куна-Такера)}
-Пусть $x^*$ решение задачи математического программирования, и функции $f, h_j, g_i$ дифференцируемы. 
-Тогда найдутся такие $\bmu^*$ и $\blambda^*$, что выполнены следующие условия:
+Пусть $x^*$ локальное решение задачи математического программирования, и функции $f, h_j, g_i$ дифференцируемы. 
+Тогда найдутся такие $\bmu^*$ и $\blambda^*$, что при некоторых дополнительных условиях регулярности выполнено следующее:
 \begin{itemize}
 \item $g_i(x^*) = 0$, $i = 1,\ldots,m$
 \item $h_j(x^*) \leq 0$, $j = 1,\ldots,p$
@@ -208,69 +208,102 @@ L(x, \blambda, \bmu) = f(x) + \sum\limits_{i=1}^m\lambda_i g_i(x) + \sum\limits_
 Если задача выпуклая, то это же условие является достаточным.
 \end{frame}
 
-\begin{frame}{Условия оптимальности (cont'd)}
-\small
-Если задача невыпуклая, то
-\begin{block}{Достаточное условие первого порядка}
-\small
-Если для стационарной точки $(x^*, \blambda^*, \bmu^*)$ число активных неравенств $|J|$ такое что $n = m + |J|$ и $\mu_j > 0, \; j \in J$, то эта точка является точкой минимума.
-\end{block}
-
-\begin{block}{Достаточное условие второго порядка}
-\small
-Если в задаче математического программирования число активных ограничений меньше размерности задачи, то точка $x^*$ является решением задачи, если выполнены условия
-\vspace{-3mm}
-\[
-\bz^{\T}\nabla_{xx}^2 L(x^*)\bz > 0
-\vspace{-3mm}
-\] 
-для 
-\vspace{-4mm}
+\begin{frame}{Примеры условий регулярности}
 \begin{itemize}
-\item $\bz \neq 0$ и $\nabla g^{\T}_i(x^*)\bz = 0$
-\vspace{-3mm}
-\item при $j \in J$ и $\mu_j > 0$, $\nabla h^{\T}_j(x^*) \bz = 0$
-\vspace{-3mm}
-\item при $j \in J$ и $\mu_j = 0$, $\nabla h^{\T}_j(x^*) \bz \leq 0$
+\item Если $g_i$ и $h_j$ линейны, то дополнительные условия не нужны
+\item Градиенты ограничений типа равенств и активных ограничений типа неравенств линейно независимы в~$x^*$
+\item Условие Слейтера
 \end{itemize}
-\end{block}
-
 \end{frame}
+
+%\begin{frame}{Условия оптимальности (cont'd)}
+%\small
+%Если задача невыпуклая, то
+%\begin{block}{Достаточное условие первого порядка}
+%\small
+%Если для стационарной точки $(x^*, \blambda^*, \bmu^*)$ число активных неравенств $|J|$ такое что $n = m + |J|$ и $\mu_j > 0, \; j \in J$, то эта точка является точкой минимума.
+%\end{block}
+%
+%\begin{block}{Достаточное условие второго порядка}
+%\small
+%Если в задаче математического программирования число активных ограничений меньше размерности задачи, то точка $x^*$ является решением задачи, если выполнены условия
+%\vspace{-3mm}
+%\[
+%\bz^{\T}\nabla_{xx}^2 L(x^*)\bz > 0
+%\vspace{-3mm}
+%\] 
+%для 
+%\vspace{-4mm}
+%\begin{itemize}
+%\item $\bz \neq 0$ и $\nabla g^{\T}_i(x^*)\bz = 0$
+%\vspace{-3mm}
+%\item при $j \in J$ и $\mu_j > 0$, $\nabla h^{\T}_j(x^*) \bz = 0$
+%\vspace{-3mm}
+%\item при $j \in J$ и $\mu_j = 0$, $\nabla h^{\T}_j(x^*) \bz \leq 0$
+%\end{itemize}
+%\end{block}
+%
+%\end{frame}
 
 \begin{frame}{Примеры}
 \begin{itemize}
-\small
-\item Пример 1
-\vspace{-5mm}
+\item 
 \begin{equation*}
 \begin{split}
-& \extr (x_1 - 3)(x_2 - 2)\\
-\text{s.t. } & x_1 + 2x_2 = 4\\
-& x^2_1 + x^2_2 \leq 5\\
-& x_1 \geq 0, \; x_2 \geq 0 
-\end{split}
-\end{equation*} 
-\vspace{-5mm}
-\item Пример 2
-\vspace{-5mm}
-\begin{equation*}
-\begin{split}
-& \extr \sum\limits_{i=1}^n \frac{c_i}{x_i}\\
-\text{s.t. } & \sum\limits_{i=1}^n a_ix_i \leq b\\
-& x_i > 0, \; b > 0, \; c_i > 0, \; a_i > 0
+& \min x + 3y\\
+\text{s.t. } & x - y \geq 0\\
+& (x - 1)^2 + (y - 1)^2 \leq 9
 \end{split}
 \end{equation*}
-\vspace{-4mm}
-\item Пример 3
-\vspace{-3mm}
+\item 
 \begin{equation*}
 \begin{split}
-& \extr (x_1x_3 - 2x_2)\\
-\text{s.t. } & 2x_1 - x_2 - 3x_3 \leq 10\\
-& 3x_1 + 2x_2 + x_3 = 6\\
-& x_2 \geq 0
+& \min \; (x+ 1)^2 + (y + 1)^2\\
+\text{s.t. } & 2x + 3y \geq 5
 \end{split}
 \end{equation*}
+\item 
+\begin{equation*}
+\begin{split}
+& \min \; x_1 - 2x_2 + x_3\\
+\text{s.t. } & -x_1 + x_2 + x_3 \leq -2\\
+& x_1 + 2x_2 + x_3 \leq 10\\
+& x_1 + x_2 - x_3 = 4\\
+& x_i \geq 0
+\end{split}
+\end{equation*}
+%\small
+%\item Пример 1
+%\vspace{-5mm}
+%\begin{equation*}
+%\begin{split}
+%& \extr (x_1 - 3)(x_2 - 2)\\
+%\text{s.t. } & x_1 + 2x_2 = 4\\
+%& x^2_1 + x^2_2 \leq 5\\
+%& x_1 \geq 0, \; x_2 \geq 0 
+%\end{split}
+%\end{equation*} 
+%\vspace{-5mm}
+%\item Пример 2
+%\vspace{-5mm}
+%\begin{equation*}
+%\begin{split}
+%& \extr \sum\limits_{i=1}^n \frac{c_i}{x_i}\\
+%\text{s.t. } & \sum\limits_{i=1}^n a_ix_i \leq b\\
+%& x_i > 0, \; b > 0, \; c_i > 0, \; a_i > 0
+%\end{split}
+%\end{equation*}
+%\vspace{-4mm}
+%\item Пример 3
+%\vspace{-3mm}
+%\begin{equation*}
+%\begin{split}
+%& \extr (x_1x_3 - 2x_2)\\
+%\text{s.t. } & 2x_1 - x_2 - 3x_3 \leq 10\\
+%& 3x_1 + 2x_2 + x_3 = 6\\
+%& x_2 \geq 0
+%\end{split}
+%\end{equation*}
 \end{itemize}
 \end{frame}
 

@@ -44,6 +44,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 	* Disciplined convex programming and autograd with PyTorch ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb), en)
 2. Unconstrained optimization problems
 	* Gradient descent ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13en.ipynb))
+	* Heavy-ball method and accelerated Nesterov method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/AccGrad/AccGrad.ipynb), en)
 	* Newton method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14en.ipynb))
 	* Quasi-Newton methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/QuasiNewton/quasi_newton.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/QuasiNewton/quasi_newton_en.ipynb))
 	* Conjugate gradient method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15en.ipynb))

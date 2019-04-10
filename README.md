@@ -48,6 +48,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 	* Newton method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/14-Newton/Seminar14en.ipynb))
 	* Quasi-Newton methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/QuasiNewton/quasi_newton.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/QuasiNewton/quasi_newton_en.ipynb))
 	* Conjugate gradient method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/15-ConjGrad/Seminar15en.ipynb))
+	* Subgradient method and intro to proximal methods (ru, [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/Non-smoothProx/seminar.ipynb))
 
 3. Linear programming
 	* Simplex method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17en.ipynb))

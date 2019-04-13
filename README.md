@@ -41,7 +41,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 1. Numerical optimization methods: introduction, convergence speed, classes of methods, black box model, one-dimensional optimization ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/tree/master/12-NumMethods/Seminar12en.ipynb))
 	* Applications of convex optimization and CVXPy ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
-	* Disciplined convex programming and autograd with PyTorch ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb), en)
+	* Disciplined convex programming and autograd with PyTorch ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb), en)
 2. Unconstrained optimization problems
 	* Gradient descent ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/13-GradDescent/Seminar13en.ipynb))
 	* Heavy-ball method and accelerated Nesterov method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/AccGrad/AccGrad.ipynb), en)

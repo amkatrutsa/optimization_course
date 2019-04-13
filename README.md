@@ -11,7 +11,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 ## Fall term
 
-1. Introduction ([ru](/01-Intro/Seminar1.pdf), [en](./01-Intro/Seminar1en.pdf)). Demo of convex optimization power ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb)], en)
+1. Introduction ([ru](/01-Intro/Seminar1.pdf), [en](./01-Intro/Seminar1en.pdf)). Demo of convex optimization power ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
 
 2. Convex sets ([ru](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2.pdf), [en](https://github.com/amkatrutsa/MIPT-Opt/blob/master/02-Convex/Seminar2en.pdf))
 

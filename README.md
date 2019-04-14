@@ -27,7 +27,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 8. Feasible direction cone, tangent cone, sharp extremum ([ru](/08-Cones/Seminar8.pdf), [en](/08-Cones/Seminar8en.pdf))
 
-9. Conjugate functions ([ru](/09-ConjugateFunctions/Seminar9.pdf), [en](/09-ConjugateFunctions/Seminar9en.pdf)) + [smoothing demo](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/09-ConjugateFunctions/smooth_demo.ipynb)
+9. Conjugate functions ([ru](/09-ConjugateFunctions/Seminar9.pdf), [en](/09-ConjugateFunctions/Seminar9en.pdf)) + [smoothing demo](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/09-ConjugateFunctions/smooth_demo.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/09-ConjugateFunctions/smooth_demo.ipynb) 
 
 10. Optimality conditions ([ru](/10-OptimalityConditions/Seminar10.pdf), [en](/10-OptimalityConditions/Seminar10en.pdf))
 
@@ -51,7 +51,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 	* Subgradient method and intro to proximal methods (ru, [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/Non-smoothProx/seminar.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/Non-smoothProx/seminar.ipynb))
 
 3. Linear programming
-	* Simplex method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17en.ipynb))
+	* Simplex method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17en.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/17-LinProgSimplex/Seminar17en.ipynb))
 	* Primal interior point method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/18-LinProgPrimalInterior/Seminar18en.ipynb))
 
 4. Constrained optimization problems
@@ -66,7 +66,7 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 
 ## Advanced and additional topics
 
-1. Least squares problem ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16en.ipynb))
+1. Least squares problem ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16en.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/16-LSQ/Seminar16en.ipynb))
 2. Nesterov's method and ODE ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/ODE4NesterovAcc/ODE4NesterovAcc.ipynb), en)
 3. Sequential quadratic programming 
 4. Theory of optimal methods and lower complexity bounds	

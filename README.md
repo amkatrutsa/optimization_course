@@ -127,6 +127,8 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 
 * [Optimization for Machine Learning by M. Jaggi at EPFL](https://github.com/epfml/OptML_course)
 
+* [Convex Optimization and Approximation by M. Hardt at UC Berkeley](https://ee227c.github.io/)
+
 ## Contributing
 
 If you want to send pull-request, please read the following [instruction](./contribution.md)

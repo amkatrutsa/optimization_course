@@ -107,6 +107,10 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 
 * [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
 
+* [Introductory Lectures on Stochastic Optimization by J. Duchi](http://stanford.edu/~jduchi/PCMIConvex/Duchi16.pdf)
+
+* [Practical optimization by P. E. Gill, W. Murray, M. H. Wright](https://www.amazon.com/Practical-Optimization-Philip-Gill/dp/0122839528)
+
 ### Related courses
 
 * [Convex optimization by S. Boyd at Stanford](http://stanford.edu/class/ee364a/) ([YouTube video](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622))
@@ -120,6 +124,10 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 * [Advanced Optimization and Randomized Methods by A. Smola and S. Sra at CMU](http://www.cs.cmu.edu/~suvrit/teach/aopt.html)
 
 * [Convex optimization by S. Sra at UC Berkeley](http://suvrit.de/teach/ee227a/lectures.html)
+
+* [Optimization for Machine Learning by M. Jaggi at EPFL](https://github.com/epfml/OptML_course)
+
+* [Convex Optimization and Approximation by M. Hardt at UC Berkeley](https://ee227c.github.io/)
 
 ## Contributing
 

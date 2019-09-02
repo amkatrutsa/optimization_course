@@ -38,6 +38,7 @@
 \item Основы выпуклого анализа
 \item Условия оптимальности
 \item Теория двойственности
+\item Линейное программирование: симплекс-метод
 \end{itemize}
 }
 \uncover<+->{
@@ -45,7 +46,7 @@
 \begin{itemize}
 \item Методы безусловной минимизации первого и второго порядка 
 \item Методы условной оптимизации
-\item Линейное программирование: симплекс-метод и пр.
+\item Барьерные методы
 \item Оптимальные методы
 \item ...
 \end{itemize}
@@ -56,14 +57,30 @@
 \begin{itemize}[<+->]
 \item Семинар и лекция раз в неделю
 \item Миниконтрольные в начале каждого семинара
-\item Домашнее задание после каждого семинара
+\item Домашние задания примерно раз в месяц
 \item Итоговая контрольная в конце семестра \\ (и промежуточная в середине семестра)
-\item Экзамен в конце семестра. Среднее арифметическое:
+\item Экзамен в конце семестра. 
+Оценка за курс~--- среднее арифметическое:
 \begin{itemize}
 \item оценки за работу в семестре
 \item ответа на экзамене
 \end{itemize}
 \item Piazza для Q\&A
+\item Gradescope для отправки домашних заданий
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Литература}
+\begin{center}
+Основная книга\\
+S. Boyd and L. Vandenberghe \emph{Convex Optimization} \\
+\url{https://web.stanford.edu/~boyd/cvxbook/}
+\end{center}
+
+\begin{itemize}
+\item К.Ю.~Осипенко Лекции
+\item В.Г.~Жадан \emph{Методы оптимизации. Часть 1. Введение в выпуклый анализ и теорию оптимизации}
+\item R.T.~Rockafellar \emph{Convex analysis}
 \end{itemize}
 \end{frame}
 
@@ -199,7 +216,7 @@
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Малоранговое приближение ранга $k$}
+\begin{frame}{Малоранговое приближение}
 
 \begin{equation*}
 \begin{split}
@@ -208,21 +225,21 @@
 \end{split}
 \end{equation*}
 
-\begin{Theorem}[Eckart–Young, 1993]
+\begin{Th}[Eckart–Young, 1993]
 Пусть $\bA = \bU\bSigma\bV^{\T}$~--- сингулярное разложение матрицы $\bA$, где $\bU = [\bU_k, \bU_{r-k}] \in \bbR^{m \times r}$, $\bSigma = \diag{\sigma_1, \ldots, \sigma_k, \ldots, \sigma_r}$, $\bV = [\bV_k, \bV_{r - k}] \in \bbR^{n \times r}$ и $r = \text{rank}(\bA)$.  Тогда решение задачи можно записать в виде:
 \[
-\bX = \hat{\bU} \hat{\bSigma} \hat{\bV}^{\T},
+\bX = \bU_k \hat{\bSigma} \bV^{\T}_k,
 \]
-где $\hat{\bU} \in \bbR^{m \times k}$, $\hat{\bSigma} = \diag{\sigma_1, \ldots, \sigma_k}$, $\hat{\bV} \in \bbR^{n \times k}$.
-\end{Theorem}
-\small Алгоритм вычисления сингулярного разложения и быстрый, и устойчивый.
+где $\bU_k \in \bbR^{m \times k}$, $\hat{\bSigma} = \diag{\sigma_1, \ldots, \sigma_k}$, $\bV_k \in \bbR^{n \times k}$.
+\end{Th}
 \end{frame}
 
 \begin{frame}{Выпуклая оптимизация}
 \begin{equation*}
 \begin{split}
 &\min\limits_{\bx \in \bbR^n} f_0(\bx)\\
-\text{s.t. } & f_i(\bx) \leq b_i, \; i = 1,\ldots, m
+\text{s.t. } & f_i(\bx) \leq 0, \; i = 1,\ldots, m\\
+& \bA\bx = \mathbf{b}
 \end{split}
 \label{eq::conv_opt}
 \end{equation*}
@@ -280,7 +297,7 @@ f(\alpha \bx_1 + \beta \bx_2) \leq \alpha f(\bx_1) + \beta f(\bx_2),
 
 \begin{frame}{Почему выпуклость так важна?}
 \uncover<+->{
-\begin{block}{R. Tyrrell Rockafellar (1935~---)}
+\begin{block}{Ralph Tyrrell Rockafellar (1935~---)}
 The great watershed in optimization is not between linearity and
 non-linearity, but convexity and non-convexity.
 \end{block}

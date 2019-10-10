@@ -105,7 +105,7 @@ The list of questions ([ru](/MinimumSpring.pdf)) about topics in Spring term par
 
 * [Lecture notes on Modern Convex Optimization by A. Nemirovski](https://www.dropbox.com/s/gr6addvyxqfqjn0/Lect_ModConvOpt.pdf?dl=0)
 
-* [Review of Stochactic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
+* [Review of Stochastic Optimization Algorithms](https://www.cs.ubc.ca/~schmidtm/Documents/2012_Notes_BigN.pdf)
 
 * [Introductory Lectures on Stochastic Optimization by J. Duchi](http://stanford.edu/~jduchi/PCMIConvex/Duchi16.pdf)
 

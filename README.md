@@ -37,7 +37,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of the course that students have to answer to pass the exam.
 
-## Spring term
+## Spring term (2016-2019)
 
 1. Numerical optimization methods: introduction, convergence speed, classes of methods, black box model, one-dimensional optimization ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/tree/master/12-NumMethods/Seminar12en.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/12-NumMethods/Seminar12en.ipynb))
 	* Applications of convex optimization and CVXPy ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
@@ -58,6 +58,30 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 	* Projected gradient method and Frank-Wolfe method ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/19-SimpleStructureSet/Seminar19en.ipynb))
 	* Interior point methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/20-InteriorPoint/Seminar20en.ipynb))
 	* Penalty methods and augmented Lagrangian methods ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/21-Penalty/Seminar21.ipynb), [en](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/21-Penalty/Seminar21en.ipynb))
+
+
+## Spring term 2020
+
+1. Demo of convex optimization applications ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
+
+2. Intro to numerical optimization and gradient descent ([ru](./Spring2020/intro_gd.ipynb), en)
+
+3. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method
+
+4. Newton and quasi-Newton methods
+
+5. Subgradient methods and intro to proximal methods
+
+6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  (?)
+
+7. Least squares problem: matrix factorizations and Levenberg-Marquardt algorithm 
+
+8. Projected gradient method and Frank-Wolfe method
+
+9. Interior point methods
+
+10. Penalty methods: augmented Lagrangian methods and ADMM
+
 
 
 ### Questions

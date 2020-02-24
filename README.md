@@ -66,7 +66,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 2. Intro to numerical optimization and gradient descent ([ru](./Spring2020/intro_gd.ipynb), en)
 
-3. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method
+3. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method ([ru](./Spring2020/acc_grad.ipynb), en)
 
 4. Newton and quasi-Newton methods
 

@@ -68,7 +68,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 3. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method ([ru](./Spring2020/acc_grad.ipynb), en)
 
-4. Newton and quasi-Newton methods
+4. Newton and quasi-Newton methods ([ru](./Spring2020/newton_quasi.ipynb), en)
 
 5. Subgradient methods and intro to proximal methods
 

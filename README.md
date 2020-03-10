@@ -70,7 +70,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 4. Newton and quasi-Newton methods ([ru](./Spring2020/newton_quasi.ipynb), en)
 
-5. Subgradient methods and intro to proximal methods
+5. Subgradient methods and intro to proximal methods ([ru](./Spring2020/subgrad_prox.ipynb), en)
 
 6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  (?)
 

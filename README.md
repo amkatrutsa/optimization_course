@@ -72,9 +72,9 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 5. Subgradient methods and intro to proximal methods ([ru](./Spring2020/subgrad_prox.ipynb), en)
 
-6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  (?)
+6. Least squares problem: matrix factorizations and Levenberg-Marquardt algorithm ([ru](./Spring2020/lsq.ipynb), en)
 
-7. Least squares problem: matrix factorizations and Levenberg-Marquardt algorithm 
+7. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  (?)
 
 8. Projected gradient method and Frank-Wolfe method
 

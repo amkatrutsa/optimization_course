@@ -76,7 +76,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 7. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  ([ru](./Spring2020/smoothing.ipynb), en)
 
-8. Projected gradient method and Frank-Wolfe method
+8. Projected gradient method and Frank-Wolfe method ([ru](./Spring2020/pg_fw.ipynb), en)
 
 9. Interior point methods
 

@@ -78,7 +78,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 8. Projected gradient method and Frank-Wolfe method ([ru](./Spring2020/pg_fw.ipynb), en)
 
-9. Interior point methods
+9. Interior point methods ([ru](./Spring2020/int_point.ipynb), en)
 
 10. Penalty methods: augmented Lagrangian methods and ADMM
 

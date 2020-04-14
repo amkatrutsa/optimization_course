@@ -80,7 +80,7 @@ The list of questions ([ru](/MinimumFall.pdf)) about topics in Fall term part of
 
 9. Interior point methods ([ru](./Spring2020/int_point.ipynb), en)
 
-10. Penalty methods: augmented Lagrangian methods and ADMM ([ru](./Spring2020/penalty_admm.ipynb), en)
+10. Penalty method, augmented Lagrangian method and ADMM ([ru](./Spring2020/penalty_admm.ipynb), en)
 
 
 

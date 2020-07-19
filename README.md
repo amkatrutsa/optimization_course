@@ -4,14 +4,14 @@ This repository contains seminars resources for the course "Optimization methods
 Every seminar presents brief review of necessary part of theory covered in lectures and examples of standard tasks for considered topic. 
 
 The main tool in development of efficient optimization methods is numerical linear algebra. 
-To refresh your knowledge, you can use the crash course ([ru](la_crash_course.ipynb), [en](la_crash_course_en.ipynb)). 
+To refresh your knowledge, you can use the crash course ([ru](./preliminaries/la_crash_course.ipynb), [en](./preliminaries/la_crash_course_en.ipynb)). 
 
 Almost all numerical tests in this repository are performed with [liboptpy](https://github.com/amkatrutsa/liboptpy) library, where you can find easy to use implementations of different optimization methods. Also we use [CVXPY 1.0](https://www.cvxpy.org/index.html) for comparison purpose. 
 
 ## Fall term
 
 - Preliminary 
-	- Crash course on the numerical linear algebra ([ru](la_crash_course.ipynb), [en](la_crash_course_en.ipynb))
+	- Crash course on the numerical linear algebra ([ru](./preliminaries/la_crash_course.ipynb), [en](./preliminaries/la_crash_course_en.ipynb))
 
 - [2016-2019](./Fall2016-2019/README.md) 
 - [2020](./Fall2020/README.md)
@@ -23,8 +23,8 @@ The minimum list of questions ([ru](/MinimumFall.pdf)) on the topics in Fall ter
 ## Spring term 
 
 - Preliminary
-	- Disciplined convex programming and autograd with PyTorch ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/dcp_autodiff/dcp_autodiff.ipynb), en)
-	- Demo of convex optimization power ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/01-Intro/demos.ipynb), en)
+	- Disciplined convex programming and autograd with PyTorch ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/dcp_autodiff/dcp_autodiff.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/dcp_autodiff/dcp_autodiff.ipynb), en)
+	- Demo of convex optimization power ([ru](https://nbviewer.jupyter.org/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/demos/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/demos/demos.ipynb), en)
 	
 - [2017-2019](./Sparing2017-2019/README.md)
 - [2020](./Spring2020/README.md)

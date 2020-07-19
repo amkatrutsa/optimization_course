@@ -1,4 +1,4 @@
-# Fall 2017-2019
+# Fall 2016-2019
 
 The main topics here are convex sets, convex functions, KKT optimality conditions and duality. The presentations are made in classical manner and give basic facts on the topics.
 

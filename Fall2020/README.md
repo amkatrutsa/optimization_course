@@ -2,7 +2,7 @@
 
 This term is devoted to basic theory of convex optimization and focuses on the tools to develop efficient numerical methods 
 
-1. Introduction, convex sets \& cones, relative interior
+1. Introduction, convex sets \& cones, relative interior ([ru](./01-ConvexSets/seminar1.pdf), en)
 2. Conjugate cones
 3. Matrix calculus and automatic differentiation
 4. Convex functions

@@ -12,8 +12,8 @@
 
 6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  ([ru](./smoothing.ipynb), en)
 
-7. Simple constrained optimization peroblems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb), en)
+7. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb), en)
 
 8. General purpose solvers: interior point methods ([ru](./int_point.ipynb), en)
 
-9. How to parallel optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb), en)
+9. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb), en)

@@ -26,7 +26,7 @@ The minimum list of questions ([ru](/MinimumFall.pdf)) on the topics in Fall ter
 	- Disciplined convex programming and autograd with PyTorch ([ru](preliminaries/dcp_autodiff/dcp_autodiff.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/dcp_autodiff/dcp_autodiff.ipynb), en)
 	- Demo of convex optimization power ([ru](preliminaries/demos/demos.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amkatrutsa/MIPT-Opt/blob/master/preliminaries/demos/demos.ipynb), en)
 	
-- [2017-2019](./Sparing2017-2019/README.md)
+- [2017-2019](./Spring2017-2019/README.md)
 - [2020](./Spring2020/README.md)
 
 

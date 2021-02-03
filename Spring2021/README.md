@@ -1,19 +1,23 @@
-# Spring term 2020
+# Spring term 2021
 
-1. Intro to numerical optimization methods. Gradient descent ([ru](./intro_gd.ipynb), en)
+0. Some applications of convex optimizations ([ru](../preliminaries/demos/demos.ipynb))
 
-2. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method ([ru](./acc_grad.ipynb), en)
+1. Intro to numerical optimization methods. Gradient descent
 
-3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations ([ru](./newton_quasi.ipynb), en)
+2. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method
 
-4. Non-smooth optimization problems: subgradient methods and intro to proximal methods ([ru](./subgrad_prox.ipynb), en)
+3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations
 
-5. Least squares problem: matrix factorizations and Levenberg-Marquardt algorithm ([ru](./lsq.ipynb), en)
+4. Non-smooth optimization problems: subgradient methods and intro to proximal methods
 
-6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))  ([ru](./smoothing.ipynb), en)
+5. Least squares problem: matrix factorizations and Levenberg-Marquardt algorithm
 
-7. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb), en)
+6. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5)) 
 
-8. General purpose solvers: interior point methods ([ru](./int_point.ipynb), en)
+7. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method
 
-9. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb), en)
+8. General purpose solvers: interior point methods
+
+9. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
+
+10. Coordinate-wise methods

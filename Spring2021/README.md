@@ -2,7 +2,7 @@
 
 0. Some applications of convex optimizations ([ru](../preliminaries/demos/demos.ipynb))
 
-1. Intro to numerical optimization methods. Gradient descent
+1. Intro to numerical optimization methods. Gradient descent ([ru](./intro_gd.ipynb))
 
 2. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method
 

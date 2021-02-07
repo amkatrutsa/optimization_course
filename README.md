@@ -28,6 +28,7 @@ The minimum list of questions ([ru](/MinimumFall.pdf)) on the topics in Fall ter
 	
 - [2017-2019](./Spring2017-2019/README.md)
 - [2020](./Spring2020/README.md)
+- [2021](./Spring2021/README.md)
 
 
 ### Questions

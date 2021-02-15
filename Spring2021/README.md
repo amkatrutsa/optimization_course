@@ -4,7 +4,7 @@
 
 1. Intro to numerical optimization methods. Gradient descent ([ru](./intro_gd.ipynb))
 
-2. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method ([ru](./acc_grad.ipynb))
+2. How to accelerate gradient descent: conjugate gradient method, heavy-ball method and fast gradient method ([vol 1, ru](./acc_grad.ipynb); [vol 2, ru](./acc_grad_vol2.ipynb))
 
 3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations
 

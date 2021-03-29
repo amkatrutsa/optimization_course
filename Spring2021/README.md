@@ -10,7 +10,7 @@
 
 4. Non-smooth optimization problems: subgradient methods and intro to proximal methods ([en](./subgrad_prox.ipynb))
 
-5. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5)) 
+5. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5)) ([ru](./smoothing.ipynb))
 
 6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method
 

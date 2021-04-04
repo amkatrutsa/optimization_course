@@ -12,7 +12,7 @@
 
 5. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5)) ([ru](./smoothing.ipynb))
 
-6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method
+6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb))
 
 7. General purpose solvers: interior point methods
 

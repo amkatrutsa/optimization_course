@@ -14,7 +14,7 @@
 
 6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb))
 
-7. General purpose solvers: interior point methods
+7. General purpose solvers: interior point methods ([ru](./int_point.ipynb))
 
 8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
 

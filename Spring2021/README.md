@@ -16,6 +16,6 @@
 
 7. General purpose solvers: interior point methods ([ru](./int_point.ipynb))
 
-8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
+8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb))
 
 9. Coordinate-wise methods

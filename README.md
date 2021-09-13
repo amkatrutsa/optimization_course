@@ -15,6 +15,7 @@ Almost all numerical tests in this repository are performed with [liboptpy](http
 
 - [2016-2019](./Fall2016-2019/README.md) 
 - [2020](./Fall2020/README.md)
+- [2021](./Fall2021/README.md)
 
 ### Questions
 

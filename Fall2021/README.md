@@ -3,7 +3,7 @@
 This term is devoted to basic theory of convex optimization and focuses on the tools to develop efficient numerical methods 
 
 1. [Introduction, convex sets \& cones, relative interior](./01-ConvexSets/seminar1.pdf)
-2. Conjugate cones
+2. [Conjugate cones](./02-ConjCones/seminar2.pdf)
 3. Matrix calculus and automatic differentiation 
 4. Convex functions 
 5. Subdifferential

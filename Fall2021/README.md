@@ -8,7 +8,7 @@ This term is devoted to basic theory of convex optimization and focuses on the t
 4. [Convex functions](./04-ConvexFunc/seminar4.pdf)
 5. [Subdifferential](./05-Subdifferential/seminar5.pdf)
 6. [Simple optimality conditions](./06-SimpleOptCond/seminar6.pdf) 
-7. [Conjugate functions](./07-ConjFuncs/seminar7.pdf)
+7. [Conjugate functions](./07-ConjFuncs/seminar7.pdf). [Smoothing demo](./07-ConjFuncs/smooth_demo.ipynb)
 8. ККТ optimality conditions 
 9. Intro to duality
 10. Conic duality intro

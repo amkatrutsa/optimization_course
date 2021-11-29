@@ -11,5 +11,4 @@ This term is devoted to basic theory of convex optimization and focuses on the t
 7. [Conjugate functions](./07-ConjFuncs/seminar7.pdf). [Smoothing demo](./07-ConjFuncs/smooth_demo.ipynb)
 8. [ККТ optimality conditions](./08-KKT/seminar8.pdf) 
 9. [Intro to duality](./09-Duality/seminar9.pdf)
-10. Conic duality intro
-11. Linear programming and simplex method
+10. [Linear programming and simplex method](./10-LinProg/Seminar10.ipynb). [Examples of using tableau simplex method](./10-LinProg/examples.pdf)

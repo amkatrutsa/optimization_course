@@ -1,6 +1,6 @@
 # Spring term 2022
 
-0. Overview of the term and some applications of convex optimizations ([ru](.//demos/demos.ipynb))
+0. Overview of the term topics and some applications of convex optimization ([ru](.//demos/demos.ipynb))
 
 1. Intro to numerical optimization methods. Gradient descent
 
@@ -15,13 +15,13 @@
 
 5. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))
 
-6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method ([ru](./pg_fw.ipynb))
+6. Simple constrained optimization problems: projected gradient method and Frank-Wolfe method
 
 7. General purpose solvers
 
     - interior point methods
     - SQP as generalization of interior point methods to non-convex problems
 
-8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb))
+8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
 
 9. Stochastic gradient methods: non-convex non-smooth but structured objectives. Training neural networks as a basic example

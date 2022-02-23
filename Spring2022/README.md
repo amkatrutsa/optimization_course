@@ -1,8 +1,8 @@
 # Spring term 2022
 
-0. Overview of the term topics and some applications of convex optimization ([ru](.//demos/demos.ipynb))
+0. Overview of the term topics and some applications of convex optimization ([ru](./demos/demos.ipynb))
 
-1. Intro to numerical optimization methods. Gradient descent
+1. Intro to numerical optimization methods. Gradient descent ([ru](./intro_gd.ipynb))
 
 2. How to accelerate gradient descent
 

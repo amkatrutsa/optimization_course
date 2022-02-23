@@ -6,8 +6,8 @@
 
 2. How to accelerate gradient descent
 
-   - conjugate gradient method
-   - heavy-ball method and fast gradient method
+   - conjugate gradient method ([ru](./cg.ipynb))
+   - heavy-ball method and fast gradient method ([ru](./hb_acc_grad.ipynb))
 
 3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations 
 

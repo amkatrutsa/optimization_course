@@ -24,4 +24,4 @@
 
 8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
 
-9. Stochastic gradient methods: non-convex non-smooth but structured objectives. Training neural networks as a basic example
+9. Stochastic gradient methods: non-convex non-smooth but structured objectives. Training neural networks as a basic example ([ru](./stoch_grad_methods.ipynb))

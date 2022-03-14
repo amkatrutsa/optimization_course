@@ -9,7 +9,7 @@
    - conjugate gradient method ([ru](./cg.ipynb))
    - heavy-ball method and fast gradient method ([ru](./hb_acc_grad.ipynb))
 
-3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations 
+3. Second order methods: Newton method. Quasi-Newton methods as trade-off between convergence speed and cost of one iterations  ([ru](./newton_quasi.ipynb))
 
 4. Non-smooth optimization problems: subgradient methods and intro to proximal methods
 

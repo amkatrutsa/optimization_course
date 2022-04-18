@@ -15,7 +15,7 @@
 
 5*. Smoothing: smooth minimization of non-smooth functions ([original paper](https://link.springer.com/article/10.1007/s10107-004-0552-5))
 
-6. Frank-Wolfe method
+6. Frank-Wolfe method ([ru](./frank-wolfe.ipynb))
 
 7. General purpose solvers
 

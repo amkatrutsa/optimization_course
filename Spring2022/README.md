@@ -22,6 +22,6 @@
     - interior point methods
     - SQP as generalization of interior point methods to non-convex problems
 
-8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM
+8. How to parallelize optimization methods: penalty method, augmented Lagrangian method and ADMM ([ru](./penalty_admm.ipynb))
 
 9. Stochastic gradient methods: non-convex non-smooth but structured objectives. Training neural networks as a basic example ([ru](./stoch_grad_methods.ipynb))

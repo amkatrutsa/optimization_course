@@ -1,6 +1,6 @@
 # Optimization Methods
 
-This repository contains seminars resources for the course "Optimization methods" for the 3-rd year students of Department of Control and Applied Mathematics, [MIPT](https://mipt.ru/english/).
+This repository contains seminars resources for the course "Optimization methods" for the 3-rd year students of Department of Control and Applied Mathematics.
 Every seminar presents brief review of necessary part of theory covered in lectures and examples of standard tasks for considered topic. 
 
 The main tool in development of efficient optimization methods is numerical linear algebra. 
